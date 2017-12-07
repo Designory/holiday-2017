@@ -1,5 +1,5 @@
 .gradient {
-    background: linear-gradient(45deg, #00547a, #40d0c7);
+    background: linear-gradient(to right, #ffe400, #0dd902);
     height: 100%;
     left: 0;
     position: absolute;
