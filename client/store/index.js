@@ -1,38 +1,36 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import router from '../router'
+import * as Utils from '../utils';
 
 Vue.use(Vuex)
 
 const state = {
   /**
-   * Contains data on current view (page)
-   * Sets the limit for views
+   * -> Month & Date are for searching holiday's data
+   *    Defaults defined at 'rest.js'
+   *    Updated by 'Calendar.vue' 
+   *    Used by 'Holiday.vue' 
    */
-  views: {
-    limit: 2, // number of pages 3 => 0, 1, 2
-    current: 0
+  params: {
+    month: 0,   
+    date: 1,
+    view: 0   // welcome screen
   },
 
   /**
-   * Used for searching holiday's data
-   * Defaults defined at 'rest.js'
-   * Updated by 'Calendar.vue' 
-   * Used by 'Holiday.vue' 
+   * Set limit for number of views (just in case) ¯\_(ツ)_/¯
    */
-  holiday: { 
-    month: 0,
-    date: 1
-  }
+  limit: 2, // number of pages 3 => 0, 1, 2
 }
 
 const mutations = {
-  FORWARD (state) {
-    state.views.current++;
-  },
-  BACK (state) {
-    state.views.current--;
-  }
+  // FORWARD (state) {
+  //   state.views.current++;
+  // },
+  // BACK (state) {
+  //   state.views.current--;
+  // }
 }
 
 const actions = {
@@ -41,26 +39,20 @@ const actions = {
    * Push state
    */
   nextView({ commit }) {
-    if (state.views.current < state.views.limit) {
-      commit('FORWARD'); 
-      router.push({ 
-        path: `/view=${state.views.current}/params`, 
-        query: store.state.route.query
-      });
-    }
+    // get current view data
+    let nextView = Number(state.params.view) + 1;
+
+    Utils.setView(nextView);
   },
   /**
    * Show previous view (page)
    * Push state
    */
   prevView({ commit }) {
-    if (state.views.current > 0) {
-      commit('BACK');
-      router.push({ 
-        path: `/view=${state.views.current}/params`, 
-        query: store.state.route.query 
-      });
-    }
+    // get current view data
+    let prevView = Number(state.params.view) - 1;
+    
+    Utils.setView(prevView);
   }
 }
 

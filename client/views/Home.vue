@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     view() {
-      return this.$store.state.views.current;
+      return this.$store.state.route.query.view;
     }
   }
 };
