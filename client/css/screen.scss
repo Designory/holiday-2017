@@ -1,0 +1,12 @@
+.screen {
+
+    &__content {
+        display: none;
+
+        @for $i from 0 through 3 {
+            [data-view="#{$i}"] &--#{$i} {
+                display: block;
+            }
+        }
+    }
+}

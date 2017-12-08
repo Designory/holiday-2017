@@ -1,26 +1,41 @@
 <template>
-  <div :class="['page page--' + view]">
-     <p class="txt">
-       While we do want to wish you a very happy holiday season, we here at Designory want the world to know that every day is a good day to celebrate. 
-     </p>
-     <p class="txt txt--strong">
-       Enter a day — any day. And we’ll show you your reason to celebrate.
-     </p>
-     <p class="txt">VIEW: {{ view }}</p>
+  <div class="page" :data-view="view">
+     <div class="screen">
+
+       <!-- welcome screen  -->
+       <div class="screen__content screen__content--0">
+        <Welcome></Welcome>
+       </div>
+       
+       <!-- calendar screen -->
+       <div class="screen__content screen__content--1">
+        <Calendar></Calendar>
+       </div>
+
+       <!-- date screen -->
+       <div class="screen__content screen__content--2">
+        <Date></Date>
+       </div>
+       
+     </div>
   </div>
 </template>
 
 <script>
-import Counter from 'components/Counter';
+import Welcome from "views/Welcome";
+import Calendar from "views/Calendar";
+import Date from "views/Date";
 
 export default {
   components: {
-    Counter
+    Welcome,
+    Calendar,
+    Date
   },
   computed: {
     view() {
       return this.$store.state.views.current;
     }
   }
-}
+};
 </script>

@@ -18,6 +18,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   @import '../css/_style.scss';
 </style>

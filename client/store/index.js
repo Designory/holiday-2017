@@ -21,10 +21,16 @@ const mutations = {
 
 const actions = {
   nextView({ commit }) {
-    if (state.views.current < state.views.limit) commit('FORWARD');
+    if (state.views.current < state.views.limit) {
+      commit('FORWARD'); 
+      window.history.pushState(state, `lorem`, `#${state.views.current}`)
+    }
   },
   prevView({ commit }) {
-    if (state.views.current > 0) commit('BACK');
+    if (state.views.current > 0) {
+      commit('BACK');
+      window.history.pushState(state, `lorem`, `#${state.views.current}`)
+    }
   }
 }
 
