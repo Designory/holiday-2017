@@ -6,7 +6,7 @@
      <p class="txt txt--strong">
        Enter a day — any day. And we’ll show you your reason to celebrate.
      </p>
-     <p>VIEW: {{ count }}</p>
+     <p class="txt">VIEW: {{ view }}</p>
   </div>
 </template>
 
