@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="app">
     <gradient></gradient>
-    <router-view></router-view>
-    <Navigation></Navigation>  
+    <home></home>
+    <navigation></navigation>  
   </div>
 </template>
 
@@ -10,10 +10,13 @@
 import Gradient from 'components/Gradient';
 import Navigation from 'components/Navigation';
 
+import Home from 'views/Home';
+
 export default {
   components: {
     Gradient,
-    Navigation
+    Navigation,
+    Home
   }
 }
 </script>
