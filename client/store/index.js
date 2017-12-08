@@ -43,7 +43,10 @@ const actions = {
   nextView({ commit }) {
     if (state.views.current < state.views.limit) {
       commit('FORWARD'); 
-      router.push({ path: `/view=${state.views.current}/params`, query: store.state.route.query})
+      router.push({ 
+        path: `/view=${state.views.current}/params`, 
+        query: store.state.route.query
+      });
     }
   },
   /**
@@ -53,7 +56,10 @@ const actions = {
   prevView({ commit }) {
     if (state.views.current > 0) {
       commit('BACK');
-      router.push({ path: `/view=${state.views.current}/params`, query: store.state.route.query })
+      router.push({ 
+        path: `/view=${state.views.current}/params`, 
+        query: store.state.route.query 
+      });
     }
   }
 }
