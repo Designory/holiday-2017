@@ -1,12 +1,19 @@
 .navigation {
+    position: relative;
+    z-index: 1;
 
     &__elm {
         display: inline-block;
 
         &--logo {}
 
-        &--next {}
+        &--next {
+            float: right;
+        }
 
-        &--prev {}
+        &--prev {
+            float: right;
+            margin-right: 15px;
+        }
     }
 }
