@@ -1,9 +1,10 @@
 .screen {
 
     height: calc(100vh - #{$content-padding-mobile*2 + $navigation-height-mobile});
+    position: relative;
 
     &__content {
-        display: none;
+        @extend %layer;
 
         @for $i from 0 through 3 {
             [data-view="#{$i}"] &--#{$i} {

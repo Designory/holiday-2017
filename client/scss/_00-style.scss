@@ -1,0 +1,13 @@
+@import './_01-variables.scss';
+@import './_02-placeholders.scss';
+@import './_03-reset.scss';
+
+@import "./modules/app.scss";
+@import "./modules/gradients.scss";
+@import "./modules/navigation.scss";
+@import "./modules/screen.scss";
+@import "./modules/txt.scss";
+
+* {
+    box-sizing: border-box;
+}
