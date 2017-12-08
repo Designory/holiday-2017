@@ -28,10 +28,19 @@ const actions = {
   }
 }
 
+const getters = {
+  test: state => {
+    return state.views.current;
+  }
+}
+
 const store = new Vuex.Store({
   state,
   mutations,
-  actions
+  actions,
+  getters
 })
+
+console.log(store);
  
 export default store

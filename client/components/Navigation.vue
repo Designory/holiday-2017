@@ -2,10 +2,10 @@
     <div class="nav">
         <div class="nav__logo">
             <a target="_blank" href="https://designory.com">
-                logo
+               logo
             </a>
         </div>
-        <div class="nav__btn nav__btn--next nav__btn--active" @click="$store.dispatch('nextView')">
+        <div class="nav__btn nav__btn--next" @click="$store.dispatch('nextView')">
             next
         </div>
         <div class="nav__btn nav__btn--prev" @click="$store.dispatch('prevView')">
