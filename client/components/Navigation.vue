@@ -1,12 +1,14 @@
 <template>
     <div class="nav">
         <div class="nav__logo">
-            logo
+            <a target="_blank" href="https://designory.com">
+                logo
+            </a>
         </div>
-        <div class="nav__next">
+        <div class="nav__btn nav__btn--next nav__btn--active" @click="$store.dispatch('nextView')">
             next
         </div>
-        <div class="nav__prev">
+        <div class="nav__btn nav__btn--prev" @click="$store.dispatch('prevView')">
             prev
         </div>
     </div>

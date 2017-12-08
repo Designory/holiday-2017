@@ -4,23 +4,27 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 0
+  views: {
+    limit: 2, // number of pages 3 => 0, 1, 2
+    current: 0
+  }
 }
 
 const mutations = {
-  INCREMENT (state) {
-    state.count++;
+  FORWARD (state) {
+    state.views.current++;
   },
-  DECREMENT (state) {
-    state.count--
+  BACK (state) {
+    state.views.current--;
   }
 }
 
 const actions = {
-  incrementAsync ({ commit }) {
-    setTimeout(() => {
-      commit('INCREMENT')
-    }, 200)
+  nextView({ commit }) {
+    if (state.views.current < state.views.limit) commit('FORWARD');
+  },
+  prevView({ commit }) {
+    if (state.views.current > 0) commit('BACK');
   }
 }
 
