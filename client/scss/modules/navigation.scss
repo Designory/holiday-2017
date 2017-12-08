@@ -5,7 +5,8 @@
     &__elm {
         display: inline-block;
 
-        &--logo {}
+        &--logo {
+        }
 
         &--next {
             float: right;
@@ -15,5 +16,10 @@
             float: right;
             margin-right: 15px;
         }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
     }
 }

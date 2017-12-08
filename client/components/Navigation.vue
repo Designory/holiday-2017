@@ -1,7 +1,7 @@
 <template>
     <div class="navigation">
         <div class="navigation__elm navigation__elm--logo">
-            <a target="_blank" href="https://designory.com">
+            <a class="navigation__link" target="_blank" href="https://designory.com">
                logo
             </a>
         </div>
