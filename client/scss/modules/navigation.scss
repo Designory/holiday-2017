@@ -1,21 +1,47 @@
+@function arrow($color: $white) {
+  @return svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.0141 11.9956"><path d="M0,11.9956H3.6172l6.3969-5.9975L3.6172,0H0L6.268,5.9971Z" style="fill:#{$color}"/></svg>')
+};
+
 .navigation {
     position: relative;
     z-index: 1;
 
-    &__elm {
-        display: inline-block;
-
-        &--logo {
+    &__btn {
+        background: {
+            image: arrow();
+            repeat: no-repeat;
+            size: contain;
         }
+        display: inline-block;
+        vertical-align: middle;
 
         &--next {
             float: right;
+            height: 25px;
+            width: 25px;
+
+            // [data-view="2"] & {
+            //     display: none;
+            // }
         }
 
         &--prev {
             float: right;
+            height: 25px;
             margin-right: 15px;
+            transform: rotate(180deg);
+            width: 25px;
+
+            // [data-view="0"] &,
+            // [data-view="1"] & {
+            //     display: none !important;
+            // }
         }
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
     }
 
     &__link {

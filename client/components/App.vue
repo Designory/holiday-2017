@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app">
+  <div id="app" class="app" :data-view="view">
     <gradient></gradient>
     <home></home>
     <navigation></navigation>  
@@ -19,6 +19,11 @@ export default {
     Gradient,
     Navigation,
     Home
+  },
+  computed: {
+    view() {
+      return this.$store.state.route.query.view;
+    }
   }
 }
 </script>
