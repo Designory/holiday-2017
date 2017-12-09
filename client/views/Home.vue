@@ -1,5 +1,5 @@
 <template>
-  <div class="page" :data-view="view">
+  <div class="page">
      <div class="screen">
 
        <!-- welcome screen  -->
@@ -31,11 +31,6 @@ export default {
     Welcome,
     Calendar,
     Date
-  },
-  computed: {
-    view() {
-      return this.$store.state.route.query.view;
-    }
   }
 };
 </script>
