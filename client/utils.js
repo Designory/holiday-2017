@@ -52,7 +52,7 @@ function normalizeParams({ view, month, date }) {
     // generate valid date, aka normalize date params
     let holiday = new Date(2018, month, date);
 
-    // assign valid values to query params
+    // assign valid values back to query params
     month = holiday.getMonth();
     date = holiday.getDate();
 
