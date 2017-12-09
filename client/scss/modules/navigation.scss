@@ -1,0 +1,25 @@
+.navigation {
+    position: relative;
+    z-index: 1;
+
+    &__elm {
+        display: inline-block;
+
+        &--logo {
+        }
+
+        &--next {
+            float: right;
+        }
+
+        &--prev {
+            float: right;
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+}

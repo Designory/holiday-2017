@@ -1,0 +1,19 @@
+.gradient {
+    z-index: -1;
+    
+    &__layer {
+        @extend %layer;
+        
+        &--0 {
+            background: linear-gradient(to right, #fc4a1a, #f7b733);
+        }
+
+        &--1 {
+            background: linear-gradient(to right, #00f260, #0575e6);
+        }
+
+        &--2 {
+            background: linear-gradient(to right, #283c86, #45a247);
+        }
+    }
+}

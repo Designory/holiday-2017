@@ -1,30 +1,58 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from '../router'
+import * as Utils from '../utils';
 
 Vue.use(Vuex)
 
 const state = {
-  views: {
-    limit: 2, // number of pages 3 => 0, 1, 2
-    current: 0
-  }
+  /**
+   * -> Month & Date are for searching holiday's data
+   *      Defaults defined at 'rest.js'
+   *      Updated by 'Calendar.vue' 
+   *      Used by 'Holiday.vue' 
+   * -> View is for displaying one of 3 available 'screens':
+   *      0. Welcome
+   *      1. Calendar
+   *      3. Holiday Data
+   */
+  params: {
+    month: 0,   
+    date: 1,
+    view: 0 
+  },
+
+  /**
+   * Set limit for number of views (just in case) ¯\_(ツ)_/¯
+   */
+  limit: 2, // number of pages 3 => 0, 1, 2
 }
 
 const mutations = {
-  FORWARD (state) {
-    state.views.current++;
-  },
-  BACK (state) {
-    state.views.current--;
-  }
+  // FORWARD (state) {
+  //   state.views.current++;
+  // },
+  // BACK (state) {
+  //   state.views.current--;
+  // }
 }
 
 const actions = {
+  /**
+   * Show next view (page)
+   * Current view param + 1
+   * Push state
+   */
   nextView({ commit }) {
-    if (state.views.current < state.views.limit) commit('FORWARD');
+    Utils.setView(Number(state.params.view) + 1);
   },
+  /**
+   * Show previous view (page)
+   * Current view param - 1
+   * Push state
+   */
   prevView({ commit }) {
-    if (state.views.current > 0) commit('BACK');
+    Utils.setView(Number(state.params.view) - 1);
   }
 }
 
@@ -33,5 +61,7 @@ const store = new Vuex.Store({
   mutations,
   actions
 })
+
+console.log(store);
  
 export default store

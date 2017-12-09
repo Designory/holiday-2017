@@ -1,8 +1,10 @@
 .app {
+    background: linear-gradient(to right, #ffe400, #0dd902);
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: 100vh;
-    padding: 35px;
+    overflow: hidden;
+    padding: $content-padding-mobile;
     position: relative;
     width: 100vw;
 }

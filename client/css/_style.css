@@ -1,8 +1,0 @@
-@import '../css/reset.css';
-@import '../css/app.css';
-@import '../css/txt.css';
-@import '../css/gradients.css';
-
-* {
-    box-sizing: border-box;
-}
