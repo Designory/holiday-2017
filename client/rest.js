@@ -14,12 +14,11 @@ async function getQueryParams() {
 }
 
 /**
- * Trigger chain:
+ * Trigger on sync operation complete:
  * - validate query params
- * - update 'store.holiday' with query params
+ * - update 'store.state' with query params
  * - if failed => set default => current date
  */
 getQueryParams()
-    .then(params => Utils.normalizeParams(params))
-    .then(params => Utils.pushState(params))
-    .catch(err => Utils.pushState( Utils.normalizeParams({ view: null, month: null, date: null }) ));
+    .then(params => Utils.pushState( Utils.normalizeParams(params) ))
+    .catch(err => Utils.pushState( Utils.normalizeParams() ));
