@@ -1,9 +1,12 @@
 .calendar {
-    &__elm {
+    &__field {
         background: rgba(0,0,0,0);
         border: 3px solid $white;
         color: $white;
         font-size: 2rem;
         text-align: center;
+    }
+
+    &__item {
     }
 }
