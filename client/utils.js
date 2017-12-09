@@ -1,6 +1,12 @@
 import router from './router'
 import store from './store'
 
+/**
+ * Take new parameters and update store.state
+ * Then push state to history
+ * @param {params} params { view, month, date}
+ * @returns {promise}
+ */
 function pushState(params) {
     return new Promise (resolve => {
         // overwrite current state
@@ -16,18 +22,33 @@ function pushState(params) {
     });
 }
 
+/**
+ * Switch to a proper view => update state & history
+ * @param {number} view integrer representing the view [0-2] 
+ * @returns {promise}
+ */
 function setView(view) {
     return new Promise( resolve => {    
         resolve(pushState(normalizeParams({ ...store.state.params, view})));
     });
 }
 
+/**
+ * Set month => update state & history
+ * @param {number} month integrer representing month [0-11]
+ * @returns {promise}
+ */
 function setMonth(month) {
     return new Promise( resolve => {    
         resolve(pushState(normalizeParams({ ...store.state.params, month })));
     });
 }
 
+/**
+ * Set date => update state & history
+ * @param {number} date integrer representing date [0-31]
+ * @returns {promise}
+ */
 function setDate(date) {
     return new Promise( resolve => {    
         resolve(pushState(normalizeParams({ ...store.state.params, date })));
@@ -36,7 +57,7 @@ function setDate(date) {
 
 /**
  * Normalize query params
- * @param {object}
+ * @param {object} 
  * @return {object} normalized params
  */
 function normalizeParams({ view, month, date }) {
