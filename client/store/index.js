@@ -8,14 +8,18 @@ Vue.use(Vuex)
 const state = {
   /**
    * -> Month & Date are for searching holiday's data
-   *    Defaults defined at 'rest.js'
-   *    Updated by 'Calendar.vue' 
-   *    Used by 'Holiday.vue' 
+   *      Defaults defined at 'rest.js'
+   *      Updated by 'Calendar.vue' 
+   *      Used by 'Holiday.vue' 
+   * -> View is for displaying one of 3 available 'screens':
+   *      0. Welcome
+   *      1. Calendar
+   *      3. Holiday Data
    */
   params: {
     month: 0,   
     date: 1,
-    view: 0   // welcome screen
+    view: 0 
   },
 
   /**

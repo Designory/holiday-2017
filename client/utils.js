@@ -2,28 +2,36 @@ import router from './router'
 import store from './store'
 
 function pushState(params) {
-    // overwrite current state
-    store.state.params = params;
+    return new Promise (resolve => {
+        // overwrite current state
+        store.state.params = params;
 
-    // push state
-    router.push({
-        path: `/params`,
-        query: params
+        // push state
+        router.push({
+            path: `/params`,
+            query: params
+        });
+
+        resolve(params);
     });
-
-    return true;
 }
 
 function setView(view) {
-    pushState( normalizeParams({ ...store.state.params, view}) );
+    return new Promise( resolve => {    
+        resolve(pushState(normalizeParams({ ...store.state.params, view})));
+    });
 }
 
 function setMonth(month) {
-    pushState( normalizeParams({ ...store.state.params, month }) );
+    return new Promise( resolve => {    
+        resolve(pushState(normalizeParams({ ...store.state.params, month })));
+    });
 }
 
 function setDate(date) {
-    pushState( normalizeParams({ ...store.state.params, date }) );
+    return new Promise( resolve => {    
+        resolve(pushState(normalizeParams({ ...store.state.params, date })));
+    });
 }
 
 /**
