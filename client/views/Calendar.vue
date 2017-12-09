@@ -1,23 +1,16 @@
 <template>
   <div class="calendar">
-    <div class="calendar__field">
-      <div class="calandar__month" data-month="1">Jan</div>
-      <div class="calandar__month" data-month="2">Feb</div>
-      <div class="calandar__month" data-month="3">Mar</div>
-      <div class="calandar__month" data-month="4">Apr</div>
-    </div>
-    <div class="calendar__field">
-      <div class="calendar__date" data-date="1">1</div>
-      <div class="calendar__date" data-date="2">2</div>
-      <div class="calendar__date" data-date="3">3</div>
-      <div class="calendar__date" data-date="3">4</div>
-      <div class="calendar__date" data-date="3">5</div>
-      <div class="calendar__date" data-date="3">6</div>
-      <div class="calendar__date" data-date="3">7</div>
-      <div class="calendar__date" data-date="3">8</div>
-      <div class="calendar__date" data-date="3">9</div>
-      <div class="calendar__date" data-date="3">10</div>
-      <div class="calendar__date" data-date="3">11</div>
-    </div>
+    <select class="calendar__elm calendar__elm--month" name="month">
+      <option value="volvo">Jan</option>
+      <option value="saab">Feb</option>
+      <option value="fiat">Mar</option>
+      <option value="audi">Apr</option>
+    </select>
+    <select class="calendar__elm calendar__elm--date" name="date">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
   </div>
 </template>
