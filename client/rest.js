@@ -14,10 +14,10 @@ async function getQueryParams() {
 }
 
 /**
- * Trigger on sync operation complete:
+ * Trigger on 'sync(store, router)' operation complete:
  * - validate query params
  * - update 'store.state' with query params
- * - if failed => set default => current date
+ * - if failed => set default : current date
  */
 getQueryParams()
     .then(params => Utils.pushState( Utils.normalizeParams(params) ))
