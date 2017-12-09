@@ -36,23 +36,19 @@ const mutations = {
 const actions = {
   /**
    * Show next view (page)
+   * Current view param + 1
    * Push state
    */
   nextView({ commit }) {
-    // get current view data
-    let nextView = Number(state.params.view) + 1;
-
-    Utils.setView(nextView);
+    Utils.setView(Number(state.params.view) + 1);
   },
   /**
    * Show previous view (page)
+   * Current view param - 1
    * Push state
    */
   prevView({ commit }) {
-    // get current view data
-    let prevView = Number(state.params.view) - 1;
-    
-    Utils.setView(prevView);
+    Utils.setView(Number(state.params.view) - 1);
   }
 }
 
