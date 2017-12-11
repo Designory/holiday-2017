@@ -36,34 +36,12 @@ function setView(view) {
 }
 
 /**
- * Set month => update state & history
- * @param {number} month integrer representing month [0-11]
- * @returns {promise}
- */
-function setMonth(month) {
-    return new Promise( resolve => {    
-        resolve(pushState(normalizeParams({ ...store.state.params, month })));
-    });
-}
-
-/**
- * Set date => update state & history
- * @param {number} date integrer representing date [1-31]
- * @returns {promise}
- */
-function setDate(date) {
-    return new Promise( resolve => {    
-        resolve(pushState(normalizeParams({ ...store.state.params, date })));
-    });
-}
-
-/**
  * Set full date => update state & history
  * @param {number} month integrer representing month [0-11]
  * @param {number} date integrer representing full date [1-31]
  * @returns {promise}
  */
-function setFullDate(month, date) {
+function setDate(month, date) {
     return new Promise(resolve => {
         resolve(pushState(normalizeParams({ ...store.state.params, month, date })));
     });
