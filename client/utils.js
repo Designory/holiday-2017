@@ -56,6 +56,18 @@ function setDate(date) {
 }
 
 /**
+ * Set full date => update state & history
+ * @param {number} month integrer representing month [0-11]
+ * @param {number} date integrer representing full date [0-31]
+ * @returns {promise}
+ */
+function setFullDate(month, date) {
+    return new Promise(resolve => {
+        resolve(pushState(normalizeParams({ ...store.state.params, month, date })));
+    });
+}
+
+/**
  * Normalize query params
  * @param {object} 
  * @return {object} normalized params
@@ -80,4 +92,4 @@ function normalizeParams({ view, month, date }) {
     return { view, month, date };
 }
 
-export { pushState, setView, setMonth, setDate, normalizeParams };
+export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };

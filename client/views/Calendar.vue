@@ -1,7 +1,6 @@
 <template>
-  <div class="example-page">
+  <div class="calendar">
     <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
-    <button class="button" type="button" @click="confirm">Confirm</button>
   </div>
 </template>
 
@@ -10,38 +9,42 @@
 < * Third party code - DO NOT TOUCH IT - unless you know what you are doing * >
 \*****************************************************************************/
 import Vue from 'vue'
+import store from '../store'
+import * as Utils from '../utils';
+
 import SmoothPicker from 'vue-smooth-picker';
 import 'vue-smooth-picker/dist/css/style.css';
+
 Vue.use(SmoothPicker);
 
   export default {
-    name: 'example-page',
+    name: 'calendar',
     data () {
       const nowYear = (new Date()).getFullYear()
       const years = []
-      for (let i = 1991; i <= nowYear; i++) {
+      for (let i = 2017; i <= nowYear; i++) {
         years.push(i)
       }
 
       return {
         data: [
           {
-            currentIndex: parseInt((nowYear - 1991) / 2),
-            flex: 3,
+            currentIndex: parseInt((nowYear - 2017) / 2),
+            flex: 2,
             list: years,
             textAlign: 'center',
             className: 'row-group'
           },
           {
-            currentIndex: 8,
-            flex: 3,
+            currentIndex: store.state.params.month,
+            flex: 2,
             list: [...Array(12)].map((m, i) => i + 1),
             textAlign: 'center',
             className: 'row-group'
           },
           {
-            currentIndex: 1,
-            flex: 3,
+            currentIndex: store.state.params.date,
+            flex: 2,
             list: [...Array(30)].map((d, i) => i + 1),
             onClick: this.clickOnDay,
             textAlign: 'center',
@@ -55,11 +58,14 @@ Vue.use(SmoothPicker);
         return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)
       },
       dataChange (gIndex, iIndex) {
-        console.info('list', gIndex, iIndex)
+        // this object (Array) contains data for selected date 
+        // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
 
+        Utils.setFullDate(ciList[1], ciList[2]);
+
         if (gIndex === 0 || gIndex === 1) { // year or month changed
-          let currentIndex = 15
+          let currentIndex = 1
           let monthCount = 30
 
           let month = iIndex + 1 // month
@@ -79,10 +85,11 @@ Vue.use(SmoothPicker);
               }
 
               monthCount = 28
-              currentIndex = 14
+              currentIndex = store.state.params.date < 28 ? store.state.params.date : 28;
+              
               if (isLeapYear) {
                 monthCount = 29
-                currentIndex = 15
+                currentIndex = store.state.params.date < 29 ? store.state.params.date : 29;
               }
               break
             case 4:
@@ -90,39 +97,16 @@ Vue.use(SmoothPicker);
             case 9:
             case 11:
               monthCount = 30
-              currentIndex = 15
+              currentIndex = store.state.params.date < 31 ? store.state.params.date : 30;
               break
             default:
               monthCount = 31
-              currentIndex = 16
+              currentIndex = store.state.params.date
           }
           const list = [...Array(monthCount)].map((d, i) => i + 1)
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
         }
-      },
-      clickOnDay (gIndex, iIndex) {
-        window.alert('Clicked day: ' + this.data[gIndex].list[iIndex])
-      },
-      confirm () {
-        const ciList = this.$refs.smoothPicker.getCurrentIndexList()
-        const year = this.data[0].list[ciList[0]]
-        const month = this.data[1].list[ciList[1]]
-        const day = this.data[2].list[ciList[2]]
-        window.alert(
-          year + ' / ' + month + ' / ' + day
-        )
       }
     }
   }
 </script>
-
-<style lang="scss">
-  /*******************************\
-  < * Tweaking smooth scrolling * >
-  \*******************************/
-  #app {
-    .smooth-picker {
-      background-color: rgba(0,0,0,0);
-    }
-  }
-</style>
