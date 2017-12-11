@@ -1,5 +1,6 @@
 import router from './router'
 import store from './store'
+import data from './data/holidays.json'
 
 /**
  * Take new parameters and update store.state
@@ -11,6 +12,7 @@ function pushState(params) {
     return new Promise (resolve => {
         // overwrite current state
         store.state.params = params;
+        store.state.holiday = findHoliday(params.month, params.date, data.holidays);
 
         // push state
         router.push({
@@ -34,34 +36,12 @@ function setView(view) {
 }
 
 /**
- * Set month => update state & history
- * @param {number} month integrer representing month [0-11]
- * @returns {promise}
- */
-function setMonth(month) {
-    return new Promise( resolve => {    
-        resolve(pushState(normalizeParams({ ...store.state.params, month })));
-    });
-}
-
-/**
- * Set date => update state & history
- * @param {number} date integrer representing date [1-31]
- * @returns {promise}
- */
-function setDate(date) {
-    return new Promise( resolve => {    
-        resolve(pushState(normalizeParams({ ...store.state.params, date })));
-    });
-}
-
-/**
  * Set full date => update state & history
  * @param {number} month integrer representing month [0-11]
  * @param {number} date integrer representing full date [1-31]
  * @returns {promise}
  */
-function setFullDate(month, date) {
+function setDate(month, date) {
     return new Promise(resolve => {
         resolve(pushState(normalizeParams({ ...store.state.params, month, date })));
     });
@@ -93,6 +73,22 @@ function normalizeParams({ view, month, date }) {
     date = holiday.getDate();
 
     return { view, month, date };
+}
+
+/**
+ * Find a proper holiday data
+ * Expects array of objects 
+ * arr[1]: {
+ *           "y": 2018,
+ *           "m": 1,
+ *           "d": 2,
+ *           "title": "Science Fiction Day",
+ *           "description": "Do androids dream of electric sheep? We think so."
+ *         }
+ * @returns {object} data for holiday, falls back Jan 1st if fails for some reason
+ */
+function findHoliday(month, date, arr) {
+    for (let day of arr) if (month === day.m && date === day.d) return day;
 }
 
 export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };

@@ -21,6 +21,15 @@ const state = {
     date: 1,
     view: 0 
   },
+  /**
+   * This object is just a place holder to see the structure
+   */
+  holiday: {
+    m: 1,
+    d: 1,
+    title: "New Year's Day",
+    description: "Alcohol choice regret! But it's a new year and a clean slate!" 
+  },
 
   /**
    * Set limit for number of views (just in case) ¯\_(ツ)_/¯
@@ -60,8 +69,6 @@ const store = new Vuex.Store({
   state,
   mutations,
   actions
-})
-
-console.log(store);
+});
  
-export default store
+export default store;

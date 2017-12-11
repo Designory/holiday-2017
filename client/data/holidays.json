@@ -1,0 +1,2566 @@
+{
+    "holidays": [
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 15,
+            "title": "Cat Herders Day",
+            "description": "Here kitty kitty..."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 16,
+            "title": "Natl. Chocolate Covered Anything Day",
+            "description": "Chocolate covered chocolate? Please and thank you."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 17,
+            "title": "Wright Brothers Day",
+            "description": "Up, up and. . . down."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 18,
+            "title": "Natl. Roast Suckling Pig Day",
+            "description": "That'll do pig, that'll do."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 19,
+            "title": "Natl Hard Candy Day",
+            "description": "Careful, don't break your teeth."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 20,
+            "title": "Go Caroling Day",
+            "description": "\u266C Silent Night / Holy Night / All is calm / All is bright \u266C"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 21,
+            "title": "Winter Solstice",
+            "description": "Celebrate the shortest/longest day of the year whether you're in the Northern or Southern Hemisphere"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 22,
+            "title": "Ntl. Date Nut Bread Day",
+            "description": "Take your favorite Nut Bread out to dinner and a movie ;-)"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 23,
+            "title": "Festivus",
+            "description": "The holiday for the rest of us!"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 24,
+            "title": "Christmas Eve",
+            "description": "Get those cookies and chimney enlargers ready!"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 25,
+            "title": "Christmas Day",
+            "description": "Cashmere socks, check. Silk pijamas, check. Yorkshire pudding, check. Merry Christmas, check!"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 26,
+            "title": "Boxing Day",
+            "description": "Otherwise known as Second Christmas Day. Which is alright with us."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 27,
+            "title": "Ntl. Fruitcake Day",
+            "description": "For all the nuts in your family. \nWhatever you don't finish eating today (we know it's going to be the whole cake), save for January 6th!"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 28,
+            "title": "Card Playing Day",
+            "description": "Cut the deck and get to shuffling so you can play your favorite card games"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 29,
+            "title": "No Interruptions Day",
+            "description": "Squirrel!"
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 30,
+            "title": "Bacon Day",
+            "description": "Don't forget to pig out."
+        },
+        {
+            "y": 2017,
+            "m": 12,
+            "d": 31,
+            "title": "New Year's Eve",
+            "description": "Drink! Do not drive! Kiss someone! (It might change your life.)"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 1,
+            "title": "New Year's Day",
+            "description": "Alcohol choice regret! But it's a new year and a clean slate!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 2,
+            "title": "Science Fiction Day",
+            "description": "Do androids dream of electric sheep? We think so."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 3,
+            "title": "Festival of Sleep Day",
+            "description": "You must be dreaming..."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 4,
+            "title": "Trivia Day",
+            "description": "Foods that start with the letter Q: quiche, quince, quesadilla, queso..."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 5,
+            "title": "Ntl. Bird Day",
+            "description": "Pull!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 6,
+            "title": "Fruitcake Toss Day",
+            "description": "Yeah, we know that freshly baked fruit cake will keep for 6 months in the fridge... But doesn't throwing it sound fun?"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 7,
+            "title": "Harlem Globetrotter's Day",
+            "description": "Sweet Georgia Brown!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 8,
+            "title": "Bubble Bath Day",
+            "description": "Calgon, take me away!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 9,
+            "title": "Clean Off Your Desk Day",
+            "description": "We're looking at you, Brannon!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 10,
+            "title": "Houseplant Appreciation Day",
+            "description": "Stop torturing your ficus, be kind."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 11,
+            "title": "Ntl. Milk Day",
+            "description": "Got Lactaid?"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 12,
+            "title": "Ntl. Pharmacist Day",
+            "description": "Shout out to all the pharmacists, even though they make us wait 20 min."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 13,
+            "title": "Rubber Ducky Day",
+            "description": "What do you call 50,000 rubber duckies in the Chicago River? #ChiDuckyDerby."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 14,
+            "title": "Intl. Kite Day",
+            "description": "This year, coinciding with national wind day."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 15,
+            "title": "MLK Day",
+            "description": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.\" \u266CMLK"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 16,
+            "title": "Book Publishers Day",
+            "description": "You absolutely, positively must read today, darling!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 17,
+            "title": "Kid Inventors�۪ Day",
+            "description": "Without 11 year old Frank Epperson, we'd never have popsicles. Kids invent the darndest things."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 18,
+            "title": "Thesaurus Day",
+            "description": "We were cool before Google. Also, a type of dinosaur."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 19,
+            "title": "Ntl. Popcorn Day",
+            "description": "Enjoy some buttery popcorn with your favorite movie or just watching some drama unfold"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 20,
+            "title": "Penguin Awareness Day",
+            "description": "Queue up Happy Feet on Netfix. Then chill."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 21,
+            "title": "Ntl. Hugging Day",
+            "description": "Hugs are free. But also a really easy way to invade personal space."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 22,
+            "title": "Ntl. Answer Your Cat's Question Day",
+            "description": "Purr-plexing"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 23,
+            "title": "Ntl. Handwriting Day",
+            "description": "Practice the cursive that you haven't used since fifth grade today!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 24,
+            "title": "Compliment Day",
+            "description": "We don't need a special day to tell you how beautiful you are. But hey, while we're on the topic: you're beautiful."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 25,
+            "title": "Opposite Day",
+            "description": "Actually, it's not opposite day. No, it is. No... pretty sure it's not."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 26,
+            "title": "Spouse's Day",
+            "description": "But ever wonder what it's like being married to YOU?"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 27,
+            "title": "Ntl. Chocolate Cake Day",
+            "description": "We've been over this, Margot. Every day is chocolate cake!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 28,
+            "title": "Data Privacy Day",
+            "description": "Hahaha! Ooops, sorry."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 29,
+            "title": "Bubble Wrap Appreciation Day",
+            "description": "Pop it loud pop it proud!"
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 30,
+            "title": "Yodel for Your Neighbors Day",
+            "description": "And if they turn off their lights while you do it, you'll know you need more practice."
+        },
+        {
+            "y": 2018,
+            "m": 1,
+            "d": 31,
+            "title": "Scotch Tape Day",
+            "description": "You sticky translucent wonder."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 1,
+            "title": "Car Insurance Day",
+            "description": "Accidents can happen!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 2,
+            "title": "Groundhog Day",
+            "description": "Drink to world peace. Again!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 3,
+            "title": "Elmo's Birthday",
+            "description": "Happy bday to one of our favorite residents of Sesame Street!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 4,
+            "title": "Super Bowl Sunday",
+            "description": "Commercials! Justin Timberlake! And some minor stuff in between!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 5,
+            "title": "Ntl. Weatherman's Day",
+            "description": "If our predictions are correct, this holiday was actually forecast to be last week..."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 6,
+            "title": "Ntl. Chopsticks Day",
+            "description": "Potentially more difficult than a fork, but definitely more sanitary than your fingers."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 7,
+            "title": "Ballet Day",
+            "description": "Be en pointe."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 8,
+            "title": "Opera Day",
+            "description": "Quick, who wrote Madame Butterfly?"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 9,
+            "title": "Ntl. Pizza Day",
+            "description": "Should be every day."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 10,
+            "title": "Teddy Bear Day",
+            "description": "Teddy, like the bear."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 11,
+            "title": "Satisfied Staying Single Day",
+            "description": "At least that's what you say when Vanity Fair interviewed you, right?"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 12,
+            "title": "Ntl. PB&J Day",
+            "description": "Keep the knife out just in case the first PB&J wasn't enough. And it never is."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 13,
+            "title": "Mardi Gras",
+            "description": "Mardi Gras means Fat Tuesday, which means beignets!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 14,
+            "title": "Valentine's Day",
+            "description": "Only one day to celebrate your absolutely, perfectly, amazingly great relationship?"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 15,
+            "title": "Ntl. Chewing Gum Day",
+            "description": "Cher Horowitz, this one's for you."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 16,
+            "title": "Chinese New Year",
+            "description": "It's the year of the dog\u266Cshow tolerance and empathy towards all."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 17,
+            "title": "Random Acts of Kindness Day",
+            "description": "Be kinder, nicer you know?"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 18,
+            "title": "Drink Wine Day",
+            "description": "Should be every day. We're working on it."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 19,
+            "title": "President's Day",
+            "description": "Make sure you know what this day's about: Washington's birthday."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 20,
+            "title": "Love Your Pet Day",
+            "description": "No but like really, really, really love your pet. Don't let her out of your arms."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 21,
+            "title": "Ntl. Sticky Bun Day",
+            "description": "Today I don't want none unless you got buns, hun!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 22,
+            "title": "Ntl. Margarita Day",
+            "description": "Write this down: Cesar's Killer Margaritas. North side. Chicago."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 23,
+            "title": "Intl. Repetitive Strain Injury Awareness Day",
+            "description": "Good luck keeping your swiping to a minimum today."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 24,
+            "title": "Ntl. Tortilla Chip Day",
+            "description": "Not all tortilla chips are made equal. They can't be too thin or too salty and they cannot be gluten free."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 25,
+            "title": "Quiet Day",
+            "description": "Shhhhhh. Hear that?"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 26,
+            "title": "Levi Strauss Day",
+            "description": "Legend has it, to get the perfect fit, you must lay with your jeans in your full bathtub."
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 27,
+            "title": "Ntl. Strawberry Day",
+            "description": "This berry special day is our jam!"
+        },
+        {
+            "y": 2018,
+            "m": 2,
+            "d": 28,
+            "title": "Ntl. Tooth Fairy Day",
+            "description": "There's something we've been meaning to tell you..."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 1,
+            "title": "World Compliment Day",
+            "description": "Because January 24th wasn't enough."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 2,
+            "title": "Dress in Blue Day",
+            "description": "Wear that Canadian tuxedo with pride today. (But we know you never stopped.)"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 3,
+            "title": "Ntl. Cold Cuts Day",
+            "description": "Today you must go to Bari on Grand Ave in Chicago and get a sub."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 4,
+            "title": "Ntl. Dance the Waltz Day",
+            "description": "Make sure you don't step on anyone's toes."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 5,
+            "title": "Cinco de Marcho",
+            "description": "For those who just can't wait until May."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 6,
+            "title": "Alamo Day",
+            "description": "Don't forget."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 7,
+            "title": "World Math Day",
+            "description": "It all adds up."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 8,
+            "title": "Intl. Women's Day",
+            "description": "Buy a rose for all the women in your life."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 9,
+            "title": "Barbie Day",
+            "description": "Come on Barbie, let's go party!"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 10,
+            "title": "US Paper Money Day",
+            "description": "Make it rain!"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 11,
+            "title": "Check Your Batteries Day",
+            "description": "Just roooooll them around. Remote will work."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 12,
+            "title": "Ntl. Workplace Napping Day",
+            "description": "Just don't let the boss catch you."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 13,
+            "title": "Ntl. Jewel Day",
+            "description": "\u266C Who will saaeaeve your soul... after those lies that you told, boy? \u266C"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 14,
+            "title": "Ntl. Potato Chip Day",
+            "description": "Betcha can't eat just one"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 15,
+            "title": "Companies That Care Day",
+            "description": "Get a marketing partner that cares \u266C like Designory."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 16,
+            "title": "Lips Appreciation Day",
+            "description": "Whether chapped of Flaming, let your lips know you love them."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 17,
+            "title": "St. Patrick's Day",
+            "description": "Amateur drunkard day."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 18,
+            "title": "Ntl. Awkward Moments Day",
+            "description": "Remember that time you called your teacher \"mom\"?"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 19,
+            "title": "Client's Day",
+            "description": "Did we mention how much you mean to us?"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 20,
+            "title": "Intl. Astrology Day",
+            "description": "Libras are superior and everyone knows it. Take time to hug one today."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 21,
+            "title": "World Poetry Day",
+            "description": "Haikus are easy / But sometimes they don't make sense / Illuminati"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 22,
+            "title": "Ntl. Goof-Off Day",
+            "description": "Start that office Nerf war. Put whoopee cushions under your couch cushions."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 23,
+            "title": "Ntl. Puppy Day",
+            "description": "OMG PUPPIES"
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 24,
+            "title": "Ntl. Cocktail Day",
+            "description": "Fill shaker with ice. Add gin and a splash of vermouth. Shake."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 25,
+            "title": "Pecan Day",
+            "description": "Pecan pie, pecan muffins, pecan brownies. Make them."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 26,
+            "title": "Solitude Day",
+            "description": "Ah, look at all the lonely people."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 27,
+            "title": "World Theatre Day",
+            "description": "All the world's a stage, darling."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 28,
+            "title": "Ntl. Little Red Wagon Day",
+            "description": "I'll fix it for ya."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 29,
+            "title": "Smoke and Mirrors Day",
+            "description": "We're just messing with you."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 30,
+            "title": "Good Friday",
+            "description": "You probably have today off, and that is a great thing."
+        },
+        {
+            "y": 2018,
+            "m": 3,
+            "d": 31,
+            "title": "World Backup Day",
+            "description": "Save early. Save often. Save your sanity."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 1,
+            "title": "Easter Sunday",
+            "description": "But also April fool's day. Hmm."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 2,
+            "title": "Reconciliation Day",
+            "description": "I love you. I'm sorry. Forgive me. Say it to someone."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 3,
+            "title": "World Party Day",
+            "description": "Beastie Boys fought for this. Respect that."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 4,
+            "title": "Hug a Newsperson Day",
+            "description": "This just in: back-breaking hugs. More in a minute."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 5,
+            "title": "Bellbottoms Day",
+            "description": "Hell's Bell(bottoms)"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 6,
+            "title": "Teflon Day",
+            "description": "Nothing's going to stick today. :("
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 7,
+            "title": "Ntl. Beer Day",
+            "description": "Why so far away from pizza day???"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 8,
+            "title": "Intl. Feng Shui Awareness Day",
+            "description": "Even if you've never pronounced it right, celebrate it! (Also Rex Manning Day!)"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 9,
+            "title": "Ntl. Cherish an Antique Day",
+            "description": "Just like grandma, old things should be cherished, because they've seen a lot."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 10,
+            "title": "Ntl. Sibling Day",
+            "description": "Celebrate your sibs. After all, who else has seen your sheet mask selfie and still liked you?"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 11,
+            "title": "Ntl. Pet Day",
+            "description": "They're like family, and they never make awkward political conversation at Thanksgiving. Appreciate them."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 12,
+            "title": "Walk On Your Wild Side Day",
+            "description": "Make Lou Reed proud. He didn't sell his soul to be in a Honda scooter commercial for nothing."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 13,
+            "title": "Blame Someone Else Day",
+            "description": "I didn't make this day up, he did!"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 14,
+            "title": "Look up at the Sky Day",
+            "description": "Pro Tip: Don't stare directly into the sun today... or any day."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 15,
+            "title": "Titanic Remembrance Day",
+            "description": "\u266C Remember near... far... whereeeeverrr you are... \u266C"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 16,
+            "title": "Ntl. Wear Your Pajamas to Work Day",
+            "description": "I woke up like this"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 17,
+            "title": "Tax Day (US)",
+            "description": "Give Uncle Sam his money. Or, let him give you some back."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 18,
+            "title": "World Heritage Day",
+            "description": "Celebrate who you are and where you come from."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 19,
+            "title": "Get to Know Your Customer Day",
+            "description": "We want to know you better, and tell your story even better."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 20,
+            "title": "Lima Bean Respect Day",
+            "description": "\u266C R.E.S.P.E.C.T. \u266C Find out what it means to beans! \u266C"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 21,
+            "title": "World Circus Day",
+            "description": "Swing from the trapeze!"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 22,
+            "title": "Intl. Earth Day",
+            "description": "Make Earth Day everyday."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 23,
+            "title": "World Book Day",
+            "description": "Today's a great excuse to reread the entire Harry Potter series uninterrupted. You know you want to."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 24,
+            "title": "New Kids on the Block Day",
+            "description": "Hang tough!"
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 25,
+            "title": "Denim Day",
+            "description": "Did you know denim couches exist? Go ahead, look it up."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 26,
+            "title": "Ntl. Static Cling Day",
+            "description": "Because you forgot to get that spray."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 27,
+            "title": "Ntl. Hairball Awareness Day",
+            "description": "Hack up something we can share."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 28,
+            "title": "World Healing Day",
+            "description": "Put a bandaid on it."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 29,
+            "title": "Intl. Dance Day",
+            "description": "Dance like no one is watching."
+        },
+        {
+            "y": 2018,
+            "m": 4,
+            "d": 30,
+            "title": "Intl. Jazz Day",
+            "description": "There's gotta be something else to celebrate on this day."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 1,
+            "title": "Call in Sick Day",
+            "description": "Let us guess: [cough cough] you�۪re sick, right?"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 2,
+            "title": "Take a Baby to Lunch Day",
+            "description": "Babies are great dates. They don't text over lunch."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 3,
+            "title": "Ntl. Two Different Colored Shoes Day",
+            "description": "No need to participate \u266C we just wanted you to be aware."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 4,
+            "title": "Petite and Proud Day",
+            "description": "Show the world that good things come in small packages."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 5,
+            "title": "Cinco de Mayo",
+            "description": "Celebrate the Mexican victory over French forces at the Battle of Puebla."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 6,
+            "title": "Intl. No Diet Day",
+            "description": "This doesn't mean no diet coke, right? Right?"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 7,
+            "title": "Ntl. Meeting Planners Appreciation Day",
+            "description": "Make sure you get this on the calendar."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 8,
+            "title": "No Socks Day",
+            "description": "Set your toes free!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 9,
+            "title": "Tear the Tags Off the Mattress Day",
+            "description": "Let \u266Cer rip!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 10,
+            "title": "Ntl. Clean Up Your Room Day",
+            "description": "We�۪ll tell your mom if you don�۪t."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 11,
+            "title": "Ntl. Twilight Zone Day",
+            "description": "IT'S A COOKBOOK!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 12,
+            "title": "Intl. Nurses�۪ Day",
+            "description": "Nurses are miracle workers. Appreciate them today."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 13,
+            "title": "Mother's Day",
+            "description": "Thank you for all you do, mommies!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 14,
+            "title": "Ntl. Dance Like a Chicken Day",
+            "description": "If there was ever a time to break out the \u266Cfunky chicken,�۝ it's now."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 15,
+            "title": "Intl. Day of Families",
+            "description": "Hug your loved ones a little tighter today."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 16,
+            "title": "Love a Tree Day",
+            "description": "Even better, plant a tree!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 17,
+            "title": "Intl.. Recycling Day",
+            "description": "Reduce and Reuse."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 18,
+            "title": "Bike-to-Work Day",
+            "description": "It's wheelie good for you!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 19,
+            "title": "Culture Freedom Day",
+            "description": "Be authentic."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 20,
+            "title": "World Baking Day",
+            "description": "Dust off your oven mitts and fire up the oven!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 21,
+            "title": "Ntl. Waiters and Waitresses Day",
+            "description": "Don't be a cheapskate- tip these fine people well today!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 22,
+            "title": "World Goth Day",
+            "description": "Break out the hairspray and the eyeliner and blast The Cure!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 23,
+            "title": "Lucky Penny Day",
+            "description": "If you find one, pick it up. All day long you'll have good luck."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 24,
+            "title": "Intl. Tiara Day",
+            "description": "You always knew you were royalty. Let everyone else know today."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 25,
+            "title": "Ntl. Wine Day",
+            "description": "This wine already happened, right?"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 26,
+            "title": "Sally Ride Day",
+            "description": "One small step for woman, one giant leap for badasses everywhere"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 27,
+            "title": "Nothing to Fear Day",
+            "description": "Put on a brave face today!"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 28,
+            "title": "Memorial Day",
+            "description": "Only the dead have seen the end of war.\" \u266CPlato"
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 29,
+            "title": "Put a Pillow On Your Fridge Day",
+            "description": "Don�۪t ask us why. Just do it."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 30,
+            "title": "My Bucket's Got A Hole In It Day",
+            "description": "Sounds like a personal problem."
+        },
+        {
+            "y": 2018,
+            "m": 5,
+            "d": 31,
+            "title": "Speak in Complete Sentences Day",
+            "description": "Paraphrase the question first."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 1,
+            "title": "Dare Day",
+            "description": "On this day, no one picks \"truth"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 2,
+            "title": "Ntl. Trails Day",
+            "description": "Take a hike!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 3,
+            "title": "Repeat Day",
+            "description": "Again!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 4,
+            "title": "Hug Your Cat Day",
+            "description": "Kitty!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 5,
+            "title": "Hot Air Balloon Day",
+            "description": "\u266CWould you like to ride in my beautiful balloon?\u266C"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 6,
+            "title": "Drive-In Movie Day",
+            "description": "Good luck finding one."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 7,
+            "title": "VCR Day",
+            "description": "Don't forget to rewind so you can celebrate again next year!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 8,
+            "title": "World Ocean Day",
+            "description": "70% of the oxygen we breathe is produced by oceans. Thanks, Oceans!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 9,
+            "title": "Donald Duck Day",
+            "description": ""
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 10,
+            "title": "Ballpoint Pen Day",
+            "description": "If you think this is a silly holiday, remember you could be writing everything with a feather..."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 11,
+            "title": "Corn on the Cob Day",
+            "description": ""
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 12,
+            "title": "Magic Day",
+            "description": "Open sesame a bottle of wine and watch it disappear!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 13,
+            "title": "Weed Your Garden Day",
+            "description": "Where my garden hose at?"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 14,
+            "title": "Flag Day",
+            "description": "Let your freak flag fly"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 15,
+            "title": "Global Wind Day",
+            "description": "Don't pull your uncle's finger."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 16,
+            "title": "Wish Fulfillment Day",
+            "description": "What am I, a genie?"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 17,
+            "title": "Father's Day",
+            "description": "Don't touch the thermostat today... or any day for that matter!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 18,
+            "title": "Intl. Sushi Day",
+            "description": "The One With Unagi"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 19,
+            "title": "Juneteenth",
+            "description": "Those who deny freedom to others deserve it not for themselves.\" \u266CAbraham Lincoln"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 20,
+            "title": "Ntl. Bald Eagle Day",
+            "description": "Thank you for saving us from the Turkey being our national bird."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 21,
+            "title": "Ntl. Selfie Day",
+            "description": "Everyone thinks they invented the selfie. But it was us."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 22,
+            "title": "Take Your Dog to Work Day",
+            "description": "No Kujos allowed."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 23,
+            "title": "Public Service Day",
+            "description": "Volunteer lately? Check out what your community needs."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 24,
+            "title": "Intl. Fairy Day",
+            "description": "Leave out some fairy dust by the mantle."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 25,
+            "title": "Global Beatles Day",
+            "description": "Take a Magical Mystery Tour down Abbey Road. Don't get lost or you'll have a Hard Day's Night...and need a little Help!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 26,
+            "title": "Forgiveness Day",
+            "description": "Let it go. Llike the song."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 27,
+            "title": "Sunglasses Day",
+            "description": "The shadiest of the holidays."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 28,
+            "title": "Intl. CAPS LOCK DAY",
+            "description": "IT'S NOT POLITE TO YELL!"
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 29,
+            "title": "Camera Day",
+            "description": "Be like Mariah Carrey and make sure they get your good side."
+        },
+        {
+            "y": 2018,
+            "m": 6,
+            "d": 30,
+            "title": "Social Media Day",
+            "description": "Take the perfect #nofilter selfie for a chance at insta-fame"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 1,
+            "title": "Intl. Chicken Wing Day",
+            "description": "There's a KFC calling my name. BRB."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 2,
+            "title": "World UFO Day",
+            "description": "I WANT TO BELIEVE."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 3,
+            "title": "Disobedience Day",
+            "description": "That's right, I said no."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 4,
+            "title": "Independence Day",
+            "description": "Be a strong independent nation that don't need no ruling state."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 5,
+            "title": "Bikini Day",
+            "description": "Celebrate at your own risk."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 6,
+            "title": "Intl. Kissing Day",
+            "description": "Kiss me I'm...."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 7,
+            "title": "Tell the Truth Day",
+            "description": "Or watch Liar, Liar. Still good."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 8,
+            "title": "Video Games Day",
+            "description": "Remember how long it took to pass that snow level in Donkey Kong II? Celebrate that."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 9,
+            "title": "Fashion Day",
+            "description": "Make it work."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 10,
+            "title": "Teddy Bear Picnic Day",
+            "description": "It'll be unbearably cute."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 11,
+            "title": "Cheer Up the Lonely Day",
+            "description": "One is the loneliest number that you'll ever seeee.... Look around. Cheer someone up."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 12,
+            "title": "Nat'l. Eat Your Jello Day",
+            "description": "It goes down smooth! Especially with vodka."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 13,
+            "title": "Embrace Your Geekness Day",
+            "description": "Let your geek flag fly!"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 14,
+            "title": "Shark Awareness Day",
+            "description": "We're gonna need a bigger boat."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 15,
+            "title": "Be a Dork Day",
+            "description": "Do you really need a holiday to be yourself? :)"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 16,
+            "title": "Fresh Spinach Day",
+            "description": "And no, that does not include the spinach that's been in your crisper for 3 weeks."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 17,
+            "title": "World Emoji Day",
+            "description": "(can we place emojis here that represent all the races?)"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 18,
+            "title": "Nelson Mandela International Day",
+            "description": "It always seems impossible until it's done.\" \u266CNelson Mandela"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 19,
+            "title": "New Friends Day",
+            "description": "Make a new friend today! (In real life, though.)"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 20,
+            "title": "Moon Day",
+            "description": "We <3 you to the moon and back!"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 21,
+            "title": "Ntl. Junk Food Day",
+            "description": "The perfect day to try that oreo-potato chip- ice cream concoction you've been dreaming up"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 22,
+            "title": "Hammock Day",
+            "description": "Lay low today"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 23,
+            "title": "Int'l. Yada, Yada, Yada Day",
+            "description": "It's a day about nothing."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 24,
+            "title": "Tell an Old Joke Day",
+            "description": "Laugh 'til you fall off your dinosaur."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 25,
+            "title": "Int'l. Red Shoe Day",
+            "description": "Dorothy is probably pretty happy about this."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 26,
+            "title": "Nat'l. Intern Day",
+            "description": "Go on a coffee run for your interns instead of the other way around today."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 27,
+            "title": "Bagpipe Appreciation Day",
+            "description": "We'd appreciate it if you piped down"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 28,
+            "title": "Nat'l. Dance Day",
+            "description": "Shake your groove thing for your country!"
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 29,
+            "title": "World Tiger Day",
+            "description": "Othwerwise known as Big Kitty Day."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 30,
+            "title": "World Day of Friendship",
+            "description": "Write a letter, send it to a friend."
+        },
+        {
+            "y": 2018,
+            "m": 7,
+            "d": 31,
+            "title": "Nat'l. Avocado Day",
+            "description": "Just like guacamole, I'm extra too"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 1,
+            "title": "Play Ball Day",
+            "description": "Go Cubs, go!"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 2,
+            "title": "Dinosaur Day",
+            "description": "Have a yabba dabba doo time"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 3,
+            "title": "Int'l. Beer Day",
+            "description": "Why so far away from Int'l Pizza Day?"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 4,
+            "title": "Hooray for Kids Day",
+            "description": "Some kids are alright. And those kids deserve a hooray."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 5,
+            "title": "Int'l. Traffic Light Day",
+            "description": "You're holding up traffic \u266C green means GO!"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 6,
+            "title": "Nat'l. Fresh Breath Day",
+            "description": "Toothpaste sales increase monumintally today."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 7,
+            "title": "Particularly Preposterous Packaging Day",
+            "description": "So out of the box, it is the box"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 8,
+            "title": "Intl. Cat Day",
+            "description": "Not one cat on the planet cares about this or anything else."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 9,
+            "title": "Book Lovers Day",
+            "description": "Be kind to your books. Read them."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 10,
+            "title": "Nat'l. Lazy Day",
+            "description": "Don't do anything today. We mean it."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 11,
+            "title": "Play in the Sand Day",
+            "description": "Build a sand castle."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 12,
+            "title": "Vinyl Record Day",
+            "description": "Get that gramophone out and don't scratch the record!"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 13,
+            "title": "Victory Day",
+            "description": "Winning. That's what that is all about."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 14,
+            "title": "Coloring Book Day",
+            "description": "Feel free to go outside of the lines today"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 15,
+            "title": "I Love Cowboys and Cowgirls Day",
+            "description": "Yeee-haw!"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 16,
+            "title": "Madonna's Birthday",
+            "description": "Be your own Material Girl and go get yourself something nice."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 17,
+            "title": "Baby Boomers Recognition Day",
+            "description": "For giving us so many babies that are now old, we salute you, Baby Boomers."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 18,
+            "title": "Mail Order Catalog Day",
+            "description": "Take a plane trip just for the Skymall today."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 19,
+            "title": "World Humanitarian Day",
+            "description": "Think of those who have less and help them."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 20,
+            "title": "Nat'l. Radio Day",
+            "description": "10-4 Little Buddy"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 21,
+            "title": "Poet's Day",
+            "description": "Haikus are easy. Write one for a friend today. You are a poet."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 22,
+            "title": "Southern Hemisphere Hoodie Hoo Day",
+            "description": "Southern friends: we're counting on youdie-you to scream Hoodie Hoo."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 23,
+            "title": "Buttered Corn Day",
+            "description": "Well butter my grits, grits are corn too, ya know."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 24,
+            "title": "Pluto Demoted Day",
+            "description": "Tell a youngster about how Pluto used to be a planet back in your day."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 25,
+            "title": "Nat'l. Second-hand Wardrobe Day",
+            "description": "Or as we like to call it, vintage."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 26,
+            "title": "Women's Equality Day",
+            "description": "Who runs the world? Girls."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 27,
+            "title": "Kiss Me Day",
+            "description": "But only if you're feeling it."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 28,
+            "title": "Red Wine Day",
+            "description": "Neil Diamond sang about it first."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 29,
+            "title": "Lemon Juice Day",
+            "description": "Take those lemons and make lemonade."
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 30,
+            "title": "Frankenstein Day",
+            "description": "Be alive!"
+        },
+        {
+            "y": 2018,
+            "m": 8,
+            "d": 31,
+            "title": "Eat Outside Day",
+            "description": "Dine Al Fresco!"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 1,
+            "title": "Int'l. Bacon Day",
+            "description": "Any way you slice it, you have license to pig out today"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 2,
+            "title": "World Coconut Day",
+            "description": "Go-go-nuts for coconuts."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 3,
+            "title": "Labor Day",
+            "description": "Let's honor America's workers. By not working."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 4,
+            "title": "Beyonce's Birthday",
+            "description": "Bow down to the queen."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 5,
+            "title": "National Be Late For Something Day",
+            "description": "Happy Birthday Beyonce!\" Oh, was that yesterday?"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 6,
+            "title": "Read a Book Day",
+            "description": "Do it! It's good for you."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 7,
+            "title": "Google Commemoration Day",
+            "description": "Google it."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 8,
+            "title": "World First Aid Day",
+            "description": "I need 20cc's of Band-Aids STAT!"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 9,
+            "title": "Ntl. Grandparents Day",
+            "description": "Thank your grandparents for letting you do everything your parents never let you."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 10,
+            "title": "Sewing Machine Day",
+            "description": "Dust it off and thread the needle! Today's the day to put the button back on that shirt in the bottom of your hamper."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 11,
+            "title": "9/11 Remembrance",
+            "description": "Never forget."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 12,
+            "title": "Natl. Video Games Day",
+            "description": "Appreciate the skills required to sit in one place for a really, really long time."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 13,
+            "title": "Fortune Cookie Day",
+            "description": "You will be much respected and revered by the local pets."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 14,
+            "title": "Eat a Hoagie Day",
+            "description": "Keep the antacid near by \u266C just in case."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 15,
+            "title": "Big Whopper Liar Day",
+            "description": "It's a great day to tell a tall tale."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 16,
+            "title": "Emmy Day (Emmy Awards)",
+            "description": "And the Emmy for best daytime drama queen goes to ...."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 17,
+            "title": "Citizenship Day",
+            "description": "Wherever you're from, know that you belong."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 18,
+            "title": "Natl. Cheeseburger Day",
+            "description": "Eat a burger! With cheese. Or a vegan burger, with fake cheese. Either way, acknowledge this important holiday."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 19,
+            "title": "Intl. Talk Like a Pirate Day",
+            "description": "Batten down the hatches, matey!"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 20,
+            "title": "Ntl. Pepperoni Pizza Day",
+            "description": "Make pepperoni your pepperonly today."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 21,
+            "title": "Intl. Peace Day",
+            "description": "Now this is a day we can all get behind."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 22,
+            "title": "Elephant Appreciation Day",
+            "description": "Elephants never forget. But that doesn't mean they hold grudges, right?"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 23,
+            "title": "Checkers Day",
+            "description": "King me!"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 24,
+            "title": "Natl. Punctuation Day",
+            "description": "Punctuation. It. Matters."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 25,
+            "title": "Natl. Comic Book Day",
+            "description": "With great powers come great readability."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 26,
+            "title": "Johnny Appleseed Day",
+            "description": "Pretty sure Johnny would get a ticket for littering nowadays."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 27,
+            "title": "Natl. Crush a Can Day",
+            "description": "But why crush a can, when you can cut it, and make perfect beer can chicken?"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 28,
+            "title": "Ask A Stupid Question Day",
+            "description": "What is bark made out of?"
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 29,
+            "title": "Goose Day",
+            "description": "Hug your goose down duvet now."
+        },
+        {
+            "y": 2018,
+            "m": 9,
+            "d": 30,
+            "title": "Intl. Podcast Day",
+            "description": "Listening to podcasts makes you 89% more likely to quote podcasts!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 1,
+            "title": "CD Player Day",
+            "description": "Only for Windows users."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 2,
+            "title": "Natl. Name Your Car Day",
+            "description": "Give your sweet ride the moniker it always deserved."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 3,
+            "title": "Mean Girls\" Appreciation Day",
+            "description": "It's Wednesday. Did you wear pink? Because that would be totally fetch."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 4,
+            "title": "Improve Your Office Day",
+            "description": "All it takes is one person. Really."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 5,
+            "title": "World Smile Day",
+            "description": "Show off those pearly off-whites today."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 6,
+            "title": "Int'l. Frugal Fun Day",
+            "description": "Have a blast on a budget."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 7,
+            "title": "Bathtub Day",
+            "description": "Light some candles and treat yourself to a lush bath. If you don't have a bath, sit in the shower."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 8,
+            "title": "Nat'l. Kick Butt Day",
+            "description": "Kick today in the tushie."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 9,
+            "title": "Moldy Cheese Day",
+            "description": "Is that mold or is it your homemade roquefort?"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 10,
+            "title": "Intl. Newspaper Carrier Day",
+            "description": "Don't forget to tip your newspaper delivery carrier!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 11,
+            "title": "Take Your Teddy Bear to Work Day",
+            "description": "We know you already do, so just take him out of your bag."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 12,
+            "title": "Moment of Frustration Day",
+            "description": "It's okay. Take a breath and move on from today."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 13,
+            "title": "Int'l. Skeptics Day",
+            "description": "We're not sure this is actually a holiday..."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 14,
+            "title": "Nat'l. Dessert Day",
+            "description": "Me first."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 15,
+            "title": "I Love Lucy\" Day",
+            "description": "Get into some shenanegans!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 16,
+            "title": "Dictionary Day",
+            "description": "I had to look this one up."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 17,
+            "title": "Wear Something Gaudy Day",
+            "description": "You'll probably have to buy something to wear- you have impeccable style!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 18,
+            "title": "No Beard Day",
+            "description": "Well, this is the worst day ever. Who doesn't like beards?"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 19,
+            "title": "Evaluate Your Life Day",
+            "description": "Are you doing what you thought you'd be doing at this point in your life?"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 20,
+            "title": "Sweetest Day",
+            "description": "Show love to everyone."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 21,
+            "title": "Babbling Day",
+            "description": "That one person in your life who won't shut it now has a day!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 22,
+            "title": "Smart Is Cool Day",
+            "description": "Smart was always cool, baby."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 23,
+            "title": "Tv Talk Show Host Day",
+            "description": "Today we're going to talk about talk show hosts and the viewers who love them."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 24,
+            "title": "Take Back Your Time Day",
+            "description": "Avoid that late night Instagram black hole, and voila! Three hours back, just like that."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 25,
+            "title": "World Pasta Day",
+            "description": "Carbo load!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 26,
+            "title": "National Mule Day",
+            "description": "Don't be a jackass!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 27,
+            "title": "Frankenstein Friday",
+            "description": "It's alive! You're alive! We're alive!"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 28,
+            "title": "Make a Difference Day",
+            "description": "Practice a random act of kindness today."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 29,
+            "title": "Intl. Internet Day",
+            "description": "Isn't this every day?"
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 30,
+            "title": "Mischief Night",
+            "description": "Be good at being bad."
+        },
+        {
+            "y": 2018,
+            "m": 10,
+            "d": 31,
+            "title": "Halloween",
+            "description": "If you're over 12, and you want candy, don't show up at my door without a costume!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 1,
+            "title": "World Vegan Day",
+            "description": "The first rule of Vegan Club: Tell everyone about Vegan Club."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 2,
+            "title": "Cookie Monster Day",
+            "description": "\u266CC is for cookie, cookie starts with c. If you just eat cookies, you'll get a cavity.\u266C"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 3,
+            "title": "Cliche Day",
+            "description": "In this day and age, leveraging an outside the box approach can really be a solution... yeah you get it."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 4,
+            "title": "Use Your Common Sense Day",
+            "description": "Do as your ancestors did, and use all your senses. Including your common sense."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 5,
+            "title": "American Football Day",
+            "description": "...and by that we mean FOOTBALL DAY! 'Merica!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 6,
+            "title": "Election Day",
+            "description": "Vote early, vote often. Make your voice heard!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 7,
+            "title": "International Stress Awareness Day",
+            "description": "Tell everyone how busy you are today."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 8,
+            "title": "X-Ray Day",
+            "description": "I see through you, X-Ray Day."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 9,
+            "title": "Go to an Art Museum Today Day",
+            "description": "Take your lover to the Louvre! Take Mama to MoMA!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 10,
+            "title": "Sesame Street Day",
+            "description": "Can you tell me how to get...?"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 11,
+            "title": "Int'l. Tongue Twister Day",
+            "description": "How much wood *should* a wood chuck chuck?"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 12,
+            "title": "Veterans Day",
+            "description": "We thank you for your service."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 13,
+            "title": "World Kindness Day",
+            "description": "There's no such thing as being too kind. And it's free!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 14,
+            "title": "Intl. Girls Day",
+            "description": "Who runs the world?! Girls."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 15,
+            "title": "America Recycles Day",
+            "description": "If you're not recycling, you're not being nice."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 16,
+            "title": "Natl. Button Day",
+            "description": "The hardest button to button is the one that fell off your coat."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 17,
+            "title": "Homemade Bread Day",
+            "description": "Wait, that's not every day? This should be every day."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 18,
+            "title": "Married to a Scorpio Support Day",
+            "description": "We're here if you need to talk."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 19,
+            "title": "Natl. Have a Bad Day Day",
+            "description": "The day you've been waiting for all year!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 20,
+            "title": "Beautiful Day",
+            "description": "\u266C You are beautifuuuuul, in every single waaaaaay \u266C"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 21,
+            "title": "World Hello Day",
+            "description": "Aloha. Ni hao. Hola. Shalom. Konnichiwa. Ciao. Salut. Hello! Dobar Den!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 22,
+            "title": "Thanksgiving",
+            "description": "Take a moment to give thanks for portion control."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 23,
+            "title": "Black Friday",
+            "description": "Don't be that person in line at Walmart. Sleep in!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 24,
+            "title": "Celebrate Your Unique Talent Day",
+            "description": "Monsieur Pedicure!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 25,
+            "title": "Blase Day",
+            "description": "Meh. It's just another holiday."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 26,
+            "title": "Cyber Monday",
+            "description": "It's basically Black Friday in your PJ's."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 27,
+            "title": "Pie in the Face Day",
+            "description": "Better than egg on your face!"
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 28,
+            "title": "It's Letter Writing Day",
+            "description": "Good luck getting someone to read something on actual paper."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 29,
+            "title": "Customer is Wrong Day",
+            "description": "Maybe at other agencies, but not this one."
+        },
+        {
+            "y": 2018,
+            "m": 11,
+            "d": 30,
+            "title": "Perpetual Youth Day",
+            "description": "I want to be forever yooooooung."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 1,
+            "title": "Earmuff Day",
+            "description": "Keep warm with the fluffiest earmuffs you can find."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 2,
+            "title": "Safety Razor Day",
+            "description": "Movember is over. Your bristles are likely long and your blades are likely sharp. Take heed this morning."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 3,
+            "title": "Let's Hug Day",
+            "description": "Also, the first day of Chanukah. Perhaps they're related?"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 4,
+            "title": "Wear Brown Shoes Day",
+            "description": "Today's the day to rock your favorite pair of brown shoes (with a belt to match)!"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 5,
+            "title": "Nat'l. Blue Jeans Day",
+            "description": "Blue jean baby, L.A. lady, seamstress for the band..."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 6,
+            "title": "Nat'l. Microwave Oven Day",
+            "description": "Don't stand too close!"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 7,
+            "title": "National Cotton Candy Day",
+            "description": "Stuff that makes your teeth hurt."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 8,
+            "title": "Int'l. Shareware Day",
+            "description": "Sharewaring is carewaring."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 9,
+            "title": "World Techno Day",
+            "description": "Get your 90's CDs out and rave!"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 10,
+            "title": "Festival for the Souls of Dead Whales",
+            "description": "It's time to finally read Moby Dick. Or pretend to. Again."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 11,
+            "title": "Int'l. Mountain Day",
+            "description": "Climb every one of 'em!"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 12,
+            "title": "Gingerbread House Day",
+            "description": "Any contractor will tell you the key is a good foundation."
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 13,
+            "title": "Nat'l. Cocoa Day",
+            "description": "Relive your childhood and pour on as many mini marshmallows as you want!"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 14,
+            "title": "Monkey Day",
+            "description": "Go bananas lol"
+        },
+        {
+            "y": 2018,
+            "m": 12,
+            "d": 15,
+            "title": "Nat'l. Cupcake Day",
+            "description": "Cut a cupcake in half, turn it upside down, make a cupcake sandwich!"
+        }
+    ]
+}
