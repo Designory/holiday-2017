@@ -9,6 +9,10 @@
 
 <script>
 
+// import data from './holidays.json';
+
+// console.log(JSON.parse(data));
+
 export default {
   computed: {
     month() {
