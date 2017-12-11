@@ -4,25 +4,29 @@
             "month": 0,
             "date": 1,
             "title": "Penguin Awarness Day",
-            "description": "Lorem ipsum sit dolor aset met"
+            "description": "Lorem ipsum sit dolor aset met",
+            "background": 1
         },
         {
             "month": 1,
             "date": 2,
             "title": "Awarness Penguin Day",
-            "description": "Quis platea vitae est"
+            "description": "Quis platea vitae est",
+            "background": 2
         },
         {
             "month": 2,
             "date": 3,
             "title": "Awarness Day Penguin",
-            "description": "Vel donec ridiculus posuere"
+            "description": "Vel donec ridiculus posuere",
+            "background": 3
         },
         {
             "month": 3,
             "date": 4,
             "title": "Day Penguin Awarness",
-            "description": "Libero primis platea convallis"
+            "description": "Libero primis platea convallis",
+            "background": 4
         }
     ]
 }
