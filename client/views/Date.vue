@@ -1,18 +1,13 @@
 <template>
   <div>
-    <p class="txt txt--center">Month: {{month}}</p>
-    <p class="txt txt--center">Date: {{date}}</p>
-    <p class="txt txt--center">Description</p>
+    <p class="txt">On {{month}}/{{date}}, I'll be celebrating</p>
+    <p class="txt txt--center">{{title}}</p>
+    <p class="txt txt--center">{{description}}</p>
     
   </div>
 </template>
 
 <script>
-
-// import data from './holidays.json';
-
-// console.log(JSON.parse(data));
-
 export default {
   computed: {
     month() {
@@ -20,6 +15,13 @@ export default {
     },
     date() {
       return this.$store.state.params.date;
+    },
+    title() {
+      // store.state.holiday = findHoliday(this.$store.state.params.month, this.$store.state.params.date)
+      return this.$store.state.holiday.title;
+    },
+    description() {   
+      return this.$store.state.holiday.description;
     }
   }
 }
