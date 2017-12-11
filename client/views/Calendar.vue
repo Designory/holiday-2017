@@ -10,7 +10,7 @@
 \*****************************************************************************/
 import Vue from 'vue'
 import store from '../store'
-import * as Utils from '../utils';
+import { setFullDate } from '../utils';
 
 import SmoothPicker from 'vue-smooth-picker';
 import 'vue-smooth-picker/dist/css/style.css';
@@ -60,8 +60,8 @@ Vue.use(SmoothPicker);
         // this object (Array) contains data for selected date 
         // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
-        console.log(ciList);
-        Utils.setFullDate(ciList[1] + 1, ciList[2] + 1);
+
+        setFullDate(ciList[1] + 1, ciList[2] + 1);
 
         if (gIndex === 0 || gIndex === 1) { // year or month changed
           let currentIndex = 15
