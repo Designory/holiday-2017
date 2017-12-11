@@ -1,0 +1,15 @@
+/*******************************\
+< * Tweaking smooth scrolling * >
+\*******************************/
+#app {
+    .smooth-picker {
+        background-color: rgba(0,0,0,0);
+    }
+    .smooth-group:nth-of-type(1) {
+        display: none;
+    }
+    .smooth-top,
+    .smooth-bottom {
+        background: rgba(0,0,0,0);
+    }
+}
