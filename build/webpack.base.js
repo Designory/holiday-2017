@@ -42,10 +42,6 @@ module.exports = {
         loaders: ['vue-loader']
       },
       {
-        test: /\.json/,
-        loader: 'json'
-      },
-      {
         test: /\.js$/,
         loaders: ['babel-loader'],
         exclude: [/node_modules/]
