@@ -22,14 +22,13 @@ Vue.use(SmoothPicker);
     data () {
       const nowYear = (new Date()).getFullYear()
       const years = []
-      for (let i = 2017; i <= nowYear; i++) {
-        years.push(i)
-      }
+      
+      years.push(2018)
 
       return {
         data: [
           {
-            currentIndex: parseInt((nowYear - 2017) / 2),
+            currentIndex: 2018,
             flex: 2,
             list: years,
             textAlign: 'center',
@@ -61,11 +60,11 @@ Vue.use(SmoothPicker);
         // this object (Array) contains data for selected date 
         // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
-
-        Utils.setFullDate(ciList[1], ciList[2]);
+        console.log(ciList);
+        Utils.setFullDate(ciList[1] + 1, ciList[2] + 1);
 
         if (gIndex === 0 || gIndex === 1) { // year or month changed
-          let currentIndex = 1
+          let currentIndex = 15
           let monthCount = 30
 
           let month = iIndex + 1 // month
@@ -85,11 +84,11 @@ Vue.use(SmoothPicker);
               }
 
               monthCount = 28
-              currentIndex = store.state.params.date < 28 ? store.state.params.date : 28;
-              
+              currentIndex = store.state.params.date < 28 ? store.state.params.date - 1 : 28;
+
               if (isLeapYear) {
                 monthCount = 29
-                currentIndex = store.state.params.date < 29 ? store.state.params.date : 29;
+                currentIndex = store.state.params.date < 29 ? store.state.params.date - 1 : 29;
               }
               break
             case 4:
@@ -97,11 +96,11 @@ Vue.use(SmoothPicker);
             case 9:
             case 11:
               monthCount = 30
-              currentIndex = store.state.params.date < 31 ? store.state.params.date : 30;
+              currentIndex = store.state.params.date < 31 ? store.state.params.date - 1 : 30;
               break
             default:
               monthCount = 31
-              currentIndex = store.state.params.date
+              currentIndex = store.state.params.date - 1
           }
           const list = [...Array(monthCount)].map((d, i) => i + 1)
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
