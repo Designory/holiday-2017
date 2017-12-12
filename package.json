@@ -41,6 +41,7 @@
     "babel-runtime": "^6.18.0",
     "json-loader": "^0.5.7",
     "promise-polyfill": "^6.0.2",
+    "shake.js": "^1.2.2",
     "vue": "^2.2.0",
     "vue-router": "^2.0.0",
     "vue-smooth-picker": "^0.3.6",
