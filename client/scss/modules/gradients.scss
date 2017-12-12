@@ -5,8 +5,9 @@
         @extend %layer;
         
         opacity: 0;
-        transition: opacity 1s;
+        transition: all 1s;
 
+        // define all the gradients
         @each $number, $left-color, $right-color in (1, #ffe400, #0dd902),
                                                     (2, #2ae905, #01ffaf),
                                                     (3, #00faa4, #00d1fc),
@@ -22,10 +23,17 @@
             }
         }
 
+        // set visability for aproper layer
         @for $i from 1 through 10 {
             [data-bg="#{$i}"] &--#{$i} {
                 opacity: 1;
             }
+        }
+
+        // display animated layer at resulting screen
+        [data-view="2"] &--snowflakes {
+            opacity: 1;
+            background: rgba(0,0,0,.6);
         }
     }
 }
