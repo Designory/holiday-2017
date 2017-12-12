@@ -475,7 +475,8 @@ var Add2Calendar = function (eventData) {
         this.selector = selector;
         this.eWidget = document.querySelector(selector);
 
-        console.log(document.querySelector(selector));
+        // clear widget
+        this.eWidget.innerHTML = '';
 
         var node = this.getWidgetNode();
         this.eWidget.appendChild(node);
