@@ -1,6 +1,7 @@
 <template>
   <div class="calendar">
     <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
+    <button @click="randomize()">RANDOMIZE</button>
   </div>
 </template>
 
@@ -20,17 +21,13 @@ Vue.use(SmoothPicker);
   export default {
     name: 'calendar',
     data () {
-      const nowYear = (new Date()).getFullYear()
-      const years = []
-      
-      years.push(2018)
 
       return {
         data: [
           {
             currentIndex: 2018,
             flex: 2,
-            list: years,
+            list: [2018],
             textAlign: 'center',
             className: 'row-group'
           },
@@ -42,10 +39,9 @@ Vue.use(SmoothPicker);
             className: 'row-group'
           },
           {
-            currentIndex: store.state.params.date,
+            currentIndex: store.state.params.date - 1,
             flex: 2,
             list: [...Array(30)].map((d, i) => i + 1),
-            onClick: this.clickOnDay,
             textAlign: 'center',
             className: 'item-group'
           }
@@ -57,6 +53,8 @@ Vue.use(SmoothPicker);
         return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)
       },
       dataChange (gIndex, iIndex) {
+        console.log(gIndex, iIndex);
+        console.log(this.$refs.smoothPicker.getCurrentIndexList());
         // this object (Array) contains data for selected date 
         // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
@@ -105,6 +103,18 @@ Vue.use(SmoothPicker);
           const list = [...Array(monthCount)].map((d, i) => i + 1)
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
         }
+      },
+      randomize() {
+        console.log('this');
+        this.$refs.smoothPicker.setGroupData(1, { 
+            ...this.$refs.smoothPicker.data[1], 
+            currentIndex: 5
+          });
+        this.$refs.smoothPicker.setGroupData(2, { 
+          ...this.$refs.smoothPicker.data[2], 
+          currentIndex: 5
+        });
+        this.dataChange(1,3);
       }
     }
   }

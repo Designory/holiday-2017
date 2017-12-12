@@ -17,8 +17,8 @@ const state = {
    *      3. Holiday Data
    */
   params: {
-    month: 0,   
-    date: 1,
+    month: (new Date()).getMonth(),   
+    date: (new Date()).getDate(),
     view: 0 
   },
   /**
