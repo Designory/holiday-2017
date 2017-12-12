@@ -9,7 +9,8 @@ $ npm install
 To develop:
 
 ```bash
-$ npm run dev```
+$ npm run dev
+```
 
 To build for production:
 
@@ -17,5 +18,10 @@ To build for production:
 $ npm run build
 ```
 
+Dev server: 
+
+```
+http://10.89.236.189:4000/
+```
 
 ---
