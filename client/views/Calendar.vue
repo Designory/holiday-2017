@@ -105,19 +105,19 @@ Vue.use(SmoothPicker);
         }
       },
       randomize() {
-        console.log(this.data);
+        let randomMonth = Math.floor(Math.random()*12),
+            randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
         
         this.$refs.smoothPicker.setGroupData(1, { 
             ...this.$refs.smoothPicker.data[1], 
-            currentIndex: 5
+            currentIndex: randomMonth
           });
         this.$refs.smoothPicker.setGroupData(2, { 
           ...this.$refs.smoothPicker.data[2], 
-          currentIndex: 5
+          currentIndex: randomDate
         });
         
-        setDate(5, 5).then(_=> {
-          console.log('this');
+        setDate(randomMonth, randomDate).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
           {
