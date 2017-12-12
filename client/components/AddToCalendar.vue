@@ -4,7 +4,7 @@
 
 <script>
 import store from '../store'
-import Add2Calendar from '../add-calendar-event';
+import Add2Calendar from '../scripts/add-calendar-event';
 
 var singleEvent = new Add2Calendar(getOptions());
 

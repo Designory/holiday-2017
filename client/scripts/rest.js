@@ -1,6 +1,6 @@
 import { sync } from 'vuex-router-sync'
-import router from './router'
-import store from './store'
+import router from '../router'
+import store from '../store'
 import { normalize } from 'path'
 import * as Utils from './utils'
 

@@ -1,6 +1,6 @@
-import router from './router'
-import store from './store'
-import data from './data/holidays.json'
+import router from '../router'
+import store from '../store'
+import data from '../data/holidays.json'
 
 /**
  * Take new parameters and update store.state
