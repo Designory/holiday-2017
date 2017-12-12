@@ -1,15 +1,25 @@
 <template>
   <div>
-    <p class="txt">On {{month}} {{date}}, celebrate</p>
-    <p class="txt txt--center">{{title}}</p>
-    <p class="txt txt--center">{{description}}</p>
+    <p class="txt txt--result-sub-title txt--center">On {{month}} {{date}}, celebrate</p>
+    <p class="txt txt--result-title txt--center">{{title}}</p>
+    <p class="txt txt--result-desc txt--center">{{description}}</p>
 
-    <div @click="randomize()">RANDOMIZE</div>
-    
-    <Social></Social>
-    <AddToCalendar></AddToCalendar>
 
-    <p id="test"></p>
+    <div class="options">
+
+      <div class="options__item">
+        <div @click="randomize()">RANDOMIZE</div>
+      </div>
+        
+      <div class="options__item">
+        <Social></Social>
+      </div>
+
+      <div class="options__item">
+        <AddToCalendar></AddToCalendar>
+      </div>
+      
+    </div>
   </div>
 </template>
 
