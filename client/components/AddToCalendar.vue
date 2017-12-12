@@ -12,13 +12,13 @@ function getOptions() {
   const currentDate = new Date(),
       month = store.state.params.month,
       date = store.state.params.date,
-      year = (month === 12 && date > 15) ? currentDate.getFullYear() : currentDate.getFullYear() + 1;
+      year = store.state.holiday.y || (month === 12 && date > 15) ? currentDate.getFullYear() : currentDate.getFullYear() + 1;
 
   return {
     title: store.state.holiday.title,
-    start: new Date(year, store.state.params.month - 1, store.state.params.date),
-    end: new Date(year, store.state.params.month - 1, store.state.params.date + 1),
-    description: store.state.holiday.titldescriptione,
+    start: new Date(year, month, date),
+    end: new Date(year, month, date + 1),
+    description: store.state.holiday.title,
   }
 }
 

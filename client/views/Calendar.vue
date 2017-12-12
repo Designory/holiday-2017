@@ -1,7 +1,18 @@
 <template>
   <div class="calendar">
-    <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
-    <div @click="randomize()">RANDOMIZE</div>
+    <p class="txt txt--center-xs">My reason to celebrate</p>
+    
+    <div class="smooth-picker-container">
+      <div class="smooth-picker-divider"></div>
+      <div class="smooth-picker-window smooth-picker-window--left"></div>
+      <div class="smooth-picker-window smooth-picker-window--right"></div>
+      <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
+    </div>
+
+    <div class="smooth-picker-randomize" @click="randomize()">
+      <img class="smooth-picker-icon" src="/static/randomize.png" alt="img">
+      <p class="smooth-picker-text">RANDOMIZE</p>
+    </div>
   </div>
 </template>
 

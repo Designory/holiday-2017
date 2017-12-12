@@ -1,10 +1,19 @@
 .txt {
     font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.2;
+    letter-spacing: 1px;
     margin-bottom: 1rem;
 
     &--strong {}
+
     &--center {
         text-align: center;
+    }
+    
+    &--center-xs {
+        @include bp('sm') {
+            text-align: center;
+        }
     }
 }
