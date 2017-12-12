@@ -5,6 +5,7 @@
                       quote="abc"
                       hashtags="designory, holidaycard"
                       inline-template>
+                      
         <div class="social">
             <network network="email" class="social__elm">
                 <i class="fa fa-envelope"></i> Email
