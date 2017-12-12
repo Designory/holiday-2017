@@ -44,6 +44,7 @@
     "vue": "^2.2.0",
     "vue-router": "^2.0.0",
     "vue-smooth-picker": "^0.3.6",
+    "vue-social-sharing": "^2.3.3",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^4.0.0"
   },
