@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import router from '../router'
-import * as Utils from '../utils';
+import * as Utils from '../scripts/utils';
 
 Vue.use(Vuex)
 
