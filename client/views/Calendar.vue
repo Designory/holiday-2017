@@ -1,5 +1,6 @@
 <template>
   <div class="calendar">
+    <p class="txt txt--center-xs">My reason to celebrate</p>
     <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
     <div @click="randomize()">RANDOMIZE</div>
   </div>

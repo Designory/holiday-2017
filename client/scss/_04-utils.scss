@@ -26,3 +26,13 @@
 
   @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
 }
+
+@mixin bp($bp) {
+  @if $bp == sm {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $bp == lg {
+    @media (min-width: 768px) { @content; }
+  }
+}

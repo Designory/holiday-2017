@@ -4,7 +4,14 @@
     margin-bottom: 1rem;
 
     &--strong {}
+
     &--center {
         text-align: center;
+    }
+    
+    &--center-xs {
+        @include bp('sm') {
+            text-align: center;
+        }
     }
 }
