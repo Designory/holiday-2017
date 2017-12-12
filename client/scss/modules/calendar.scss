@@ -2,8 +2,14 @@
 < * Tweaking smooth scrolling * >
 \*******************************/
 #app {
+    .smooth-picker-container {
+        border: 1px solid red;
+        height: 65px;
+        overflow: hidden;
+    }
     .smooth-picker {
         background-color: rgba(0,0,0,0);
+        transform: translateY(-80px);
     }
     .smooth-group:nth-of-type(1) {
         display: none;
@@ -11,5 +17,22 @@
     .smooth-top,
     .smooth-bottom {
         background: rgba(0,0,0,0);
+        border: none;
+    }
+    .smooth-item {
+        font-size: 1.8rem;
+        font-weight: 300;
+        height: 4.1rem;
+        line-height: 1.4;
+        overflow: visible;
+        transition: margin-top .2s, font-size .2s;
+    }
+    .smooth-item-selected {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+
+        & + .smooth-item {
+            margin-top: 2rem;
+        }
     }
 }

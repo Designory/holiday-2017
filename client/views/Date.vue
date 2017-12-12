@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="txt">On {{month}} {{date}}, I'll be celebrating</p>
+    <p class="txt">On {{month}} {{date}}, celebrate</p>
     <p class="txt txt--center">{{title}}</p>
     <p class="txt txt--center">{{description}}</p>
 
