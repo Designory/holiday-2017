@@ -53,8 +53,8 @@ Vue.use(SmoothPicker);
         return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)
       },
       dataChange (gIndex, iIndex) {
-        console.log(gIndex, iIndex);
-        console.log(this.$refs.smoothPicker.getCurrentIndexList());
+        // console.log(gIndex, iIndex);
+        // console.log(this.$refs.smoothPicker.getCurrentIndexList());
         // this object (Array) contains data for selected date 
         // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
@@ -105,7 +105,8 @@ Vue.use(SmoothPicker);
         }
       },
       randomize() {
-        console.log('this');
+        console.log(this.data);
+        
         this.$refs.smoothPicker.setGroupData(1, { 
             ...this.$refs.smoothPicker.data[1], 
             currentIndex: 5
@@ -114,7 +115,34 @@ Vue.use(SmoothPicker);
           ...this.$refs.smoothPicker.data[2], 
           currentIndex: 5
         });
-        this.dataChange(1,3);
+        
+        setDate(5, 5).then(_=> {
+          console.log('this');
+          this.dataChange(store.state.params.month, store.state.params.date - 1);
+          this.data = [
+          {
+            currentIndex: 2018,
+            flex: 2,
+            list: [2018],
+            textAlign: 'center',
+            className: 'row-group'
+          },
+          {
+            currentIndex: store.state.params.month,
+            flex: 2,
+            list: [...Array(12)].map((m, i) => i + 1),
+            textAlign: 'center',
+            className: 'row-group'
+          },
+          {
+            currentIndex: store.state.params.date - 1,
+            flex: 2,
+            list: [...Array(30)].map((d, i) => i + 1),
+            textAlign: 'center',
+            className: 'item-group'
+          }
+        ];
+        })
       }
     }
   }
