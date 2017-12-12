@@ -219,7 +219,7 @@
         {
             "y": 2018,
             "m": 1,
-            "d": 11,
+            "d": 9,
             "bg": 1, 
             "title": "Ntl. Milk Day",
             "description": "Got Lactaid?"
@@ -467,7 +467,7 @@
         {
             "y": 2018,
             "m": 2,
-            "d": 11,
+            "d": 9,
             "bg": 2, 
             "title": "Satisfied Staying Single Day",
             "description": "At least that's what you say when Vanity Fair interviewed you, right?"
@@ -691,7 +691,7 @@
         {
             "y": 2018,
             "m": 3,
-            "d": 11,
+            "d": 9,
             "bg": 3, 
             "title": "Check Your Batteries Day",
             "description": "Just roooooll them around. Remote will work."
@@ -939,7 +939,7 @@
         {
             "y": 2018,
             "m": 4,
-            "d": 11,
+            "d": 9,
             "bg": 4, 
             "title": "Ntl. Pet Day",
             "description": "They're like family, and they never make awkward political conversation at Thanksgiving. Appreciate them."
@@ -1179,7 +1179,7 @@
         {
             "y": 2018,
             "m": 5,
-            "d": 11,
+            "d": 9,
             "bg": 5, 
             "title": "Ntl. Twilight Zone Day",
             "description": "IT'S A COOKBOOK!"
@@ -1427,7 +1427,7 @@
         {
             "y": 2018,
             "m": 6,
-            "d": 11,
+            "d": 9,
             "bg": 6, 
             "title": "Corn on the Cob Day",
             "description": ""
@@ -1667,7 +1667,7 @@
         {
             "y": 2018,
             "m": 7,
-            "d": 11,
+            "d": 9,
             "bg": 7, 
             "title": "Cheer Up the Lonely Day",
             "description": "One is the loneliest number that you'll ever seeee.... Look around. Cheer someone up."
@@ -1915,7 +1915,7 @@
         {
             "y": 2018,
             "m": 8,
-            "d": 11,
+            "d": 9,
             "bg": 8, 
             "title": "Play in the Sand Day",
             "description": "Build a sand castle."
@@ -2163,7 +2163,7 @@
         {
             "y": 2018,
             "m": 9,
-            "d": 11,
+            "d": 9,
             "bg": 9, 
             "title": "9/11 Remembrance",
             "description": "Never forget."
@@ -2396,15 +2396,15 @@
             "y": 2018,
             "m": 10,
             "d": 10,
-            "bg": 0,
+            "bg": 2,
             "title": "Intl. Newspaper Carrier Day",
             "description": "Don't forget to tip your newspaper delivery carrier!"
         },
         {
             "y": 2018,
             "m": 10,
-            "d": 11,
-            "bg": 0,
+            "d": 9,
+            "bg": 2,
             "title": "Take Your Teddy Bear to Work Day",
             "description": "We know you already do, so just take him out of your bag."
         },
@@ -2412,7 +2412,7 @@
             "y": 2018,
             "m": 10,
             "d": 12,
-            "bg": 0,
+            "bg": 2,
             "title": "Moment of Frustration Day",
             "description": "It's okay. Take a breath and move on from today."
         },
@@ -2420,7 +2420,7 @@
             "y": 2018,
             "m": 10,
             "d": 13,
-            "bg": 0,
+            "bg": 2,
             "title": "Int'l. Skeptics Day",
             "description": "We're not sure this is actually a holiday..."
         },
@@ -2428,7 +2428,7 @@
             "y": 2018,
             "m": 10,
             "d": 14,
-            "bg": 0,
+            "bg": 3,
             "title": "Nat'l. Dessert Day",
             "description": "Me first."
         },
@@ -2436,7 +2436,7 @@
             "y": 2018,
             "m": 10,
             "d": 15,
-            "bg": 0,
+            "bg": 3,
             "title": "I Love Lucy\" Day",
             "description": "Get into some shenanegans!"
         },
@@ -2444,7 +2444,7 @@
             "y": 2018,
             "m": 10,
             "d": 16,
-            "bg": 0,
+            "bg": 3,
             "title": "Dictionary Day",
             "description": "I had to look this one up."
         },
@@ -2452,7 +2452,7 @@
             "y": 2018,
             "m": 10,
             "d": 17,
-            "bg": 0,
+            "bg": 3,
             "title": "Wear Something Gaudy Day",
             "description": "You'll probably have to buy something to wear- you have impeccable style!"
         },
@@ -2460,7 +2460,7 @@
             "y": 2018,
             "m": 10,
             "d": 18,
-            "bg": 0,
+            "bg": 3,
             "title": "No Beard Day",
             "description": "Well, this is the worst day ever. Who doesn't like beards?"
         },
@@ -2468,7 +2468,7 @@
             "y": 2018,
             "m": 10,
             "d": 19,
-            "bg": 0,
+            "bg": 3,
             "title": "Evaluate Your Life Day",
             "description": "Are you doing what you thought you'd be doing at this point in your life?"
         },
@@ -2476,7 +2476,7 @@
             "y": 2018,
             "m": 10,
             "d": 20,
-            "bg": 0,
+            "bg": 3,
             "title": "Sweetest Day",
             "description": "Show love to everyone."
         },
@@ -2484,7 +2484,7 @@
             "y": 2018,
             "m": 10,
             "d": 21,
-            "bg": 0,
+            "bg": 3,
             "title": "Babbling Day",
             "description": "That one person in your life who won't shut it now has a day!"
         },
@@ -2492,7 +2492,7 @@
             "y": 2018,
             "m": 10,
             "d": 22,
-            "bg": 0,
+            "bg": 3,
             "title": "Smart Is Cool Day",
             "description": "Smart was always cool, baby."
         },
@@ -2500,7 +2500,7 @@
             "y": 2018,
             "m": 10,
             "d": 23,
-            "bg": 0,
+            "bg": 3,
             "title": "Tv Talk Show Host Day",
             "description": "Today we're going to talk about talk show hosts and the viewers who love them."
         },
@@ -2508,7 +2508,7 @@
             "y": 2018,
             "m": 10,
             "d": 24,
-            "bg": 0,
+            "bg": 3,
             "title": "Take Back Your Time Day",
             "description": "Avoid that late night Instagram black hole, and voila! Three hours back, just like that."
         },
@@ -2516,7 +2516,7 @@
             "y": 2018,
             "m": 10,
             "d": 25,
-            "bg": 0,
+            "bg": 3,
             "title": "World Pasta Day",
             "description": "Carbo load!"
         },
@@ -2524,7 +2524,7 @@
             "y": 2018,
             "m": 10,
             "d": 26,
-            "bg": 0,
+            "bg": 3,
             "title": "National Mule Day",
             "description": "Don't be a jackass!"
         },
@@ -2532,7 +2532,7 @@
             "y": 2018,
             "m": 10,
             "d": 27,
-            "bg": 0,
+            "bg": 3,
             "title": "Frankenstein Friday",
             "description": "It's alive! You're alive! We're alive!"
         },
@@ -2540,7 +2540,7 @@
             "y": 2018,
             "m": 10,
             "d": 28,
-            "bg": 0,
+            "bg": 3,
             "title": "Make a Difference Day",
             "description": "Practice a random act of kindness today."
         },
@@ -2548,7 +2548,7 @@
             "y": 2018,
             "m": 10,
             "d": 29,
-            "bg": 0,
+            "bg": 4,
             "title": "Intl. Internet Day",
             "description": "Isn't this every day?"
         },
@@ -2556,7 +2556,7 @@
             "y": 2018,
             "m": 10,
             "d": 30,
-            "bg": 0,
+            "bg": 4,
             "title": "Mischief Night",
             "description": "Be good at being bad."
         },
@@ -2564,7 +2564,7 @@
             "y": 2018,
             "m": 10,
             "d": 31,
-            "bg": 0,
+            "bg": 4,
             "title": "Halloween",
             "description": "If you're over 12, and you want candy, don't show up at my door without a costume!"
         },
@@ -2572,7 +2572,7 @@
             "y": 2018,
             "m": 11,
             "d": 1,
-            "bg": 11,
+            "bg": 9,
             "title": "World Vegan Day",
             "description": "The first rule of Vegan Club: Tell everyone about Vegan Club."
         },
@@ -2580,7 +2580,7 @@
             "y": 2018,
             "m": 11,
             "d": 2,
-            "bg": 11,
+            "bg": 9,
             "title": "Cookie Monster Day",
             "description": "\u266CC is for cookie, cookie starts with c. If you just eat cookies, you'll get a cavity.\u266C"
         },
@@ -2588,7 +2588,7 @@
             "y": 2018,
             "m": 11,
             "d": 3,
-            "bg": 11,
+            "bg": 9,
             "title": "Cliche Day",
             "description": "In this day and age, leveraging an outside the box approach can really be a solution... yeah you get it."
         },
@@ -2596,7 +2596,7 @@
             "y": 2018,
             "m": 11,
             "d": 4,
-            "bg": 11,
+            "bg": 9,
             "title": "Use Your Common Sense Day",
             "description": "Do as your ancestors did, and use all your senses. Including your common sense."
         },
@@ -2604,7 +2604,7 @@
             "y": 2018,
             "m": 11,
             "d": 5,
-            "bg": 11,
+            "bg": 9,
             "title": "American Football Day",
             "description": "...and by that we mean FOOTBALL DAY! 'Merica!"
         },
@@ -2612,7 +2612,7 @@
             "y": 2018,
             "m": 11,
             "d": 6,
-            "bg": 11,
+            "bg": 9,
             "title": "Election Day",
             "description": "Vote early, vote often. Make your voice heard!"
         },
@@ -2620,7 +2620,7 @@
             "y": 2018,
             "m": 11,
             "d": 7,
-            "bg": 11,
+            "bg": 9,
             "title": "International Stress Awareness Day",
             "description": "Tell everyone how busy you are today."
         },
@@ -2628,7 +2628,7 @@
             "y": 2018,
             "m": 11,
             "d": 8,
-            "bg": 11,
+            "bg": 9,
             "title": "X-Ray Day",
             "description": "I see through you, X-Ray Day."
         },
@@ -2636,7 +2636,7 @@
             "y": 2018,
             "m": 11,
             "d": 9,
-            "bg": 11,
+            "bg": 9,
             "title": "Go to an Art Museum Today Day",
             "description": "Take your lover to the Louvre! Take Mama to MoMA!"
         },
@@ -2651,7 +2651,7 @@
         {
             "y": 2018,
             "m": 11,
-            "d": 11,
+            "d": 9,
             "bg": 1,
             "title": "Int'l. Tongue Twister Day",
             "description": "How much wood *should* a wood chuck chuck?"
@@ -2812,7 +2812,7 @@
             "y": 2018,
             "m": 12,
             "d": 1,
-            "bg": 11,
+            "bg": 9,
             "title": "Earmuff Day",
             "description": "Keep warm with the fluffiest earmuffs you can find."
         },
@@ -2820,7 +2820,7 @@
             "y": 2018,
             "m": 12,
             "d": 2,
-            "bg": 11,
+            "bg": 9,
             "title": "Safety Razor Day",
             "description": "Movember is over. Your bristles are likely long and your blades are likely sharp. Take heed this morning."
         },
@@ -2828,7 +2828,7 @@
             "y": 2018,
             "m": 12,
             "d": 3,
-            "bg": 11,
+            "bg": 9,
             "title": "Let's Hug Day",
             "description": "Also, the first day of Chanukah. Perhaps they're related?"
         },
@@ -2836,7 +2836,7 @@
             "y": 2018,
             "m": 12,
             "d": 4,
-            "bg": 11,
+            "bg": 9,
             "title": "Wear Brown Shoes Day",
             "description": "Today's the day to rock your favorite pair of brown shoes (with a belt to match)!"
         },
@@ -2844,7 +2844,7 @@
             "y": 2018,
             "m": 12,
             "d": 5,
-            "bg": 11,
+            "bg": 9,
             "title": "Nat'l. Blue Jeans Day",
             "description": "Blue jean baby, L.A. lady, seamstress for the band..."
         },
@@ -2852,7 +2852,7 @@
             "y": 2018,
             "m": 12,
             "d": 6,
-            "bg": 11,
+            "bg": 9,
             "title": "Nat'l. Microwave Oven Day",
             "description": "Don't stand too close!"
         },
@@ -2860,7 +2860,7 @@
             "y": 2018,
             "m": 12,
             "d": 7,
-            "bg": 11,
+            "bg": 9,
             "title": "National Cotton Candy Day",
             "description": "Stuff that makes your teeth hurt."
         },
@@ -2868,7 +2868,7 @@
             "y": 2018,
             "m": 12,
             "d": 8,
-            "bg": 11,
+            "bg": 9,
             "title": "Int'l. Shareware Day",
             "description": "Sharewaring is carewaring."
         },
@@ -2876,7 +2876,7 @@
             "y": 2018,
             "m": 12,
             "d": 9,
-            "bg": 11,
+            "bg": 9,
             "title": "World Techno Day",
             "description": "Get your 90's CDs out and rave!"
         },
@@ -2891,7 +2891,7 @@
         {
             "y": 2018,
             "m": 12,
-            "d": 11,
+            "d": 9,
             "bg": 2,
             "title": "Int'l. Mountain Day",
             "description": "Climb every one of 'em!"
