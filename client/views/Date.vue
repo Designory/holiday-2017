@@ -7,12 +7,29 @@
     <div @click="randomize()">RANDOMIZE</div>
     
     <Social></Social>
+
+    <p id="test"></p>
   </div>
 </template>
 
 <script>
 import Social from '../components/Social';
 import { setDate } from '../utils';
+// import Add2Calendar from 'add2calendar';
+
+import Add2Calendar from '../test';
+
+var singleEventArgs = {
+  title       : 'Add2Calendar plugin event',
+  start       : 'July 27, 2018 10:30',
+  end         : 'July 29, 2018 19:20',
+  location    : 'Bangkok, Thailand',
+  description : 'Event description'
+};
+var singleEvent = new Add2Calendar(singleEventArgs);
+// setTimeout(() => {
+//   singleEvent.createWidget('#test');
+// }, 2000);
 
 export default {
   components: {
@@ -39,6 +56,10 @@ export default {
 
       setDate(randomMonth, randomDate);
     }
+  },
+  updated: function() {
+    console.log('this');
+    singleEvent.createWidget('#test');
   }
 }
 </script>
