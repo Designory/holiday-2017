@@ -34,7 +34,7 @@ Vue.use(SmoothPicker);
           {
             currentIndex: store.state.params.month,
             flex: 2,
-            list: [...Array(12)].map((m, i) => i + 1),
+            list: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             textAlign: 'center',
             className: 'row-group'
           },
@@ -55,7 +55,7 @@ Vue.use(SmoothPicker);
       dataChange (gIndex, iIndex) {
         // this array contains data for selected date 
         // [year, month, date]
-        const ciList = this.$refs.smoothPicker.getCurrentIndexList()
+        const ciList = this.$refs.smoothPicker.getCurrentIndexList();
 
         setDate(ciList[1] + 1, ciList[2] + 1);
 
@@ -129,7 +129,7 @@ Vue.use(SmoothPicker);
         setDate(randomMonth, randomDate).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
-            { ...this.data[0], currentIndex: 0},
+            { ...this.data[0]},
             { ...this.data[1], currentIndex: store.state.params.month},
             { ...this.data[2], currentIndex: store.state.params.date - 1}
           ];

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="txt">On {{month}}/{{date}}, I'll be celebrating</p>
+    <p class="txt">On {{month}} {{date}}, I'll be celebrating</p>
     <p class="txt txt--center">{{title}}</p>
     <p class="txt txt--center">{{description}}</p>
 
@@ -25,10 +25,13 @@ export default {
   },
   computed: {
     month() {
-      return this.$store.state.params.month;
+      let month = ['Void', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return month[this.$store.state.params.month];
     },
     date() {
-      return this.$store.state.params.date;
+      let date = this.$store.state.params.date;
+      // convert to date ordinal
+      return date + (date > 0 ? ['th', 'st', 'nd', 'rd'][(date > 3 && date < 21) || date % 10 > 3 ? 0 : date % 10] : '');
     },
     title() {
       return this.$store.state.holiday.title;
