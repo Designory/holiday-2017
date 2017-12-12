@@ -27,6 +27,7 @@ const state = {
   holiday: {
     m: 1,
     d: 1,
+    bg: 1,
     title: "New Year's Day",
     description: "Alcohol choice regret! But it's a new year and a clean slate!" 
   },
