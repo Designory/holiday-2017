@@ -1,7 +1,7 @@
 <template>
   <div class="calendar">
     <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
-    <button @click="randomize()">RANDOMIZE</button>
+    <div @click="randomize()">RANDOMIZE</div>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ Vue.use(SmoothPicker);
       return {
         data: [
           {
-            currentIndex: 2018,
+            currentIndex: 0,
             flex: 2,
             list: [2018],
             textAlign: 'center',
@@ -53,9 +53,7 @@ Vue.use(SmoothPicker);
         return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)
       },
       dataChange (gIndex, iIndex) {
-        // console.log(gIndex, iIndex);
-        // console.log(this.$refs.smoothPicker.getCurrentIndexList());
-        // this object (Array) contains data for selected date 
+        // this array contains data for selected date 
         // [year, month, date]
         const ciList = this.$refs.smoothPicker.getCurrentIndexList()
 
@@ -104,10 +102,19 @@ Vue.use(SmoothPicker);
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
         }
       },
+      /**
+       * Custom method for third party widget
+       * 1. Update widget's group data
+       * 2. Update store.state
+       * 3. Render widget with updated data for currentIndex
+       */
       randomize() {
         let randomMonth = Math.floor(Math.random()*12),
             randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
         
+        // update group data for widget
+        // month => data[1]
+        // date => data[2]
         this.$refs.smoothPicker.setGroupData(1, { 
             ...this.$refs.smoothPicker.data[1], 
             currentIndex: randomMonth
@@ -117,31 +124,15 @@ Vue.use(SmoothPicker);
           currentIndex: randomDate
         });
         
+        // update state
+        // then render widget with updated data
         setDate(randomMonth, randomDate).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
-          {
-            currentIndex: 2018,
-            flex: 2,
-            list: [2018],
-            textAlign: 'center',
-            className: 'row-group'
-          },
-          {
-            currentIndex: store.state.params.month,
-            flex: 2,
-            list: [...Array(12)].map((m, i) => i + 1),
-            textAlign: 'center',
-            className: 'row-group'
-          },
-          {
-            currentIndex: store.state.params.date - 1,
-            flex: 2,
-            list: [...Array(30)].map((d, i) => i + 1),
-            textAlign: 'center',
-            className: 'item-group'
-          }
-        ];
+            { ...this.data[0], currentIndex: 0},
+            { ...this.data[1], currentIndex: store.state.params.month},
+            { ...this.data[2], currentIndex: store.state.params.date - 1}
+          ];
         })
       }
     }
