@@ -16,8 +16,8 @@ function getOptions() {
 
   return {
     title: store.state.holiday.title,
-    start: new Date(currentDate.getFullYear(), store.state.params.month - 1, store.state.params.date),
-    end: new Date(currentDate.getFullYear(), store.state.params.month - 1, store.state.params.date + 1),
+    start: new Date(year, store.state.params.month - 1, store.state.params.date),
+    end: new Date(year, store.state.params.month - 1, store.state.params.date + 1),
     description: store.state.holiday.titldescriptione,
   }
 }

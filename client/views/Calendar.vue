@@ -129,7 +129,7 @@ Vue.use(SmoothPicker);
         setDate(randomMonth, randomDate).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
-            { ...this.data[0], currentIndex: 0},
+            { ...this.data[0]},
             { ...this.data[1], currentIndex: store.state.params.month},
             { ...this.data[2], currentIndex: store.state.params.date - 1}
           ];
