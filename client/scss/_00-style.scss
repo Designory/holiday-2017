@@ -8,9 +8,14 @@
 @import "./modules/navigation.scss";
 @import "./modules/screen.scss";
 @import "./modules/txt.scss";
-@import "./modules/calendar.scss";
+@import "./modules/smooth-picker.scss";
 @import "./modules/social.scss";
 
 * { // why is it there? ¯\_(ツ)_/¯
     box-sizing: border-box;
+}
+
+body { // ¯\_(ツ)_/¯
+    position: fixed;
+    height: 100%;
 }

@@ -1,9 +1,8 @@
-// @function arrow($color: $white) {
-//   @return svg-url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.0141 11.9956"><path d="M0,11.9956H3.6172l6.3969-5.9975L3.6172,0H0L6.268,5.9971Z" style="fill:#{$color}"/></svg>')
-// };
-
 .navigation {
-    position: relative;
+    bottom: $content-padding-mobile;
+    padding: 0 $content-padding-mobile;
+    position: fixed;
+    width: 100%;
     z-index: 1;
 
     &__btn {
