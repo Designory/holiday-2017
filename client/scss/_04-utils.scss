@@ -29,10 +29,10 @@
 
 @mixin bp($bp) {
   @if $bp == sm {
-    @media (max-width: 767px) { @content; }
+    @media (max-width: 1023px) { @content; }
   }
  
   @else if $bp == lg {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 1024px) { @content; }
   }
 }
