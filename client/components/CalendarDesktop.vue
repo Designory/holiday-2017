@@ -3,6 +3,7 @@
         <datepicker 
             :value="value"
             :maximum-view="'day'" 
+            :format="mmmDD"
             v-on:input="val => {updateDate(val)}"></datepicker>
 
         <div class="vdp-datepicker-randomize" @click="randomize()">
@@ -41,6 +42,12 @@ export default {
 
             store.state.date = new Date(2018, randomMonth, randomDate);
             setDate(randomMonth, randomDate);            
+        },
+        mmmDD(value) {
+            let month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][value.getMonth()],
+                date = value.getDate();
+
+            return `${month} ${date}`;
         }
     }
 }
