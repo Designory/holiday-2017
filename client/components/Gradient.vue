@@ -11,11 +11,17 @@
       <div class="gradient__layer gradient__layer--8"></div>
       <div class="gradient__layer gradient__layer--9"></div>
       <div class="gradient__layer gradient__layer--10"></div>
-      <div class="gradient__layer gradient__layer--snowflakes"></div>
+      <div class="gradient__layer gradient__layer--snowflakes" id="particles-js"></div>
   </div>
 </template>
 
 <script>
+import '../scripts/particles';
+
+window.particlesJS.load('particles-js', '/static/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 export default {
   computed: {
     bg() {
