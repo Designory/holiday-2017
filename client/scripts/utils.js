@@ -89,6 +89,8 @@ function normalizeParams({ view, month, date }) {
  */
 function findHoliday(month, date, arr) {
     for (let day of arr) if (month === day.m && date === day.d) return day;
+    // else, if not found within data spreadsheet
+    return { m: 1, d: 1, bg: 1, title: "No Holiday Found", description: "Try Again" }
 }
 
 export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };

@@ -6,15 +6,15 @@
     z-index: 1;
 
     &__btn {
-        background: {
-            image: url('/static/arrow.png');
-            repeat: no-repeat;
-            size: contain;
-        }
         display: inline-block;
         vertical-align: middle;
 
         &--next {
+            background: {
+                image: url('/static/arrow.png');
+                repeat: no-repeat;
+                size: contain;
+            }
             float: right;
             height: 24px;
             width: 29px;
@@ -26,10 +26,9 @@
 
         &--prev {
             display: none;
-            float: right;
-            height: 24px;
-            transform: rotate(180deg);
-            width: 29px;
+            position: fixed;
+            top: $content-padding-mobile;
+            left: $content-padding-mobile;
 
             [data-view="2"] & {
                 display: block;
@@ -40,6 +39,15 @@
     &__logo {
         display: inline-block;
         vertical-align: middle;
+
+        [data-view="2"] & {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: 100px;
     }
 
     &__link {
