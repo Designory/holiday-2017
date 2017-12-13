@@ -1,6 +1,6 @@
 .options {
 
-    bottom: 110px;
+    bottom: 90px;
     position: fixed;
     width: calc(100% - #{$content-padding-mobile*2});
 
@@ -17,12 +17,17 @@
     }
 
     &__widget {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
         position: absolute;
-        top: 45px;
+        top: -40px;
+        transition: opacity .2s, top .2s;
+        width: 80vw;
+        z-index: -1;
 
         &--open {
-            display: block;
+            opacity: 1;
+            top: -70px;
         }
     }
 }

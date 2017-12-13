@@ -447,9 +447,7 @@ var Add2Calendar = function (eventData) {
     };
 
     this.getWidgetNode = function () {
-        var html = '<span class="a2cldr-btn" onclick="a2cldrOnButtonsClicked(this);">'
-        html += this.getWidgetBtnText();
-        html += '</span>';
+        var html = '';
         html += this.getEventListHtml();
 
         var result = document.createElement('div');

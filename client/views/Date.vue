@@ -64,7 +64,6 @@ export default {
       setDate(randomMonth, randomDate);
     },
     showWidget(index) {
-      console.log(index);
       this.closeWidgets();
       document.querySelector(`.options__widget--${index}`).classList.add('options__widget--open');
     },
