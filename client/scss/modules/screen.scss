@@ -4,25 +4,50 @@
     
     &__content {
         @extend %layer;
-        opacity: 0;
+        // opacity: 0;
         padding: $content-padding-mobile;
-        transition: all .3s;
-        z-index: -1;
+        // pointer-events: none;
+        transition: transform .5s;
+        // z-index: -1;
 
-        @for $i from 0 through 3 {
-            [data-view="#{$i}"] &--#{$i} {
-                opacity: 1;
-                z-index: 0;
+        // @for $i from 0 through 3 {
+        //     [data-view="#{$i}"] &--#{$i} {
+        //         // opacity: 1;
+        //         pointer-events: all;
+        //         z-index: 0;
+        //     }
+        // }
+
+        &--0 {
+            transform: translateX(0);
+
+            [data-view="1"] &,
+            [data-view="2"] & {
+                transform: translateX(-100%);
             }
         }
 
         &--1 {
             padding: calc(50% - 40px) 20px 0 20px;
+            transform: translateX(0);
+
+            [data-view="0"] & {
+                transform: translateX(100%);
+            }
+
+            [data-view="2"] & {
+                transform: translateX(-100%);
+            }
         }
 
         &--2 {
             padding: 0;
-            // padding-top: $content-padding-mobile*2;
+            transform: translateX(0);
+
+            [data-view="0"] &,
+            [data-view="1"] & {
+                transform: translateX(100%);
+            }
         }
     }
 }

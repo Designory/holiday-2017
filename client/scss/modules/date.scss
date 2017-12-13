@@ -16,6 +16,7 @@
     }
 
     &__sub-title {
+        flex: 0 0 auto;
         font-size: .875rem;
         font-weight: 300;
         margin: 0;
@@ -23,22 +24,32 @@
     }
 
     &__title {
+        flex: 0 0 auto;
         font-size: 2.75rem;
         text-align: center;
     }
 
     &__desc {
+        align-items: center;
         display: flex;
+        flex: 1 1 auto;
         font-size: 1rem;
         font-weight: 300;
-        margin: 0;
-        flex: 1 1 auto;
         justify-content: center;
-        align-items: center;
+        margin: 0;
+        text-align: center;
     }
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+    0% {
+        opacity: 0;
+        transform: scale(.98);
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+    }
 }
