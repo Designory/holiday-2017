@@ -22,7 +22,7 @@
 \*****************************************************************************/
 import Vue from 'vue'
 import store from '../store'
-import { setDate } from '../utils';
+import { setDate } from '../scripts/utils';
 
 import SmoothPicker from 'vue-smooth-picker';
 import 'vue-smooth-picker/dist/css/style.css';
