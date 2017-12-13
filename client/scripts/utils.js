@@ -90,7 +90,10 @@ function normalizeParams({ view, month, date }) {
 function findHoliday(month, date, arr) {
     for (let day of arr) if (month === day.m && date === day.d) return day;
     // else if not found return 1st 'available' day of the month
-    for (let day of arr) if (month === day.m) return day;    
+    for (let day of arr) if (month === day.m) {
+        setDate(day.m, day.d);
+        return day;
+    }    
 }
 
 export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };
