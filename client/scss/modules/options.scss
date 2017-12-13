@@ -28,6 +28,7 @@
 
         &--open {
             opacity: 1;
+            pointer-events: all;
             top: -70px;
         }
 

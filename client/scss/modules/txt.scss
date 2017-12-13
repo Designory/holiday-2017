@@ -5,6 +5,10 @@
     letter-spacing: 1px;
     margin-bottom: 1rem;
 
+    @include bp('lg') {
+        font-size: 4rem;
+    }
+
     &--center {
         text-align: center;
     }
@@ -12,6 +16,18 @@
     &--center-xs {
         @include bp('sm') {
             text-align: center;
+        }
+    }
+
+    &--center-lg {
+        @include bp('lg') {
+            text-align: center;
+        }
+    }
+
+    &--thin-lg {
+        @include bp('lg') {
+            font-weight: 300;
         }
     }
 }
