@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="date">
+    <div class="date" :style="`height: ${height}px`">
       <p class="date__sub-title txt">On {{month}} {{date}}, celebrate</p>
       <p class="date__title txt">{{title}}</p>
       <p class="date__desc txt">{{description}}</p>
@@ -58,6 +58,11 @@ export default {
     },
     description() {   
       return this.$store.state.holiday.description;
+    },
+    height() {
+      // you mioght think why? ¯\_(ツ)_/¯
+      // well, because of damned ios safari dynamic nav bars
+      return window.innerHeight - 190;
     }
   },
   methods: {

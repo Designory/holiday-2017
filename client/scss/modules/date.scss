@@ -1,7 +1,8 @@
 .date {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 190px);
+    // height: calc(100vh - 250px);
+    height: 100vh; // will be limited with js calculated max-height;
     opacity: 0;
     padding: $content-padding-mobile*2 $content-padding-mobile 0 $content-padding-mobile;
     transition: opacity .2s;
