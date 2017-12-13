@@ -2,9 +2,9 @@
   <div>
 
     <div class="date">
-      <p class="txt txt--result-sub-title txt--center">On {{month}} {{date}}, celebrate</p>
-      <p class="txt txt--result-title txt--center">{{title}}</p>
-      <p class="txt txt--result-desc txt--center">{{description}}</p>
+      <p class="date__sub-title txt">On {{month}} {{date}}, celebrate</p>
+      <p class="date__title txt">{{title}}</p>
+      <p class="date__desc txt">{{description}}</p>
     </div>
 
 
