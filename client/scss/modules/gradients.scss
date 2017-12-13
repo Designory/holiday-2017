@@ -31,9 +31,13 @@
         }
 
         // display animated layer at resulting screen
-        [data-view="2"] &--snowflakes {
-            opacity: 1;
-            background: rgba(0,0,0,.6);
+        &--snowflakes {
+            transition: all .3s;
+
+            [data-view="2"] & {
+                opacity: 1;
+                // background: rgba(0,0,0,.6);
+            }
         }
     }
 }

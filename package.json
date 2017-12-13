@@ -72,7 +72,6 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.13.1",
     "vue-loader": "^11.0.0",
-    "vue-smooth-picker": "^0.3.6",
     "vue-template-compiler": "^2.2.0",
     "webpack": "2.2.0",
     "webpack-dev-server": "^2.6.1"
