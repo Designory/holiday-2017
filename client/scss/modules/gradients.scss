@@ -32,7 +32,6 @@
 
         // display animated layer at resulting screen
         &--snowflakes {
-            transition: all .3s;
 
             [data-view="2"] & {
                 opacity: 1;

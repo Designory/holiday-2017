@@ -18,9 +18,8 @@
 <script>
 import '../scripts/particles';
 
-window.particlesJS.load('particles-js', '/static/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+// initialize particles
+window.particlesJS.load('particles-js', '/static/particlesjs-config.json');
 
 export default {
   computed: {
