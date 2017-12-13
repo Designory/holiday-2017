@@ -33,6 +33,10 @@ const state = {
     description: "Alcohol choice regret! But it's a new year and a clean slate!" 
   },
 
+  /**
+   * Used sometimes...
+   * Updated sometimes...
+   */
   date: new Date(),
 
   /**
@@ -44,9 +48,6 @@ const state = {
 const mutations = {
   // FORWARD (state) {
   //   state.views.current++;
-  // },
-  // BACK (state) {
-  //   state.views.current--;
   // }
 }
 

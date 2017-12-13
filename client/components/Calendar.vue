@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div class="smooth-picker-container" :data-date="date">
+      <div class="smooth-picker-container">
           <div class="smooth-picker-divider"></div>
           <div class="smooth-picker-window smooth-picker-window--left"></div>
           <div class="smooth-picker-window smooth-picker-window--right"></div>
