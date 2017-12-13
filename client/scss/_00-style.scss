@@ -3,16 +3,17 @@
 @import './_03-reset.scss';
 @import './_04-utils.scss';
 
+@import "./modules/a2cldr.scss";
 @import "./modules/app.scss";
+@import "./modules/date.scss";
 @import "./modules/gradients.scss";
 @import "./modules/navigation.scss";
+@import "./modules/options.scss";
 @import "./modules/screen.scss";
-@import "./modules/txt.scss";
 @import "./modules/smooth-picker.scss";
 @import "./modules/social.scss";
-@import "./modules/options.scss";
-@import "./modules/a2cldr.scss";
-@import "./modules/date.scss";
+@import "./modules/txt.scss";
+@import "./modules/welcome.scss";
 
 * { // why is it there? ¯\_(ツ)_/¯
     box-sizing: border-box;
