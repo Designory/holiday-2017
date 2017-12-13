@@ -1,6 +1,5 @@
 .screen {
-
-    height: calc(100vh - #{$content-padding-mobile*2 + $navigation-height-mobile});
+    max-height: calc(100vh - #{$content-padding-mobile*2 + 85px}); // +85px to preserve space for sharing widgets view=2
     position: relative;
     
     &__content {
@@ -22,7 +21,8 @@
         }
 
         &--2 {
-            padding-top: 25%;
+            padding: 0;
+            // padding-top: $content-padding-mobile*2;
         }
     }
 }

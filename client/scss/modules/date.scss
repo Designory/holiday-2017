@@ -1,10 +1,40 @@
 .date {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 190px);
     opacity: 0;
+    padding: $content-padding-mobile*2 $content-padding-mobile 0 $content-padding-mobile;
     transition: opacity .2s;
+
+    @include bp('lg') {
+        display: block;
+    }
 
     &--animated {
         animation: 1s fadeIn;
         opacity: 1;
+    }
+
+    &__sub-title {
+        font-size: .875rem;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.75rem;
+        text-align: center;
+    }
+
+    &__desc {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+        flex: 1 1 auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 

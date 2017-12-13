@@ -1,8 +1,9 @@
 .options {
 
     bottom: 90px;
+    padding: 0 $content-padding-mobile;
     position: fixed;
-    width: calc(100% - #{$content-padding-mobile*2});
+    width: 100%;
 
     &__item {
         float: left;
