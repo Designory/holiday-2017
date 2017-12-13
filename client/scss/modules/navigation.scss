@@ -1,4 +1,6 @@
 .navigation {
+    $btn-width: 30px;
+
     bottom: $content-padding-mobile;
     padding: 0 $content-padding-mobile;
     position: fixed;
@@ -16,22 +18,26 @@
                 size: contain;
             }
             float: right;
-            height: 24px;
-            width: 29px;
+            height: 25px;
+            width: $btn-width;
+            transition: opacity .4s;
 
             [data-view="2"] & {
-                display: none;
+                opacity: 0;
             }
         }
 
         &--prev {
-            display: none;
+            opacity: 0;
             position: fixed;
+            transition: opacity .4s;
             top: $content-padding-mobile;
             left: $content-padding-mobile;
+            z-index: -1;
 
             [data-view="2"] & {
-                display: block;
+                opacity: 1;
+                z-index: 0;
             }
         }
     }
@@ -39,10 +45,13 @@
     &__logo {
         display: inline-block;
         vertical-align: middle;
+        text-align: center;
+        transition: all .4s;
+        width: 100px;
 
         [data-view="2"] & {
-            display: block;
-            text-align: center;
+            padding-left: $btn-width;
+            width: calc(100% - #{$btn-width});
         }
     }
 
