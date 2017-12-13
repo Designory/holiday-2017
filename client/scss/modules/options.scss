@@ -1,9 +1,28 @@
 .options {
 
+    bottom: 110px;
+    position: fixed;
+    width: calc(100% - #{$content-padding-mobile*2});
+
     &__item {
         float: left;
+        position: relative;
         width: 33.3333%;
+    }
 
+    &__icon {
+        display: block;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    &__widget {
         display: none;
+        position: absolute;
+        top: 45px;
+
+        &--open {
+            display: block;
+        }
     }
 }

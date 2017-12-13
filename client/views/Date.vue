@@ -8,15 +8,21 @@
     <div class="options">
 
       <div class="options__item">
-        <div @click="randomize()">RANDOMIZE</div>
+        <img @click="showWidget(0)" class="options__icon" src="/static/calendar.png" alt="icon">
+        <div class="options__widget options__widget--0">
+          <AddToCalendar></AddToCalendar>
+        </div>
       </div>
         
       <div class="options__item">
-        <Social></Social>
+        <img @click="showWidget(1)" class="options__icon" src="/static/share.png" alt="icon">
+        <div class="options__widget options__widget--1">
+          <Social></Social>
+        </div>
       </div>
 
       <div class="options__item">
-        <AddToCalendar></AddToCalendar>
+        <img @click="randomize()" class="options__icon" src="/static/dice.png" alt="icon">
       </div>
       
     </div>
@@ -56,6 +62,16 @@ export default {
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
 
       setDate(randomMonth, randomDate);
+    },
+    showWidget(index) {
+      console.log(index);
+      this.closeWidgets();
+      document.querySelector(`.options__widget--${index}`).classList.add('options__widget--open');
+    },
+    closeWidgets() {
+      [...document.querySelectorAll('.options__widget')].forEach(elm => {
+        elm.classList.remove('options__widget--open');
+      })
     }
   }
 }

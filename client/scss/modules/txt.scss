@@ -23,6 +23,8 @@
 
     &--result-title {
         font-size: 2.75rem;
+        max-height: 210px;  // small screen 'protection
+        overflow: hidden;
     }
 
     &--result-desc {
