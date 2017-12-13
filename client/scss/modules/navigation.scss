@@ -51,6 +51,10 @@
         transition: all .4s;
         width: 100px;
 
+        @include bp('lg') {
+            width: 150px;
+        }
+
         [data-view="2"] & {
             padding-left: $btn-width;
             width: calc(100% - #{$btn-width});
@@ -58,7 +62,12 @@
     }
 
     &__img {
+        cursor: pointer;
         width: 100px;
+
+        @include bp('lg') {
+            width: 150px;
+        }
     }
 
     &__link {
