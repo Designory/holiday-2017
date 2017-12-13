@@ -6,7 +6,8 @@
   "scripts": {
     "test": "",
     "build": "webpack --config build/webpack.prod.js",
-    "dev": "node build/server.js"
+    "dev": "node build/server.js",
+    "serve":"npm run build && node server.js"
   },
   "author": "Anton Kuzniatsou <anton.kuzniatsou@designory.com>",
   "license": "MIT",
@@ -40,6 +41,7 @@
   "dependencies": {
     "add2calendar": "^1.0.0",
     "babel-runtime": "^6.18.0",
+    "express": "^4.16.2",
     "hammerjs": "^2.0.8",
     "json-loader": "^0.5.7",
     "promise-polyfill": "^6.0.2",
