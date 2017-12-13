@@ -1,8 +1,11 @@
 <template>
   <div>
-    <p class="txt txt--result-sub-title txt--center">On {{month}} {{date}}, celebrate</p>
-    <p class="txt txt--result-title txt--center">{{title}}</p>
-    <p class="txt txt--result-desc txt--center">{{description}}</p>
+
+    <div class="date">
+      <p class="txt txt--result-sub-title txt--center">On {{month}} {{date}}, celebrate</p>
+      <p class="txt txt--result-title txt--center">{{title}}</p>
+      <p class="txt txt--result-desc txt--center">{{description}}</p>
+    </div>
 
 
     <div class="options">
@@ -50,6 +53,7 @@ export default {
       return date + (date > 0 ? ['th', 'st', 'nd', 'rd'][(date > 3 && date < 21) || date % 10 > 3 ? 0 : date % 10] : '');
     },
     title() {
+      this.trickyFadeIn();
       return this.$store.state.holiday.title;
     },
     description() {   
@@ -60,8 +64,9 @@ export default {
     randomize() {
       let randomMonth = Math.floor(Math.random()*12),
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
-
+      
       setDate(randomMonth, randomDate);
+      this.closeWidgets();
     },
     showWidget(index) {
       this.closeWidgets();
@@ -71,6 +76,13 @@ export default {
       [...document.querySelectorAll('.options__widget')].forEach(elm => {
         elm.classList.remove('options__widget--open');
       })
+    },
+    trickyFadeIn() {
+      if (!document.getElementsByClassName('date')[0]) return; 
+      document.getElementsByClassName('date')[0].classList.remove('date--animated');
+      setTimeout(_=> {
+        document.getElementsByClassName('date')[0].classList.add('date--animated');
+      }, 200);
     }
   }
 }
