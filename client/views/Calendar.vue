@@ -2,19 +2,18 @@
   <div class="calendar">
     <p class="txt txt--center-xs">My reason to celebrate</p>
     
-    <CalendarMobile></CalendarMobile>
+    <Calendar></Calendar>
 
     
   </div>
 </template>
 
 <script>
-import CalendarMobile from '../components/CalendarMobile'
-import CalendarDesktop from '../components/CalendarDesktop'
+import Calendar from '../components/Calendar'
 
 export default {
     components: {
-      CalendarMobile
+      Calendar
     }
 }
 </script>

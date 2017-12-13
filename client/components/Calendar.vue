@@ -27,7 +27,6 @@ import 'vue-smooth-picker/dist/css/style.css';
 
 Vue.use(SmoothPicker);
 
-
   export default {
     name: 'calendar',
     data () {
@@ -116,7 +115,6 @@ Vue.use(SmoothPicker);
             randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
         
         this.setCalendarDate(randomMonth, randomDate);
-        
       },
       /**
        * Custom method for third party widget

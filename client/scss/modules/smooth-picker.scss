@@ -38,6 +38,10 @@
     }
     .smooth-picker-randomize {
         text-align: center;
+
+        @include bp('lg') {
+            display: none;
+        }
     }
     .smooth-picker-icon {
         height: 50px;

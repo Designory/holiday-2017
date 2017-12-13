@@ -47,6 +47,7 @@
     "vue-router": "^2.0.0",
     "vue-smooth-picker": "^0.3.6",
     "vue-social-sharing": "^2.3.3",
+    "vuejs-datepicker": "^0.9.21",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^4.0.0"
   },
