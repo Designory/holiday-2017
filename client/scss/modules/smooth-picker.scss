@@ -9,6 +9,10 @@
         overflow: hidden;
         position: relative;
         width: 270px;
+
+        @include bp('lg') {
+            display: none;
+        }
     }
     .smooth-picker-divider {
         background: $white;

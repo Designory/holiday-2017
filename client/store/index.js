@@ -25,12 +25,15 @@ const state = {
    * This object is just a place holder to see the structure
    */
   holiday: {
+    y: 2018,
     m: 1,
     d: 1,
     bg: 1,
     title: "New Year's Day",
     description: "Alcohol choice regret! But it's a new year and a clean slate!" 
   },
+
+  date: new Date(),
 
   /**
    * Set limit for number of views (just in case) ¯\_(ツ)_/¯

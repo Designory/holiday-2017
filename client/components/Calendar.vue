@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div class="smooth-picker-container">
+      <div class="smooth-picker-container" :data-date="date">
           <div class="smooth-picker-divider"></div>
           <div class="smooth-picker-window smooth-picker-window--left"></div>
           <div class="smooth-picker-window smooth-picker-window--right"></div>
@@ -12,7 +12,7 @@
         <p class="smooth-picker-text">RANDOMIZE</p>
       </div>
 
-      <datepicker></datepicker>
+      <Calendar></Calendar>
     </div>
 </template>
 
@@ -26,16 +26,14 @@ import { setDate } from '../scripts/utils'
 
 import SmoothPicker from 'vue-smooth-picker'
 import 'vue-smooth-picker/dist/css/style.css'
-import Datepicker from 'vuejs-datepicker'
-
-
+import Calendar from './CalendarDesktop'
 
 Vue.use(SmoothPicker);
 
   export default {
     name: 'calendar',
     components: {
-      Datepicker
+      Calendar
     },
     data () {
       return {
