@@ -1,6 +1,6 @@
 <template>
-  <div class="calendar">
-    <p class="txt txt--center-xs">My reason to celebrate</p>
+  <div class="vdp-datepicker__screen">
+    <p class="txt txt--center-xs vdp-datepicker__title">My reason to celebrate</p>
     
     <Calendar></Calendar>
 

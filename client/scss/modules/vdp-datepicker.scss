@@ -1,10 +1,61 @@
 #app .vdp-datepicker {
+    display: none;
+
+    @include bp('lg') {
+        display: inline-block;
+    }
+
+    // separator for calendar (input) ¯\_(ツ)_/¯
+    &:before {
+        display: block;
+        content: '';
+        width: 4px;
+        height: 2rem;
+        background: $white;
+        position: absolute;
+        top: 2rem;
+        transform: rotate(20deg);
+        left: 52%;
+    }
+
+    &__screen {
+        padding-top: 30vh;
+    }
+
+    &__container {
+        padding-left: 50vw;
+    }
+
+    &__text {
+        text-decoration: underline;
+    }
 
     &__calendar {
         background: rgba(0,0,0,0);
     }
 
+    &__randomize {
+        display: none;
+
+        @include bp('lg') {
+            display: block;
+        }
+    }
+
     .day.selected {
         background: rgba(0,0,0,0);
     }
+
+    input[type="text"] {
+        background: rgba(0,0,0,0);
+        border-radius: 10px;
+        border: 6px solid $white;
+        color: $white;
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+        outline: none;
+        padding: 1rem 0 1rem 3rem;
+        position: relative;
+        width: 340px;
+    } 
 }

@@ -1,14 +1,13 @@
 <template>
-    <div>
+    <div class="vdp-datepicker__container">
         <datepicker 
             :value="value"
             :maximum-view="'day'" 
             :format="mmmDD"
             v-on:input="val => {updateDate(val)}"></datepicker>
 
-        <div class="vdp-datepicker-randomize" @click="randomize()">
-            <img class="vdp-datepicker-icon" src="/static/randomize.png" alt="img">
-            <p class="vdp-datepicker-text">RANDOMIZE</p>
+        <div class="vdp-datepicker__randomize" @click="randomize()">
+            <p class="vdp-datepicker__text">Randomize</p>
         </div>
     </div>
 </template>
@@ -44,10 +43,10 @@ export default {
             setDate(randomMonth, randomDate);            
         },
         mmmDD(value) {
-            let month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][value.getMonth()],
+            let month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'][value.getMonth()],
                 date = value.getDate();
 
-            return `${month} ${date}`;
+            return `${month}         ${date}`;
         }
     }
 }

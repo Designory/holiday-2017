@@ -35,7 +35,7 @@ const state = {
 
   /**
    * Used sometimes...
-   * Updated sometimes...
+   * Updated sometimes... CalendarDesktop for instance
    */
   date: new Date(),
 

@@ -1,5 +1,7 @@
 <template>
     <div>
+
+      <!-- Mobile -->
       <div class="smooth-picker-container">
           <div class="smooth-picker-divider"></div>
           <div class="smooth-picker-window smooth-picker-window--left"></div>
@@ -12,7 +14,9 @@
         <p class="smooth-picker-text">RANDOMIZE</p>
       </div>
 
-      <Calendar></Calendar>
+      <!-- Desktop -->
+      <Calendar></Calendar> 
+      
     </div>
 </template>
 
