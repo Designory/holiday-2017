@@ -11,6 +11,8 @@
         <img class="smooth-picker-icon" src="/static/randomize.png" alt="img">
         <p class="smooth-picker-text">RANDOMIZE</p>
       </div>
+
+      <datepicker></datepicker>
     </div>
 </template>
 
@@ -20,15 +22,21 @@
 \*****************************************************************************/
 import Vue from 'vue'
 import store from '../store'
-import { setDate } from '../scripts/utils';
+import { setDate } from '../scripts/utils'
 
-import SmoothPicker from 'vue-smooth-picker';
-import 'vue-smooth-picker/dist/css/style.css';
+import SmoothPicker from 'vue-smooth-picker'
+import 'vue-smooth-picker/dist/css/style.css'
+import Datepicker from 'vuejs-datepicker'
+
+
 
 Vue.use(SmoothPicker);
 
   export default {
     name: 'calendar',
+    components: {
+      Datepicker
+    },
     data () {
       return {
         data: [
