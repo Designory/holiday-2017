@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    &__elm {
+        display: inline-block;
+        margin: 1rem 0;
+        text-align: center;
+    }
+}

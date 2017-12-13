@@ -1,0 +1,42 @@
+.gradient {
+    z-index: -1;
+    
+    &__layer {
+        @extend %layer;
+        
+        opacity: 0;
+        transition: all 1s;
+
+        // define all the gradients
+        @each $number, $left-color, $right-color in (1, #ffe400, #0dd902),
+                                                    (2, #2ae905, #01ffaf),
+                                                    (3, #00faa4, #00d1fc),
+                                                    (4, #03c9fc, #030b75),
+                                                    (5, #2a03bb, #cd00fb),
+                                                    (6, #cb00fb, #fe0407),
+                                                    (7, #ff0313, #fd016b),
+                                                    (8, #fd187a, #ffa701),
+                                                    (9, #fe8f0b, #fed81f),
+                                                    (10, #ff1a00, #ffe400) {
+            &--#{$number} {
+                background: linear-gradient(to right, $left-color, $right-color);
+            }
+        }
+
+        // set visability for aproper layer
+        @for $i from 1 through 10 {
+            [data-bg="#{$i}"] &--#{$i} {
+                opacity: 1;
+            }
+        }
+
+        // display animated layer at resulting screen
+        &--snowflakes {
+
+            [data-view="2"] & {
+                opacity: 1;
+                // background: rgba(0,0,0,.6);
+            }
+        }
+    }
+}

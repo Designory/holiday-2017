@@ -1,0 +1,77 @@
+.navigation {
+    $btn-width: 30px;
+
+    bottom: $content-padding-mobile;
+    padding: 0 $content-padding-mobile;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+
+        &--next {
+            background: {
+                image: url('/static/arrow.png');
+                repeat: no-repeat;
+                size: contain;
+            }
+            float: right;
+            height: 25px;
+            width: $btn-width;
+            transition: opacity .4s;
+
+            [data-view="2"] & {
+                opacity: 0;
+            }
+        }
+
+        &--prev {
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            transition: opacity .4s;
+            top: $content-padding-mobile;
+            left: $content-padding-mobile;
+            z-index: -1;
+
+            [data-view="2"] & {
+                opacity: 1;
+                pointer-events: all;
+                z-index: 0;
+            }
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        transition: all .4s;
+        width: 100px;
+
+        @include bp('lg') {
+            width: 150px;
+        }
+
+        [data-view="2"] & {
+            padding-left: $btn-width;
+            width: calc(100% - #{$btn-width});
+        }
+    }
+
+    &__img {
+        cursor: pointer;
+        width: 100px;
+
+        @include bp('lg') {
+            width: 150px;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+}
