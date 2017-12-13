@@ -29,10 +29,10 @@ import 'vue-smooth-picker/dist/css/style.css';
 
 Vue.use(SmoothPicker);
 
+
   export default {
     name: 'calendar',
     data () {
-
       return {
         data: [
           {
@@ -146,6 +146,10 @@ Vue.use(SmoothPicker);
           ];
         })
       }
+    },
+    created() {
+      // adding a handler for 'shake gesture' event (mobile only), unless you have desktop with accellerometer
+      window.addEventListener('shake', this.randomize, false);
     }
   }
 </script>
