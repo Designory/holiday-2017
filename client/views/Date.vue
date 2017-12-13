@@ -1,15 +1,34 @@
 <template>
   <div>
-    <p class="txt">On {{month}} {{date}}, celebrate</p>
-    <p class="txt txt--center">{{title}}</p>
-    <p class="txt txt--center">{{description}}</p>
 
-    <div @click="randomize()">RANDOMIZE</div>
-    
-    <Social></Social>
-    <AddToCalendar></AddToCalendar>
+    <div class="date">
+      <p class="txt txt--result-sub-title txt--center">On {{month}} {{date}}, celebrate</p>
+      <p class="txt txt--result-title txt--center">{{title}}</p>
+      <p class="txt txt--result-desc txt--center">{{description}}</p>
+    </div>
 
-    <p id="test"></p>
+
+    <div class="options">
+
+      <div class="options__item">
+        <img @click="showWidget(0)" class="options__icon" src="/static/calendar.png" alt="icon">
+        <div class="options__widget options__widget--0">
+          <AddToCalendar></AddToCalendar>
+        </div>
+      </div>
+        
+      <div class="options__item">
+        <img @click="showWidget(1)" class="options__icon" src="/static/share.png" alt="icon">
+        <div class="options__widget options__widget--1">
+          <Social></Social>
+        </div>
+      </div>
+
+      <div class="options__item">
+        <img @click="randomize()" class="options__icon" src="/static/dice.png" alt="icon">
+      </div>
+      
+    </div>
   </div>
 </template>
 
@@ -34,6 +53,7 @@ export default {
       return date + (date > 0 ? ['th', 'st', 'nd', 'rd'][(date > 3 && date < 21) || date % 10 > 3 ? 0 : date % 10] : '');
     },
     title() {
+      this.trickyFadeIn();
       return this.$store.state.holiday.title;
     },
     description() {   
@@ -44,8 +64,25 @@ export default {
     randomize() {
       let randomMonth = Math.floor(Math.random()*12),
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
-
+      
       setDate(randomMonth, randomDate);
+      this.closeWidgets();
+    },
+    showWidget(index) {
+      this.closeWidgets();
+      document.querySelector(`.options__widget--${index}`).classList.add('options__widget--open');
+    },
+    closeWidgets() {
+      [...document.querySelectorAll('.options__widget')].forEach(elm => {
+        elm.classList.remove('options__widget--open');
+      })
+    },
+    trickyFadeIn() {
+      if (!document.getElementsByClassName('date')[0]) return; 
+      document.getElementsByClassName('date')[0].classList.remove('date--animated');
+      setTimeout(_=> {
+        document.getElementsByClassName('date')[0].classList.add('date--animated');
+      }, 200);
     }
   }
 }

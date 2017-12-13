@@ -1,5 +1,5 @@
 <template>
-    <div id="test" :data-date="date">some data</div>
+    <div id="test" :data-date="date"></div>
 </template>
 
 <script>

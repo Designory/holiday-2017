@@ -11,6 +11,7 @@
       <div class="gradient__layer gradient__layer--8"></div>
       <div class="gradient__layer gradient__layer--9"></div>
       <div class="gradient__layer gradient__layer--10"></div>
+      <div class="gradient__layer gradient__layer--snowflakes"></div>
   </div>
 </template>
 

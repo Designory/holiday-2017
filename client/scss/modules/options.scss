@@ -1,0 +1,39 @@
+.options {
+
+    bottom: 90px;
+    position: fixed;
+    width: calc(100% - #{$content-padding-mobile*2});
+
+    &__item {
+        float: left;
+        position: relative;
+        width: 33.3333%;
+    }
+
+    &__icon {
+        display: block;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    &__widget {
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: -40px;
+        transition: opacity .2s, top .2s;
+        width: 80vw;
+        z-index: -1;
+
+        &--open {
+            opacity: 1;
+            top: -70px;
+        }
+
+        &--1 {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
