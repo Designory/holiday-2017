@@ -111,31 +111,35 @@ Vue.use(SmoothPicker);
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
         }
       },
+      randomize() {
+        let randomMonth = Math.floor(Math.random()*12),
+            randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
+        
+        this.setCalendarDate(randomMonth, randomDate);
+        
+      },
       /**
        * Custom method for third party widget
        * 1. Update widget's group data
        * 2. Update store.state
        * 3. Render widget with updated data for currentIndex
        */
-      randomize() {
-        let randomMonth = Math.floor(Math.random()*12),
-            randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
-        
+      setCalendarDate(month, date) {
         // update group data for widget
         // month => data[1]
         // date => data[2]
         this.$refs.smoothPicker.setGroupData(1, { 
             ...this.$refs.smoothPicker.data[1], 
-            currentIndex: randomMonth
+            currentIndex: month
           });
         this.$refs.smoothPicker.setGroupData(2, { 
           ...this.$refs.smoothPicker.data[2], 
-          currentIndex: randomDate
+          currentIndex: date
         });
         
         // update state
         // then render widget with updated data
-        setDate(randomMonth, randomDate).then(_=> {
+        setDate(month, date).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
             { ...this.data[0]},

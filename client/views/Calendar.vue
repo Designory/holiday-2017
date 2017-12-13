@@ -10,6 +10,7 @@
 
 <script>
 import CalendarMobile from '../components/CalendarMobile'
+import CalendarDesktop from '../components/CalendarDesktop'
 
 export default {
     components: {
