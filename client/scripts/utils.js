@@ -13,7 +13,7 @@ function pushState(params) {
         // overwrite current state
         store.state.params = params;
         store.state.holiday = findHoliday(params.month, params.date, data.holidays);
-
+        
         // push state
         router.push({
             path: `/params`,
@@ -90,10 +90,7 @@ function normalizeParams({ view, month, date }) {
 function findHoliday(month, date, arr) {
     for (let day of arr) if (month === day.m && date === day.d) return day;
     // else if not found return 1st 'available' day of the month
-    for (let day of arr) if (month === day.m) {
-        setDate(day.m, day.d);
-        return day;
-    }    
+    for (let day of arr) if (month === day.m) return day;
 }
 
 export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };
