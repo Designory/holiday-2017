@@ -23,7 +23,7 @@
         text-align: center;
 
         @include bp('lg') {
-            font-size: 2.75rem;
+            font-size: 2.25rem;
             font-weight: 400;
             margin-bottom: .5rem;
         }
@@ -35,7 +35,8 @@
         text-align: center;
 
         @include bp('lg') {
-            font-size: 8rem;
+            font-size: 6rem;
+            line-height: 6rem;
         }
     }
 
@@ -50,7 +51,7 @@
         text-align: center;
 
         @include bp('lg') {
-            font-size: 2.75rem;
+            font-size: 1.75rem;
         }
     }
 
