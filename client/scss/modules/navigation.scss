@@ -58,6 +58,11 @@
         [data-view="2"] & {
             padding-left: $btn-width;
             width: calc(100% - #{$btn-width});
+
+            @include bp('lg') {
+                padding: 0;
+                width: 150px;
+            }
         }
     }
 

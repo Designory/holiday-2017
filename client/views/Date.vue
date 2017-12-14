@@ -62,7 +62,7 @@ export default {
     height() {
       // you mioght think why? ¯\_(ツ)_/¯
       // well, because of damned ios safari dynamic nav bars
-      return this.$store.state.screen.height - 190;
+      return this.$store.state.screen.height - (this.$store.state.screen.width < 1025 ? 190 : 290);
     }
   },
   methods: {
