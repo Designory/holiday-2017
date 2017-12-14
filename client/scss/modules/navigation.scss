@@ -52,6 +52,8 @@
 
         &--desktop {
             float: none;
+            height: 30px;
+            width: 50px;
 
             @include bp('sm') {
                 display: none;
