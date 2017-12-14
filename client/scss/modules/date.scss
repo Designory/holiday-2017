@@ -6,6 +6,10 @@
     padding: $content-padding-mobile*2 $content-padding-mobile 0 $content-padding-mobile;
     transition: opacity .2s;
 
+    @include bp('lg') {
+        padding-top: $content-padding-mobile*4;
+    }
+
     &--animated {
         animation: 1s fadeIn;
         opacity: 1;
@@ -21,7 +25,7 @@
         @include bp('lg') {
             font-size: 2.75rem;
             font-weight: 400;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
     }
 

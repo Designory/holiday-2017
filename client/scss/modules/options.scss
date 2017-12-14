@@ -1,7 +1,10 @@
 .options {
 
+    $space-for-icons: 60px;
+
     padding: 0 $content-padding-mobile;
-    margin-top: 60px; // to preserve space for widget icons
+    margin: $space-for-icons auto 0 auto; // to preserve space for widget icons
+    max-width: 1024px;
     width: 100%;
 
     &__item {
@@ -14,6 +17,18 @@
         display: block;
         height: 40px;
         margin: 0 auto;
+
+        @include bp('lg') {
+            height: 70px;
+        }
+    }
+
+    &__icon-desc {
+        display: none;
+
+        @include bp('lg') {
+            display: block;
+        }
     }
 
     &__widget {
