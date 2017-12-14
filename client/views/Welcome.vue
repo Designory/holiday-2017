@@ -5,6 +5,7 @@
     </p>
     <p class="txt txt--strong txt--center-lg">
        Enter a day — any day. And we’ll show you your reason to celebrate.
+       <span class="navigation__btn navigation__btn--next navigation__btn--desktop" @click="$store.dispatch('nextView')"></span>
     </p>
   </div>
 </template>

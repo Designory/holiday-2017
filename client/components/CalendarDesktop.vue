@@ -8,6 +8,8 @@
                 :format="mmmDD"
                 v-on:input="val => {updateDate(val)}"></datepicker>
 
+                <span class="navigation__btn navigation__btn--next navigation__btn--desktop navigation__btn--calendar" @click="$store.dispatch('nextView')"></span>
+
             <div class="vdp-datepicker__randomize" @click="randomize()">
                 <p class="vdp-datepicker__text">Randomize</p>
             </div>
@@ -33,7 +35,7 @@ export default {
     methods: {
         updateDate(val) {
             let selected = new Date(val),
-                month = selected.getMonth(),
+                month = selected.getMonth() + 1,
                 date = selected.getDate();
                 
                 setDate(month, date);

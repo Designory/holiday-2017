@@ -7,6 +7,7 @@
 
     @include bp('lg') {
         display: inline-block;
+        margin-bottom: 1rem;        
     }
 
     // separator for calendar (input) ¯\_(ツ)_/¯
@@ -45,6 +46,10 @@
         @include bp('sm') {
             display: none;
         }
+
+        @include bp('lg') {
+            transform: translateY(5%); // micro adjustments for a nicer alignmet
+        }
     }
 
     &__text {
@@ -55,7 +60,7 @@
         background: rgba(0,0,0,0);
         border: 6px solid $white;
         border-radius: 10px;
-        top: calc(100% + 2rem);
+        top: calc(100% + 3rem);
         width: $calendar-width-descktop;
 
         &:before {
@@ -90,10 +95,10 @@
         border: 6px solid $white;
         color: $white;
         font-size: 2.6rem;
-        margin-bottom: 1rem;
         outline: none;
         padding: 1rem 0 1rem 3rem;
         position: relative;
+        vertical-align: middle;
         width: $calendar-width-descktop;
     } 
 

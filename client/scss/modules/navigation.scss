@@ -3,7 +3,7 @@
 
     bottom: $content-padding-mobile;
     padding: 0 $content-padding-mobile;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1;
 
@@ -42,6 +42,25 @@
                 pointer-events: all;
                 z-index: 0;
             }
+        }
+
+        &--mobile {
+            @include bp('lg') {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            float: none;
+
+            @include bp('sm') {
+                display: none;
+            }
+        }
+
+        &--calendar {
+            margin-left: 1rem;
+            vertical-align: middle;
         }
     }
 
