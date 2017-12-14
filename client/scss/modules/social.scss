@@ -8,30 +8,25 @@
 
         &--email {
             background: url('/static/email.png') no-repeat;
+            background-size: contain;
             background-position: center;
         }
 
         &--fb {
-            background: url('/static/fb.png') no-repeat;
+            background: url('/static/facebook.png') no-repeat;
+            background-size: contain;
             background-position: center;
         }
 
         &--linked {
-            background: url('/static/linked.png') no-repeat;
+            background: url('/static/linkedin.svg') no-repeat;
+            background-size: contain;
             background-position: center;
-        }
-
-        &--sms {
-            background: url('/static/sms.png') no-repeat;
-            background-position: center;
-
-            @include bp('lg') {
-                display: none;
-            }
         }
 
         &--twitter {
-            background: url('/static/twitter.png') no-repeat;
+            background: url('/static/twitter.svg') no-repeat;
+            background-size: contain;
             background-position: center;
         }
     }
