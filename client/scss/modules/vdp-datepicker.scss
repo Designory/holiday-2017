@@ -6,6 +6,7 @@
     }
 
     // separator for calendar (input) ¯\_(ツ)_/¯
+
     &:before {
         display: block;
         content: '';
@@ -18,12 +19,23 @@
         left: 52%;
     }
 
+    //inner elements
+
     &__screen {
-        padding-top: 30vh;
+        text-align: center;
+        margin-top: 45vh;
+        transform: translateY(-50%);
     }
 
     &__container {
-        padding-left: 50vw;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: top;
     }
 
     &__text {
@@ -32,6 +44,8 @@
 
     &__calendar {
         background: rgba(0,0,0,0);
+        top: calc(100% + 2rem);
+        width: $calendar-width-descktop;
     }
 
     &__randomize {
@@ -56,6 +70,6 @@
         outline: none;
         padding: 1rem 0 1rem 3rem;
         position: relative;
-        width: 340px;
+        width: $calendar-width-descktop;
     } 
 }

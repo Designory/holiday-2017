@@ -1,13 +1,16 @@
 <template>
-    <div class="vdp-datepicker__container">
-        <datepicker 
-            :value="value"
-            :maximum-view="'day'" 
-            :format="mmmDD"
-            v-on:input="val => {updateDate(val)}"></datepicker>
+    <div class="vdp-datepicker__screen">
+        <p class="txt txt--center-xs vdp-datepicker__title">My reason to celebrate</p>
+        <div class="vdp-datepicker__container">
+            <datepicker 
+                :value="value"
+                :maximum-view="'day'" 
+                :format="mmmDD"
+                v-on:input="val => {updateDate(val)}"></datepicker>
 
-        <div class="vdp-datepicker__randomize" @click="randomize()">
-            <p class="vdp-datepicker__text">Randomize</p>
+            <div class="vdp-datepicker__randomize" @click="randomize()">
+                <p class="vdp-datepicker__text">Randomize</p>
+            </div>
         </div>
     </div>
 </template>
