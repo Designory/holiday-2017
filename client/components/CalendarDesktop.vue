@@ -6,7 +6,12 @@
                 :value="value"
                 :maximum-view="'day'" 
                 :format="mmmDD"
-                v-on:input="val => {updateDate(val)}"></datepicker>
+                :disabled="{
+                    to: new Date(2017, 11, 15),
+                    from: new Date(2018, 11, 14)
+                }"
+                v-on:input="val => {updateDate(val)}"
+                ></datepicker>
 
                 <span class="navigation__btn navigation__btn--next navigation__btn--desktop navigation__btn--calendar" @click="$store.dispatch('nextView')"></span>
 

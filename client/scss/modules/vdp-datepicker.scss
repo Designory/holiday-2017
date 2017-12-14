@@ -88,6 +88,9 @@
     .day.selected {
         background: rgba(0,0,0,0);
     }
+    .day.disabled {
+        opacity: .5;
+    }
 
     input[type="text"] {
         background: rgba(0,0,0,0);
