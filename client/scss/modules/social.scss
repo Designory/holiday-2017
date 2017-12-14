@@ -1,23 +1,29 @@
 .social {
     display: inline-block;
+    text-align: center;
+    width: 100%;
 
     &__elm {
         @extend %share-icon;
 
         &--email {
             background: url('/static/email.png') no-repeat;
+            background-position: center;
         }
 
         &--fb {
             background: url('/static/fb.png') no-repeat;
+            background-position: center;
         }
 
         &--linked {
             background: url('/static/linked.png') no-repeat;
+            background-position: center;
         }
 
         &--sms {
             background: url('/static/sms.png') no-repeat;
+            background-position: center;
 
             @include bp('lg') {
                 display: none;
@@ -26,7 +32,7 @@
 
         &--twitter {
             background: url('/static/twitter.png') no-repeat;
-            background-position: left center;
+            background-position: center;
         }
     }
 }
