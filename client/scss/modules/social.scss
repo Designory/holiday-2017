@@ -1,10 +1,32 @@
 .social {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
 
     &__elm {
-        display: inline-block;
-        margin: 1rem 0;
-        text-align: center;
+        @extend %share-icon;
+
+        &--email {
+            background: url('/static/email.png') no-repeat;
+        }
+
+        &--fb {
+            background: url('/static/fb.png') no-repeat;
+        }
+
+        &--linked {
+            background: url('/static/linked.png') no-repeat;
+        }
+
+        &--sms {
+            background: url('/static/sms.png') no-repeat;
+
+            @include bp('lg') {
+                display: none;
+            }
+        }
+
+        &--twitter {
+            background: url('/static/twitter.png') no-repeat;
+            background-position: left center;
+        }
     }
 }

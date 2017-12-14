@@ -1,21 +1,10 @@
+/*********************************\
+< * Tweaking third party styles * >
+\*********************************/
 .a2cldr {
-    $link-size: 30px;
 
     .a2cldr-item {
-        background-size: contain;
-        color: rgba(0,0,0,0);
-        display: inline-block;
-        font-size: 0;
-        height: $link-size;
-        margin-right: 1rem;
-        text-indent: -9999px;
-        width: $link-size;
-
-        a {
-            display: block;
-            height: $link-size;
-            width: $link-size;
-        }
+        @extend %share-icon;
     }
 
     .a2cldr-google {

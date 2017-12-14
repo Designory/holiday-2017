@@ -2,7 +2,7 @@
   <div>
 
     <div class="date" :style="`height: ${height}px`">
-      <p class="date__sub-title txt">On {{month}} {{date}}, celebrate</p>
+      <p class="date__sub-title txt">On <span class="date__date">{{month}} {{date}}</span>, celebrate</p>
       <p class="date__title txt">{{title}}</p>
       <p class="date__desc txt">{{description}}</p>
     </div>
@@ -10,22 +10,25 @@
 
     <div class="options">
 
-      <div class="options__item">
-        <img @click="showWidget(0)" class="options__icon" src="/static/calendar.png" alt="icon">
+      <div @click="showWidget(0)" class="options__item">
+        <img class="options__icon" src="/static/calendar.png" alt="icon">
+        <p class="options__icon-desc txt">ADD TO CALENDAR</p>
         <div class="options__widget options__widget--0">
           <AddToCalendar></AddToCalendar>
         </div>
       </div>
         
-      <div class="options__item">
-        <img @click="showWidget(1)" class="options__icon" src="/static/share.png" alt="icon">
+      <div @click="showWidget(1)" class="options__item">
+        <img class="options__icon" src="/static/share.png" alt="icon">
+        <p class="options__icon-desc txt">SHARE TO SOCIAL MEDIA</p>
         <div class="options__widget options__widget--1">
           <Social></Social>
         </div>
       </div>
 
-      <div class="options__item">
-        <img @click="randomize()" class="options__icon" src="/static/dice.png" alt="icon">
+      <div @click="randomize()" class="options__item">
+        <img class="options__icon" src="/static/dice.png" alt="icon">
+        <p class="options__icon-desc txt">RANDOM NEW DATE</p>
       </div>
       
     </div>
@@ -60,9 +63,9 @@ export default {
       return this.$store.state.holiday.description;
     },
     height() {
-      // you mioght think why? ¯\_(ツ)_/¯
+      // you might think why? ¯\_(ツ)_/¯
       // well, because of damned ios safari dynamic nav bars
-      return this.$store.state.screen.height - 190;
+      return this.$store.state.screen.height - (this.$store.state.screen.width < 1025 ? 190 : 320);
     }
   },
   methods: {

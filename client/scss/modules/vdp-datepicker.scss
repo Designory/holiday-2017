@@ -1,3 +1,7 @@
+/*********************************\
+< * Tweaking third party styles * >
+\*********************************/
+
 #app .vdp-datepicker {
     display: none;
 
@@ -28,6 +32,7 @@
     }
 
     &__container {
+        cursor: pointer;
         display: inline-block;
         text-align: left;
     }
