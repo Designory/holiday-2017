@@ -14,6 +14,10 @@
         text-indent: -9999px;
         width: $link-size;
 
+        @include bp('lg') {
+            margin-left: 1rem;
+        }
+
         a {
             display: block;
             height: $link-size;
