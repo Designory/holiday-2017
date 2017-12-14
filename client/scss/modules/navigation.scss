@@ -43,6 +43,25 @@
                 z-index: 0;
             }
         }
+
+        &--mobile {
+            @include bp('lg') {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            float: none;
+
+            @include bp('sm') {
+                display: none;
+            }
+        }
+
+        &--calendar {
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
     }
 
     &__logo {

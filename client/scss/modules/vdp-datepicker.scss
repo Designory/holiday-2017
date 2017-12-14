@@ -7,6 +7,7 @@
 
     @include bp('lg') {
         display: inline-block;
+        margin-bottom: 1rem;        
     }
 
     // separator for calendar (input) ¯\_(ツ)_/¯
@@ -90,10 +91,10 @@
         border: 6px solid $white;
         color: $white;
         font-size: 2.6rem;
-        margin-bottom: 1rem;
         outline: none;
         padding: 1rem 0 1rem 3rem;
         position: relative;
+        vertical-align: middle;
         width: $calendar-width-descktop;
     } 
 
