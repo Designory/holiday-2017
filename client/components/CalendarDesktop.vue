@@ -35,7 +35,7 @@ export default {
     methods: {
         updateDate(val) {
             let selected = new Date(val),
-                month = selected.getMonth(),
+                month = selected.getMonth() + 1,
                 date = selected.getDate();
                 
                 setDate(month, date);
