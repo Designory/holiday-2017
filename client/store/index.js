@@ -40,6 +40,14 @@ const state = {
   date: new Date(),
 
   /**
+   * Used in some cases to update view
+   */
+  screen: {
+    height: window.innerHeight,
+    width: window.innerWidth
+  },
+
+  /**
    * Set limit for number of views (just in case) ¯\_(ツ)_/¯
    */
   limit: 2, // number of pages 3 => 0, 1, 2
