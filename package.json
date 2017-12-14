@@ -18,6 +18,9 @@
       "browser"
     ]
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "babel": {
     "presets": [
       [
