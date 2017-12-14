@@ -8,7 +8,7 @@
                 :format="mmmDD"
                 :disabled="{
                     to: new Date(2017, 11, 15),
-                    from: new Date(2018, 11, 14)
+                    from: new Date(2018, 11, 15)
                 }"
                 v-on:input="val => {updateDate(val)}"
                 ></datepicker>
