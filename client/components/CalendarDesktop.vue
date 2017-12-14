@@ -49,7 +49,7 @@ export default {
             let randomMonth = Math.floor(Math.random()*12),
                 randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
 
-            store.state.date = new Date(2018, randomMonth, randomDate);
+            store.state.date = new Date(2018, randomMonth - 1, randomDate);
             setDate(randomMonth, randomDate);            
         },
         mmmDD(value) {
