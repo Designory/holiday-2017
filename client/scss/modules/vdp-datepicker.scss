@@ -44,8 +44,23 @@
 
     &__calendar {
         background: rgba(0,0,0,0);
+        border: 6px solid $white;
+        border-radius: 10px;
         top: calc(100% + 2rem);
         width: $calendar-width-descktop;
+
+        &:before {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: rgba(0, 0, 0, 0) solid 20px;
+            border-right: rgba(0, 0, 0, 0) solid 20px;
+            border-bottom: $white solid 20px;
+            position: absolute;
+            left: calc(50% - 10px);
+            top: -23px;
+        }
     }
 
     &__randomize {
@@ -72,4 +87,32 @@
         position: relative;
         width: $calendar-width-descktop;
     } 
+
+    header {
+        .prev {
+            background: rgba(0, 0, 0, 0);
+
+            &:after {
+                border-right-color: $white;
+            }
+        }
+        .next {
+            background: rgba(0, 0, 0, 0);
+
+            &:after {
+                border-left-color: $white;
+            }
+        }
+    }
+
+    .cell {
+        background-color: rgba(0,0,0,0);
+        border: none;
+        transition: background-color .3s;
+
+        &.day:hover {
+            background-color: rgba(0,0,0,.1);
+            cursor: pointer;
+        }
+    }
 }
