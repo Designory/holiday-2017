@@ -25,12 +25,19 @@ const state = {
    * This object is just a place holder to see the structure
    */
   holiday: {
+    y: 2018,
     m: 1,
     d: 1,
     bg: 1,
     title: "New Year's Day",
     description: "Alcohol choice regret! But it's a new year and a clean slate!" 
   },
+
+  /**
+   * Used sometimes...
+   * Updated sometimes... CalendarDesktop for instance
+   */
+  date: new Date(),
 
   /**
    * Set limit for number of views (just in case) ¯\_(ツ)_/¯
@@ -41,9 +48,6 @@ const state = {
 const mutations = {
   // FORWARD (state) {
   //   state.views.current++;
-  // },
-  // BACK (state) {
-  //   state.views.current--;
   // }
 }
 

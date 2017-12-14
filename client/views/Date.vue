@@ -33,9 +33,9 @@
 </template>
 
 <script>
-import Social from '../components/Social';
-import AddToCalendar from '../components/AddToCalendar';
-import { setDate } from '../scripts/utils';
+import Social from '../components/Social'
+import AddToCalendar from '../components/AddToCalendar'
+import { setDate } from '../scripts/utils'
 
 export default {
   components: {

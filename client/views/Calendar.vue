@@ -1,19 +1,23 @@
 <template>
-  <div class="calendar">
-    <p class="txt txt--center-xs">My reason to celebrate</p>
-    
-    <div class="smooth-picker-container">
-      <div class="smooth-picker-divider"></div>
-      <div class="smooth-picker-window smooth-picker-window--left"></div>
-      <div class="smooth-picker-window smooth-picker-window--right"></div>
-      <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
-    </div>
+    <div>
+      <p class="txt txt--center-xs txt--show-xs">My reason to celebrate</p>
+      <!-- Mobile -->
+      <div class="smooth-picker-container">
+          <div class="smooth-picker-divider"></div>
+          <div class="smooth-picker-window smooth-picker-window--left"></div>
+          <div class="smooth-picker-window smooth-picker-window--right"></div>
+          <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
+      </div>
 
-    <div class="smooth-picker-randomize" @click="randomize()">
-      <img class="smooth-picker-icon" src="/static/randomize.png" alt="img">
-      <p class="smooth-picker-text">RANDOMIZE</p>
+      <div class="smooth-picker-randomize" @click="randomize()">
+        <img class="smooth-picker-icon" src="/static/randomize.png" alt="img">
+        <p class="smooth-picker-text">RANDOMIZE</p>
+      </div>
+
+      <!-- Desktop -->
+      <Calendar></Calendar> 
+      
     </div>
-  </div>
 </template>
 
 <script>
@@ -22,16 +26,19 @@
 \*****************************************************************************/
 import Vue from 'vue'
 import store from '../store'
-import { setDate } from '../scripts/utils';
+import { setDate } from '../scripts/utils'
 
-import SmoothPicker from 'vue-smooth-picker';
-import 'vue-smooth-picker/dist/css/style.css';
+import SmoothPicker from 'vue-smooth-picker'
+import 'vue-smooth-picker/dist/css/style.css'
+import Calendar from '../components/CalendarDesktop'
 
 Vue.use(SmoothPicker);
 
-
   export default {
     name: 'calendar',
+    components: {
+      Calendar
+    },
     data () {
       return {
         data: [
@@ -113,31 +120,34 @@ Vue.use(SmoothPicker);
           this.$refs.smoothPicker.setGroupData(2, { ...this.data[2], ...{ currentIndex, list }})
         }
       },
+      randomize() {
+        let randomMonth = Math.floor(Math.random()*12),
+            randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
+        
+        this.setCalendarDate(randomMonth, randomDate);
+      },
       /**
        * Custom method for third party widget
        * 1. Update widget's group data
        * 2. Update store.state
        * 3. Render widget with updated data for currentIndex
        */
-      randomize() {
-        let randomMonth = Math.floor(Math.random()*12),
-            randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
-        
+      setCalendarDate(month, date) {
         // update group data for widget
         // month => data[1]
         // date => data[2]
         this.$refs.smoothPicker.setGroupData(1, { 
             ...this.$refs.smoothPicker.data[1], 
-            currentIndex: randomMonth
+            currentIndex: month
           });
         this.$refs.smoothPicker.setGroupData(2, { 
           ...this.$refs.smoothPicker.data[2], 
-          currentIndex: randomDate
+          currentIndex: date
         });
         
         // update state
         // then render widget with updated data
-        setDate(randomMonth, randomDate).then(_=> {
+        setDate(month, date).then(_=> {
           this.dataChange(store.state.params.month, store.state.params.date - 1);
           this.data = [
             { ...this.data[0]},
