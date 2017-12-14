@@ -1,0 +1,135 @@
+/*********************************\
+< * Tweaking third party styles * >
+\*********************************/
+
+#app .vdp-datepicker {
+    display: none;
+
+    @include bp('lg') {
+        display: inline-block;
+        margin-bottom: 1rem;        
+    }
+
+    // separator for calendar (input) ¯\_(ツ)_/¯
+
+    &:before {
+        display: block;
+        content: '';
+        width: 4px;
+        height: 2rem;
+        background: $white;
+        position: absolute;
+        top: 2rem;
+        transform: rotate(20deg);
+        left: 52%;
+    }
+
+    //inner elements
+
+    &__screen {
+        text-align: center;
+        margin-top: 45vh;
+        transform: translateY(-50%);
+    }
+
+    &__container {
+        cursor: pointer;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: top;
+
+        @include bp('sm') {
+            display: none;
+        }
+
+        @include bp('lg') {
+            transform: translateY(5%); // micro adjustments for a nicer alignmet
+        }
+    }
+
+    &__text {
+        text-decoration: underline;
+    }
+
+    &__calendar {
+        background: rgba(0,0,0,0);
+        border: 6px solid $white;
+        border-radius: 10px;
+        top: calc(100% + 3rem);
+        width: $calendar-width-descktop;
+
+        &:before {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: rgba(0, 0, 0, 0) solid 20px;
+            border-right: rgba(0, 0, 0, 0) solid 20px;
+            border-bottom: $white solid 20px;
+            position: absolute;
+            left: calc(50% - 10px);
+            top: -23px;
+        }
+    }
+
+    &__randomize {
+        display: none;
+
+        @include bp('lg') {
+            display: block;
+        }
+    }
+
+    .day.selected {
+        background: rgba(0,0,0,0);
+    }
+    .day.disabled {
+        opacity: .5;
+    }
+
+    input[type="text"] {
+        background: rgba(0,0,0,0);
+        border-radius: 10px;
+        border: 6px solid $white;
+        color: $white;
+        font-size: 2.6rem;
+        outline: none;
+        padding: 1rem 0 1rem 3rem;
+        position: relative;
+        vertical-align: middle;
+        width: $calendar-width-descktop;
+    } 
+
+    header {
+        .prev {
+            background: rgba(0, 0, 0, 0);
+
+            &:after {
+                border-right-color: $white;
+            }
+        }
+        .next {
+            background: rgba(0, 0, 0, 0);
+
+            &:after {
+                border-left-color: $white;
+            }
+        }
+    }
+
+    .cell {
+        background-color: rgba(0,0,0,0);
+        border: none;
+        transition: background-color .3s;
+
+        &.day:hover {
+            background-color: rgba(0,0,0,.1);
+            cursor: pointer;
+        }
+    }
+}

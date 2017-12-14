@@ -1,0 +1,9 @@
+@mixin bp($bp) {
+  @if $bp == sm {
+    @media (max-width: 1023px) { @content; }
+  }
+ 
+  @else if $bp == lg {
+    @media (min-width: 1024px) { @content; }
+  }
+}

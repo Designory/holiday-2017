@@ -3,11 +3,12 @@
 
     bottom: $content-padding-mobile;
     padding: 0 $content-padding-mobile;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1;
 
     &__btn {
+        cursor: pointer;
         display: inline-block;
         vertical-align: middle;
 
@@ -42,6 +43,25 @@
                 z-index: 0;
             }
         }
+
+        &--mobile {
+            @include bp('lg') {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            float: none;
+
+            @include bp('sm') {
+                display: none;
+            }
+        }
+
+        &--calendar {
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
     }
 
     &__logo {
@@ -58,6 +78,11 @@
         [data-view="2"] & {
             padding-left: $btn-width;
             width: calc(100% - #{$btn-width});
+
+            @include bp('lg') {
+                padding: 0;
+                width: 150px;
+            }
         }
     }
 

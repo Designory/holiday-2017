@@ -1,6 +1,6 @@
-/*******************************\
-< * Tweaking smooth scrolling * >
-\*******************************/
+/*********************************\
+< * Tweaking third party styles * >
+\*********************************/
 #app {
     // Custom elements
     .smooth-picker-container {
@@ -9,6 +9,10 @@
         overflow: hidden;
         position: relative;
         width: 270px;
+
+        @include bp('lg') {
+            display: none;
+        }
     }
     .smooth-picker-divider {
         background: $white;
@@ -38,6 +42,10 @@
     }
     .smooth-picker-randomize {
         text-align: center;
+
+        @include bp('lg') {
+            display: none;
+        }
     }
     .smooth-picker-icon {
         height: 50px;
