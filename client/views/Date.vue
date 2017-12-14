@@ -2,7 +2,7 @@
   <div>
 
     <div class="date" :style="`height: ${height}px`">
-      <p class="date__sub-title txt">On {{month}} {{date}}, celebrate</p>
+      <p class="date__sub-title txt">On <span class="date__date">{{month}} {{date}}</span>, celebrate</p>
       <p class="date__title txt">{{title}}</p>
       <p class="date__desc txt">{{description}}</p>
     </div>

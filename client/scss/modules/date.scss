@@ -40,6 +40,10 @@
         margin: 0;
         text-align: center;
     }
+
+    &__date {
+        text-decoration: underline;
+    }
 }
 
 @keyframes fadeIn {
