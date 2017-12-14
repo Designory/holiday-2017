@@ -8,6 +8,7 @@
     width: 100%;
 
     &__item {
+        cursor: pointer;
         float: left;
         position: relative;
         width: 33.3333%;
@@ -28,6 +29,9 @@
 
         @include bp('lg') {
             display: block;
+            font-size: 1rem;
+            text-align: center;
+            padding-top: 2rem;
         }
     }
 
@@ -45,6 +49,16 @@
             opacity: 1;
             pointer-events: all;
             top: -70px;
+        }
+
+        &--0 {
+            @include bp('lg') {
+                display: inline-block;
+                left: 50%;
+                text-align: center;
+                transform: translateX(-50%);
+                width: 300px;
+            }
         }
 
         &--1 {

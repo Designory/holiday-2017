@@ -10,22 +10,25 @@
 
     <div class="options">
 
-      <div class="options__item">
-        <img @click="showWidget(0)" class="options__icon" src="/static/calendar.png" alt="icon">
+      <div @click="showWidget(0)" class="options__item">
+        <img class="options__icon" src="/static/calendar.png" alt="icon">
+        <p class="options__icon-desc txt">ADD TO CALENDAR</p>
         <div class="options__widget options__widget--0">
           <AddToCalendar></AddToCalendar>
         </div>
       </div>
         
-      <div class="options__item">
-        <img @click="showWidget(1)" class="options__icon" src="/static/share.png" alt="icon">
+      <div @click="showWidget(1)" class="options__item">
+        <img class="options__icon" src="/static/share.png" alt="icon">
+        <p class="options__icon-desc txt">SHARE TO SOCIAL MEDIA</p>
         <div class="options__widget options__widget--1">
           <Social></Social>
         </div>
       </div>
 
-      <div class="options__item">
-        <img @click="randomize()" class="options__icon" src="/static/dice.png" alt="icon">
+      <div @click="randomize()" class="options__item">
+        <img class="options__icon" src="/static/dice.png" alt="icon">
+        <p class="options__icon-desc txt">RANDOM NEW DATE</p>
       </div>
       
     </div>
