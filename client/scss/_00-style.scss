@@ -24,4 +24,14 @@ body { // ¯\_(ツ)_/¯
     position: fixed;
     height: 100%;
     font-family: Helvetica, Arial, sans-serif;
+
+    min-height: 400px;
+}
+
+@media screen and (max-height: 850px) and (min-width: 1024px) {
+    body {
+        min-height: 850px;
+        position: absolute;
+        overflow: scroll;
+    }
 }

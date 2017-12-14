@@ -21,7 +21,7 @@
         }
 
         &--1 {
-            padding: calc(50% - 40px) 20px 0 20px;
+            padding: calc(45vh - 100px) 20px 0 20px;
             transform: translateX(0);
 
             @include bp('lg') {

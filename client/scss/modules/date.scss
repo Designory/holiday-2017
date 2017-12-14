@@ -2,15 +2,13 @@
     display: flex;
     flex-direction: column;
     height: 100vh; // will be limited with js calculated max-height;
+    min-height: 235px;
     opacity: 0;
     padding: $content-padding-mobile*2 $content-padding-mobile 0 $content-padding-mobile;
     transition: opacity .2s;
-
+    
     @include bp('lg') {
         min-height: 600px;
-    }
-
-    @include bp('lg') {
         padding-top: $content-padding-mobile*4;
     }
 
