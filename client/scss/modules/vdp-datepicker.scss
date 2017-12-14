@@ -46,6 +46,10 @@
         @include bp('sm') {
             display: none;
         }
+
+        @include bp('lg') {
+            transform: translateY(5%); // micro adjustments for a nicer alignmet
+        }
     }
 
     &__text {
