@@ -28,9 +28,9 @@ body { // ¯\_(ツ)_/¯
     min-height: 400px;
 }
 
-@media screen and (max-height: 850px) and (min-width: 1024px) {
+@media screen and (max-height: 700px) and (min-width: 1024px) {
     body {
-        min-height: 850px;
+        min-height: 700px;
         position: absolute;
         overflow: scroll;
     }
