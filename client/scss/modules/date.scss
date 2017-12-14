@@ -7,6 +7,10 @@
     transition: opacity .2s;
 
     @include bp('lg') {
+        min-height: 600px;
+    }
+
+    @include bp('lg') {
         padding-top: $content-padding-mobile*4;
     }
 
