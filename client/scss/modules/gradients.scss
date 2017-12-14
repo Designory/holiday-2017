@@ -1,4 +1,6 @@
 .gradient {
+    $animation-timing: 6s;
+
     z-index: -1;
     
     &__layer {
@@ -21,12 +23,25 @@
             &--#{$number} {
                 background: linear-gradient(to right, $left-color, $right-color);
             }
+            &--#{$number}a {
+                background: linear-gradient(to right, $right-color, $left-color);
+            }
+            &--#{$number}b {
+                background: linear-gradient(to right, $right-color, $left-color);
+            }
         }
 
         // set visability for aproper layer
         @for $i from 1 through 10 {
             [data-bg="#{$i}"] &--#{$i} {
                 opacity: 1;
+            }
+            [data-bg="#{$i}"] &--#{$i}a {
+                animation: $animation-timing infinite bgAnimated;
+            }
+            [data-bg="#{$i}"] &--#{$i}b {
+                animation: $animation-timing infinite bgAnimated;
+                animation-delay: $animation-timing/3;
             }
         }
 
@@ -35,8 +50,13 @@
 
             [data-view="2"] & {
                 opacity: 1;
-                // background: rgba(0,0,0,.6);
             }
         }
     }
+}
+
+@keyframes bgAnimated {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
