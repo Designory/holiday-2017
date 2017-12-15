@@ -74,8 +74,7 @@ export default {
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
       
       setDate(randomMonth, randomDate);
-      this.closeWidgets(0);
-      this.closeWidgets(1);
+      this.closeWidgets();
     },
     toggleWidget(show, close) {
       this.closeWidgets(close);
