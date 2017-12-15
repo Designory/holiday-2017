@@ -16,19 +16,21 @@
 @import "./modules/vdp-datepicker.scss";
 @import "./modules/welcome.scss";
 
+// loading tweaks in the very end
+@import "./modules/tweaks.scss";
+
 * { // why is it there? ¯\_(ツ)_/¯
     box-sizing: border-box;
 }
 
 body { // ¯\_(ツ)_/¯
-    position: fixed;
-    height: 100%;
     font-family: Helvetica, Arial, sans-serif;
-
+    height: 100%;
     min-height: 400px;
+    position: fixed;
 }
 
-@media screen and (max-height: 700px) and (min-width: 1024px) {
+@media screen and (max-height: 700px) and (min-width: 1024px) { // ¯\_(ツ)_/¯  ¯\_(ツ)_/¯  ¯\_(ツ)_/¯
     body {
         min-height: 700px;
         position: absolute;
