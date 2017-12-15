@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div @click="randomize()" class="options__item">
+      <div @click="randomize()" class="options__item options__icon-dice">
         <img class="options__icon" src="/static/dice.png" alt="icon">
         <p class="options__icon-desc txt">RANDOM NEW DATE</p>
       </div>
