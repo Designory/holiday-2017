@@ -27,7 +27,7 @@
       [
         "vue-app",
         {
-          "useBuiltIns": true
+          "useBuiltIns": false
         }
       ]
     ]
