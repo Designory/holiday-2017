@@ -25,8 +25,8 @@
           <Social></Social>
         </div>
       </div>
-      
-      <div @click="randomize()" class="options__item options__item--dice">
+
+      <div @click="randomize()" class="options__item">
         <img class="options__icon" src="/static/dice.png" alt="icon">
         <p class="options__icon-desc txt">RANDOM NEW DATE</p>
       </div>
@@ -74,7 +74,8 @@ export default {
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
       
       setDate(randomMonth, randomDate);
-      this.closeWidgets();
+      this.closeWidgets(0);
+      this.closeWidgets(1);
     },
     toggleWidget(show, close) {
       this.closeWidgets(close);

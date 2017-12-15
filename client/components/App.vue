@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app" :data-view="view">
+  <div id="app" class="app" :data-view="view" :data-date="tweak">
     <gradient></gradient>
     <home></home>
     <navigation></navigation>  
@@ -23,6 +23,9 @@ export default {
   computed: {
     view() {
       return this.$store.state.route.query.view;
+    },
+    tweak() { // for tweking purposes only => used as css selector to target exact day => 'tweaks.scss'
+      return `m${this.$store.state.params.month}d${this.$store.state.params.date}`;
     }
   }
 }
