@@ -27,7 +27,7 @@
       [
         "vue-app",
         {
-          "useBuiltIns": true
+          "useBuiltIns": false
         }
       ]
     ]
@@ -81,5 +81,8 @@
     "vue-template-compiler": "^2.2.0",
     "webpack": "2.2.0",
     "webpack-dev-server": "^2.6.1"
+  },
+  "devDependencies": {
+    
   }
 }

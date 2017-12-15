@@ -22,18 +22,18 @@
 
         &--1 {
             padding: calc(45vh - 100px) 20px 0 20px;
-            transform: translateX(100%);
+            transform: scale(.98);
+            opacity: 0;
+            transition: all .1s;
 
             @include bp('lg') {
                 padding: 0;
             }
 
             [data-view="1"] & {
-                transform: translateX(0);
-            }
-
-            [data-view="2"] & {
-                transform: translateX(-100%);
+                transition: all .3s .2s;
+                transform: scale(1);
+                opacity: 1;
             }
         }
 

@@ -39,6 +39,8 @@ const state = {
    */
   date: new Date(),
 
+  location: window.location.href,
+
   /**
    * Used in some cases to update view
    */
@@ -67,6 +69,7 @@ const actions = {
    */
   nextView({ commit }) {
     Utils.setView(Number(state.params.view) + 1);
+    Utils.pushState(store.state.params);    
   },
   /**
    * Show previous view (page)
@@ -75,6 +78,7 @@ const actions = {
    */
   prevView({ commit }) {
     Utils.setView(Number(state.params.view) - 1);
+    Utils.pushState(store.state.params);
   }
 }
 
