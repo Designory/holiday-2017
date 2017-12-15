@@ -1,0 +1,9 @@
+/**************\
+< * TWEAKING * >
+\**************/
+
+[data-date="m7d17"] .date__desc {
+    @include bp('lg') {
+        font-size: 3rem;
+    }
+}
