@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="options__item">
+      <div class="options__item options__item--dice">
         <img @click="randomize()" class="options__icon" src="/static/dice.png" alt="icon">
       </div>
       
