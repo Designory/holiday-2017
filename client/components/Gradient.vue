@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import "../scripts/particles";
+// import "../scripts/particles";
 
 // initialize particles
-window.particlesJS.load("particles-js", "/static/particlesjs-config.json");
+// window.particlesJS.load("particles-js", "/static/particlesjs-config.json");
 
 export default {
   computed: {

@@ -20,10 +20,11 @@
   },
   "babel": {
     "presets": [
+      "es2015",
       [
         "vue-app",
         {
-          "useBuiltIns": true
+          "useBuiltIns": false
         }
       ]
     ]
