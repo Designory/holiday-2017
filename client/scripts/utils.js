@@ -99,4 +99,4 @@ function findHoliday(month, date, arr) {
     for (let day of arr) if (itnMonth === day.m) return day;
 }
 
-export { pushState, setView, setDate, normalizeParams };
+export { pushState, setView, setMonth, setDate, setFullDate, normalizeParams };
