@@ -20,8 +20,9 @@ function pushState(params) {
             query: params
         });
 
-        // update page title
-        document.title = `Designory’s Holiday Card - ${store.state.holiday.title}`;
+        // update page title only on resulting screen
+        if (params.view === 2) document.title = `Designory’s Holiday Card - ${store.state.holiday.title}`;
+        if (params.view !== 2) document.title = `Designory’s Holiday Card`;
 
         resolve(params);
     });
