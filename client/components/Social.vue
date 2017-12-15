@@ -2,7 +2,8 @@
     <div class="social">
 
         <!-- Email -->
-        <social-sharing   title="I found you this special holiday!"
+        <social-sharing :url="location"
+                        title="I found you this special holiday!"
                         description="Need an excuse to celebrate every day? Try this!"
                         inline-template>
                 <network network="email" class="social__elm social__elm--email">
@@ -11,7 +12,8 @@
         </social-sharing>
         
         <!-- facebook -->
-        <social-sharing   title="Designory’s Holiday Card"
+        <social-sharing :url="location"  
+                        title="Designory’s Holiday Card"
                         quote="Need an excuse to celebrate every day? Now you have it. #holidayeveryday #designory #agencylife"
                         inline-template>
                 <network network="facebook" class="social__elm social__elm--fb">
@@ -20,7 +22,8 @@
         </social-sharing> 
 
         <!-- LinkedIn -->
-        <social-sharing   title="Designory’s Holiday Card"
+        <social-sharing :url="location"
+                        title="Designory’s Holiday Card"
                         description="Give your colleagues a reason to celebrate every day. #holidayeveryday #designory #agencylife"
                         inline-template>
                 <network network="linkedin" class="social__elm social__elm--linked">
@@ -29,7 +32,8 @@
         </social-sharing>
 
         <!-- Twitter -->
-        <social-sharing   title="Need an excuse to celebrate every day? Now you have it. #holidayeveryday #designory #agencylife"
+        <social-sharing :url="location"
+                        title="Need an excuse to celebrate every day? Now you have it. #holidayeveryday #designory #agencylife"
                         inline-template>
                 <network network="twitter" class="social__elm social__elm--twitter">
                     Twitter
@@ -54,6 +58,11 @@ Vue.use(SocialSharing);
 export default {
   components: {
     SocialSharing
+  },
+  computed: {
+      location() {
+          return this.$store.state.location;
+      }
   }
 }
 </script>

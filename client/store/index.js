@@ -39,6 +39,8 @@ const state = {
    */
   date: new Date(),
 
+  location: window.location.href,
+
   /**
    * Used in some cases to update view
    */

@@ -24,6 +24,9 @@ function pushState(params) {
         if (params.view === 2) document.title = `Designory’s Holiday Card - ${store.state.holiday.title}`;
         if (params.view !== 2) document.title = `Designory’s Holiday Card`;
 
+        // update current location info for sharing widget
+        store.state.location = window.location.href;
+
         resolve(params);
     });
 }
