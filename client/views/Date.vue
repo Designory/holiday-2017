@@ -26,7 +26,8 @@
         </div>
       </div>
 
-      <div @click="randomize()" class="options__item options__icon--dice">
+
+      <div @click="randomize()" class="options__item options__item--dice">
         <img class="options__icon" src="/static/dice.png" alt="icon">
         <p class="options__icon-desc txt">RANDOM NEW DATE</p>
       </div>
@@ -70,10 +71,11 @@ export default {
   },
   methods: {
     randomize() {
-      let randomMonth = Math.floor(Math.random()*12),
+      let randomMonth = Math.floor(Math.random()*11),
           randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
       
       setDate(randomMonth, randomDate);
+      this.animateDice();
       this.closeWidgets(0);
       this.closeWidgets(1);
     },
@@ -83,6 +85,17 @@ export default {
     },
     closeWidgets(index) {
         document.querySelectorAll('.options__widget')[index].classList.remove('options__widget--open');
+    },
+    animateDice() {
+      let dice = document.querySelector(`.options__item--dice`),
+          modifier = 'options__item--dice-animated'
+
+      // do nothing if already in animation mode
+      if (dice.classList.contains(modifier)) return 0;
+      
+      // add modifier for .82 sec only = so it runs animation once
+      dice.classList.add(modifier);
+      setTimeout(_=> { dice.classList.remove(modifier) }, 820);
     },
     trickyFadeIn() {
       if (!document.getElementsByClassName('date')[0]) return; 
