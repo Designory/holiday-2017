@@ -1,5 +1,32 @@
 .welcome {
 
+    @include bp('sm') {
+        display: none; 
+    }
+
+    @media screen and (min-width: 375px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        padding-top: 20vh;
+        * {
+            font-size: 3rem;
+        }
+    }
+
+    @include bp('lg') {
+        padding-top: 0;
+    }
+
+    &--ip5 {
+        display: block;
+        @media screen and (min-width: 375px) {
+            display: none;
+        }
+    }
+
     @include bp('lg') {
         margin-top: 50vh;
         transform: translateY(-60%);
@@ -17,5 +44,11 @@
         * {
             font-size: 3.5rem;
         }
+    }
+}
+
+.hide-m {
+    @include bp('sm') {
+        display: none;
     }
 }

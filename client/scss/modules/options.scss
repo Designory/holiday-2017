@@ -7,6 +7,14 @@
     max-width: 1024px;
     width: 100%;
 
+    @media screen and (min-width: 768px) {
+        transform: translateY(-10vh);
+    }
+
+    @include bp('lg') {
+        transform: translateY(0);
+    }
+
     &__item {
         cursor: pointer;
         float: left;
