@@ -16,7 +16,7 @@ function pushState(params) {
 
         // push state
         router.push({
-            path: `/params`,
+            path: `/`,
             query: params
         });
 

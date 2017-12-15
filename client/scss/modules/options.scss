@@ -30,6 +30,7 @@
 
     &__icon-desc {
         display: none;
+        letter-spacing: 1px;
 
         @include bp('lg') {
             display: block;
