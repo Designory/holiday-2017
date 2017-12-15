@@ -20,6 +20,9 @@ function pushState(params) {
             query: params
         });
 
+        // update page title
+        document.title = `Designory’s Holiday Card - ${store.state.holiday.title}`;
+
         resolve(params);
     });
 }
