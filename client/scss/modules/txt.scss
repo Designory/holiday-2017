@@ -30,4 +30,10 @@
             font-weight: 300;
         }
     }
+
+    &--show-xs {
+        @include bp('lg') {
+            display: none;
+        }
+    }
 }

@@ -1,14 +1,15 @@
 .date {
     display: flex;
     flex-direction: column;
-    // height: calc(100vh - 250px);
     height: 100vh; // will be limited with js calculated max-height;
+    min-height: 235px;
     opacity: 0;
     padding: $content-padding-mobile*2 $content-padding-mobile 0 $content-padding-mobile;
     transition: opacity .2s;
-
+    
     @include bp('lg') {
-        display: block;
+        min-height: 440px;
+        padding-top: $content-padding-mobile*4;
     }
 
     &--animated {
@@ -22,23 +23,42 @@
         font-weight: 300;
         margin: 0;
         text-align: center;
+
+        @include bp('lg') {
+            font-size: 2.25rem;
+            font-weight: 400;
+            margin-bottom: .5rem;
+        }
     }
 
     &__title {
         flex: 0 0 auto;
         font-size: 2.75rem;
         text-align: center;
+
+        @include bp('lg') {
+            font-size: 6rem;
+            line-height: 6rem;
+        }
     }
 
     &__desc {
         align-items: center;
         display: flex;
         flex: 1 1 auto;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300;
         justify-content: center;
         margin: 0;
         text-align: center;
+
+        @include bp('lg') {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__date {
+        text-decoration: underline;
     }
 }
 

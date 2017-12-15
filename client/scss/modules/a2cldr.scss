@@ -1,33 +1,26 @@
+/*********************************\
+< * Tweaking third party styles * >
+\*********************************/
 .a2cldr {
-    $link-size: 30px;
 
     .a2cldr-item {
-        background-size: contain;
-        color: rgba(0,0,0,0);
-        display: inline-block;
-        font-size: 0;
-        height: $link-size;
-        margin-right: 1rem;
-        text-indent: -9999px;
-        width: $link-size;
-
-        a {
-            display: block;
-            height: $link-size;
-            width: $link-size;
-        }
+        @extend %share-icon;
     }
 
     .a2cldr-google {
         background: url('/static/google.png') no-repeat;
+        background-position: center center;
     }
     .a2cldr-ical {
         background: url('/static/ical.png') no-repeat;
+        background-position: center center;
     }
     .a2cldr-outlook {
         background: url('/static/outlook.png') no-repeat;
+        background-position: center center;
     }
     .a2cldr-yahoo {
         background: url('/static/yahoo.png') no-repeat;        
+        background-position: center center;
     }
 }
