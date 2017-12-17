@@ -1,38 +1,31 @@
 .welcome {
+    display: none;
 
-    @include bp('sm') {
-        display: none; 
-    }
-
+    // visible only from 375 => targeting iphon 6
+    // for lower res there's a modifier '--ip5'
     @media screen and (min-width: 375px) {
         display: block;
     }
 
-    @media screen and (min-width: 768px) {
+    /**************************\
+    < * Very Tricky Tweaking * >
+    \**************************/
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
         text-align: center;
         padding-top: 20vh;
+
         * {
             font-size: 3rem;
         }
     }
-
-    @include bp('lg') {
-        padding-top: 0;
-    }
-
-    &--ip5 {
-        display: block;
-        @media screen and (min-width: 375px) {
-            display: none;
-        }
-    }
-
+    
     @include bp('lg') {
         margin-top: 50vh;
+        padding-top: 0;
         transform: translateY(-60%);
     }
 
-    @media screen and (max-height: 800px) {
+    @media screen and (max-height: 800px) and (min-width: 1025px) {
         margin-top: 80px;
         transform: translateY(0);
     }
@@ -45,10 +38,13 @@
             font-size: 3.5rem;
         }
     }
-}
 
-.hide-m {
-    @include bp('sm') {
-        display: none;
+    // container with text for iPhone 5 only => resolution 320px
+    &--ip5 {
+        display: block;
+
+        @media screen and (min-width: 375px) {
+            display: none;
+        }
     }
 }

@@ -7,12 +7,13 @@
     max-width: 1024px;
     width: 100%;
 
-    @media screen and (min-width: 768px) {
-        transform: translateY(-10vh);
+
+    @media screen and (max-width: 767px) {
+        transform: translateY(0);
     }
 
-    @include bp('lg') {
-        transform: translateY(0);
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        transform: translateY(-60px);
     }
 
     &__item {

@@ -30,10 +30,15 @@ body { // ¯\_(ツ)_/¯
     position: fixed;
 }
 
-@media screen and (max-height: 700px) and (min-width: 1024px) { // ¯\_(ツ)_/¯  ¯\_(ツ)_/¯  ¯\_(ツ)_/¯
+@media screen and (min-width: 425px) {
     body {
-        min-height: 700px;
         position: absolute;
+    }
+}
+
+@media screen and (max-height: 768px) and (min-width: 768px) { // ¯\_(ツ)_/¯  ¯\_(ツ)_/¯  ¯\_(ツ)_/¯
+    body {
+        min-height: 768px;
         overflow: scroll;
     }
 }
