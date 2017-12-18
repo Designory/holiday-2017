@@ -24,8 +24,8 @@
         margin: 0;
         text-align: center;
 
-        @media screen and (min-width: 768px) {
-            padding-top: 10vh;
+        @include bp('md') {
+            padding-top: 10vh;  // extra padding for tablet - designers request
         }
 
         @include bp('lg') {
@@ -40,7 +40,7 @@
         font-size: 2.75rem;
         text-align: center;
 
-        @media screen and (min-width: 768px) {
+        @include bp('md') {
             font-size: 3.5rem;
         }
 
