@@ -103,4 +103,15 @@ function findHoliday(month, date, arr) {
     for (let day of arr) if (itnMonth === day.m) return day;
 }
 
-export { pushState, setView, setDate, normalizeParams };
+/**
+ * Updating GA
+ * @param {string} label custom label for button to be tracked with GA
+ */
+function trackingBtn(label) {
+    window.dataLayer.push({ 
+        'event': 'buttonClick', 
+        'buttonName': label
+    });
+}
+
+export { pushState, setView, setDate, normalizeParams, trackingBtn };
