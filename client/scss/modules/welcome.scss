@@ -19,6 +19,10 @@
 
     @include bp('lg') {
         min-height: 710px;
+
+        * {
+            font-size: 3.7rem;
+        }
     }
     
     // container with text for iPhone 5 only => resolution 320px
