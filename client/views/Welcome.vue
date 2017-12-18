@@ -9,15 +9,15 @@
           In continuously spreading cheer!
         </p>
         <p class="txt txt--strong txt--center-lg">
-          Push those doubts away, <br>
-          We’ve dug deep, and found <br>
+          So push those doubts away, <br>
+          For we’ve dug deep, and found <br>
           A gloriously real holiday <br>
           For each day, year round!
           <span class="navigation__btn navigation__btn--next navigation__btn--desktop" @click="$store.dispatch('nextView')"></span>
         </p>
     </div>
 
-    <!-- Below 375px => aka iPhone 5 -->
+    <!-- Below 375px => aka iPhone 5 only -->
     <div class="welcome welcome--ip5">
 
       <p class="txt txt--thin txt--center-lg">
