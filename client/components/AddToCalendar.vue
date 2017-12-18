@@ -36,7 +36,7 @@ export default {
   mounted() {
       setTimeout(_=> {
         [...this.$el.getElementsByTagName('a')].forEach(elm => {
-          elm.addEventListener('click', _=> { trackingBtn(elm.textContent) });
+          if (elm) elm.addEventListener('click', _=> { trackingBtn(elm.textContent) });
         });
       }, 1000);
   }
