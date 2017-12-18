@@ -165,7 +165,7 @@ Vue.use(SmoothPicker);
     created() {
       // adding a handler for 'shake gesture' event (mobile only), unless you have desktop with accellerometer
       window.addEventListener('shake', _=> {
-        this.randomize;
+        this.randomize();
         
         // updating ga tracking 
         trackingBtn('shake');
