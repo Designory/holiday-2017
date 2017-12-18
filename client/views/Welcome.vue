@@ -8,7 +8,7 @@
         Why only celebrate 
         a couple times a year?
         We at Designory believe
-        In continuously spreading cheer!
+        In always spreading cheer!
       </p>
       <p class="txt txt--strong txt--center-lg">
         Push those doubts away, 
@@ -24,7 +24,7 @@
         Why only celebrate <br>
         A couple times a year?<br>
         We at Designory believe<br>
-        In continuously spreading cheer!
+        In always spreading cheer!
       </p>
       <p class="txt txt--strong txt--center-lg">
         Push those doubts away, <br>
