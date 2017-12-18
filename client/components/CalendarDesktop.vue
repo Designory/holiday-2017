@@ -25,7 +25,7 @@
 <script>
 import store from '../store'
 import Datepicker from 'vuejs-datepicker'
-import { setDate } from '../scripts/utils'
+import { setDate, trackingBtn } from '../scripts/utils'
 
 export default {
   
@@ -50,7 +50,10 @@ export default {
                 randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
 
             store.state.date = new Date(2018, randomMonth - 1, randomDate);
-            setDate(randomMonth, randomDate);            
+            setDate(randomMonth, randomDate);   
+            
+            // updating ga tracking 
+            trackingBtn('randomize');
         },
         mmmDD(value) {
             let month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'][value.getMonth()],
