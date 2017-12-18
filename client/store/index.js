@@ -70,8 +70,7 @@ const actions = {
   nextView({ commit }) {
     Utils.setView(Number(state.params.view) + 1);
     Utils.pushState(store.state.params);  
-    // updating ga tracking (+ 1 for pages to be labeled as 1,2,3)
-    window.dataLayer.push({ 'virtualPage': `${Number(state.params.view) + 1}` });  
+    Utils.trackingPage(); 
   },
   /**
    * Show previous view (page)
@@ -81,8 +80,7 @@ const actions = {
   prevView({ commit }) {
     Utils.setView(Number(state.params.view) - 1);
     Utils.pushState(store.state.params);
-    // updating ga tracking (+ 1 for pages to be labeled as 1,2,3)
-    window.dataLayer.push({ 'virtualPage': `${Number(state.params.view) + 1}` });
+    Utils.trackingPage();
   }
 }
 

@@ -129,6 +129,10 @@
             &:after {
                 border-left-color: $white;
             }
+
+            &.disabled {
+                opacity: .5;
+            }
         }
     }
 
