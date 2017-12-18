@@ -9,9 +9,11 @@
           <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
       </div>
 
-      <div class="smooth-picker-randomize" @click="randomize()">
-        <img class="smooth-picker-icon" src="/static/randomize.png" alt="img">
-        <p class="smooth-picker-text">RANDOMIZE</p>
+      <div class="smooth-picker-randomize">
+        <div>
+          <img class="smooth-picker-icon" src="/static/randomize.png" alt="img" @click="randomize()">
+          <p class="smooth-picker-text">RANDOMIZE</p>
+        </div>
       </div>
 
       <!-- Desktop -->
