@@ -7,6 +7,7 @@
 @import "./modules/screen.scss";
 @import "./modules/a2cldr.scss";
 @import "./modules/app.scss";
+@import "./modules/body.scss";
 @import "./modules/date.scss";
 @import "./modules/gradients.scss";
 @import "./modules/navigation.scss";
@@ -18,27 +19,3 @@
 
 // loading tweaks in the very end
 @import "./modules/tweaks.scss";
-
-* { // why is it there? ¯\_(ツ)_/¯
-    box-sizing: border-box;
-}
-
-body { // ¯\_(ツ)_/¯
-    font-family: Helvetica, Arial, sans-serif;
-    height: 100%;
-    min-height: 400px;
-    position: fixed;
-}
-
-@media screen and (min-width: 425px) {
-    body {
-        position: absolute;
-    }
-}
-
-@media screen and (max-height: 768px) and (min-width: 768px) { // ¯\_(ツ)_/¯  ¯\_(ツ)_/¯  ¯\_(ツ)_/¯
-    body {
-        min-height: 768px;
-        overflow: scroll;
-    }
-}
