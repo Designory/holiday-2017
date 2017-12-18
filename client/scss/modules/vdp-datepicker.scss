@@ -118,6 +118,10 @@
             &:after {
                 border-right-color: $white;
             }
+
+            &.disabled {
+                opacity: .5;
+            }
         }
         .next {
             background: rgba(0, 0, 0, 0);
