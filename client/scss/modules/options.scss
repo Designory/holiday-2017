@@ -6,6 +6,14 @@
     margin: $space-for-icons auto 0 auto; // to preserve space for widget icons
     max-width: 1024px;
     width: 100%;
+    
+    @include bp('md') {
+        transform: translateY(0);
+    }
+    
+    @include bp('ipad') {
+        transform: translateY(-60px); // small position adjustment for tablet => designers request
+    }
 
     &__item {
         cursor: pointer;
@@ -43,7 +51,7 @@
     &__widget {
         display: inline-block;
         left: 0;
-        min-width: 250px;
+        min-width: calc(100vw - #{$content-padding-mobile*2});
         opacity: 0;
         pointer-events: none;
         position: absolute;

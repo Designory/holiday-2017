@@ -1,21 +1,38 @@
 .welcome {
+    display: none;
+    height: calc(100vh - 60px);
+    padding: $content-padding-mobile;
 
-    @include bp('lg') {
-        margin-top: 50vh;
-        transform: translateY(-60%);
+    // visible only from 375 => targeting iphon 6
+    // for lower res there's a modifier '--ip5'
+    @media screen and (min-width: 375px) {
+        display: block;
     }
 
-    @media screen and (max-height: 800px) {
-        margin-top: 80px;
-        transform: translateY(0);
+    @include bp('md') {
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
     
-    @media screen and (max-height: 900px) and (min-width: 1024px) and (max-width: 1200px) {
-        margin-top: 10vh;
-        transform: translateY(0);
-
+    @include bp('ipad') {
         * {
-            font-size: 3.5rem;
+            font-size: 3rem;
+        }
+    }
+
+    @include bp('lg') {
+        min-height: 710px;
+    }
+    
+    // container with text for iPhone 5 only => resolution 320px
+    &--ip5 {
+        display: block;
+
+        @media screen and (min-width: 375px) {
+            display: none;
         }
     }
 }

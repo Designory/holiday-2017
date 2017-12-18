@@ -9,10 +9,7 @@
 
         &--0 {
             transform: translateX(0);
-
-            @include bp('lg') {
-                padding: 0 10vw;
-            }
+            padding: 0;
 
             [data-view="1"] &,
             [data-view="2"] & {

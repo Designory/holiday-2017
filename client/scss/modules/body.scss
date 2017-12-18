@@ -1,0 +1,19 @@
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    min-height: 400px;
+    position: fixed;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @media screen and (min-width: 425px) {
+        position: absolute;
+    }
+
+    @include bp('md') {
+        min-height: 768px;
+    }
+}
