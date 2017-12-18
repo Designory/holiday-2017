@@ -1,5 +1,6 @@
 .navigation {
     $btn-width: 30px;
+    $logo-width-desktop: 135px;
 
     bottom: $content-padding-mobile;
     padding: 0 $content-padding-mobile;
@@ -74,7 +75,7 @@
         width: 100px;
 
         @include bp('lg') {
-            width: 150px;
+            width: $logo-width-desktop;
         }
 
         [data-view="2"] & {
@@ -83,7 +84,7 @@
 
             @include bp('lg') {
                 padding: 0;
-                width: 150px;
+                width: $logo-width-desktop;
             }
         }
     }
@@ -93,7 +94,7 @@
         width: 100px;
 
         @include bp('lg') {
-            width: 150px;
+            width: $logo-width-desktop;
         }
     }
 
