@@ -12,7 +12,7 @@
 
     <div class="options">
 
-      <div @click="toggleWidget(0, 1)" class="options__item">
+      <div @click="toggleWidget(0, 1, 'addToCalendar')" class="options__item">
         <img class="options__icon" src="/static/calendar.png" alt="icon">
         <p class="options__icon-desc txt">ADD TO CALENDAR</p>
         <div class="options__widget options__widget--0">
@@ -20,7 +20,7 @@
         </div>
       </div>
         
-      <div @click="toggleWidget(1, 0)" class="options__item">
+      <div @click="toggleWidget(1, 0, 'share')" class="options__item">
         <img class="options__icon" src="/static/share.png" alt="icon">
         <p class="options__icon-desc txt">SHARE TO SOCIAL MEDIA</p>
         <div class="options__widget options__widget--1">
@@ -41,7 +41,7 @@
 <script>
 import Social from '../components/Social'
 import AddToCalendar from '../components/AddToCalendar'
-import { setDate } from '../scripts/utils'
+import { setDate, trackingBtn } from '../scripts/utils'
 
 export default {
   components: {
@@ -80,10 +80,16 @@ export default {
       this.animateDice();
       this.closeWidgets(0);
       this.closeWidgets(1);
+
+      // updating ga tracking 
+      trackingBtn('randomize');
     },
-    toggleWidget(show, close) {
+    toggleWidget(show, close, label) {
       this.closeWidgets(close);
       document.querySelector(`.options__widget--${show}`).classList.toggle('options__widget--open');
+
+      // updating ga tracking 
+      trackingBtn(label);
     },
     closeWidgets(index) {
         document.querySelectorAll('.options__widget')[index].classList.remove('options__widget--open');

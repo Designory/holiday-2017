@@ -26,7 +26,7 @@
 \*****************************************************************************/
 import Vue from 'vue'
 import store from '../store'
-import { setDate } from '../scripts/utils'
+import { setDate, trackingBtn } from '../scripts/utils'
 
 import SmoothPicker from 'vue-smooth-picker'
 import 'vue-smooth-picker/dist/css/style.css'
@@ -125,6 +125,9 @@ Vue.use(SmoothPicker);
             randomDate = randomMonth !== 2 ? Math.floor(Math.random()*30) : Math.floor(Math.random()*28);
         
         this.setCalendarDate(randomMonth, randomDate);
+
+        // updating ga tracking 
+        trackingBtn('randomize');
       },
       /**
        * Custom method for third party widget
@@ -159,7 +162,12 @@ Vue.use(SmoothPicker);
     },
     created() {
       // adding a handler for 'shake gesture' event (mobile only), unless you have desktop with accellerometer
-      window.addEventListener('shake', this.randomize, false);
+      window.addEventListener('shake', _=> {
+        this.randomize;
+        
+        // updating ga tracking 
+        trackingBtn('shake');
+      }, false);
     }
   }
 </script>
