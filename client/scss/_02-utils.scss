@@ -1,4 +1,8 @@
 @mixin bp($bp) {
+  @if $bp == xs {
+    @media (max-width: 374px) { @content; }
+  }
+  
   @if $bp == sm {
     @media (max-width: 1023px) { @content; }
   }
@@ -10,6 +14,7 @@
   @if $bp == ipad {
     @media (min-width: 768px) and (max-width: 1024px) { @content; }
   }
+
  
   @else if $bp == lg {
     @media (min-width: 1024px) { @content; }
