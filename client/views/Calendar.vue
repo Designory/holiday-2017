@@ -9,9 +9,10 @@
           <smooth-picker ref="smoothPicker" :data="data" :change="dataChange" />
       </div>
 
-      <div class="smooth-picker-randomize">
+      <div class="smooth-picker-randomize" :style="`height: ${height}px`">
         <div>
-          <img class="smooth-picker-icon" src="/static/randomize.png" alt="img" @click="randomize()">
+          <img class="smooth-picker-icon" src="/static/randomize.png" alt="img" 
+               @click="randomize()">
           <p class="smooth-picker-text">RANDOMIZE</p>
         </div>
       </div>
@@ -170,6 +171,11 @@ Vue.use(SmoothPicker);
         // updating ga tracking 
         trackingBtn('shake');
       }, false);
+    },
+    computed: {
+      height() {
+        return this.$store.state.screen.height/2 - 60;
+      }
     }
   }
 </script>
