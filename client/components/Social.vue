@@ -14,7 +14,7 @@
         <!-- facebook -->
         <social-sharing :url="location"  
                         title="Designory’s Holiday Card"
-                        quote="Need an excuse to celebrate every day? Now you have it. #holidayeveryday #designory #agencylife"
+                        quote="Need an excuse to celebrate every day? Now you have it. #everydayholiday #designory #agencylife"
                         inline-template>
                 <network network="facebook" class="social__elm social__elm--fb">
                     Facebook
@@ -24,7 +24,7 @@
         <!-- LinkedIn -->
         <social-sharing :url="location"
                         title="Designory’s Holiday Card"
-                        description="Give your colleagues a reason to celebrate every day. #holidayeveryday #designory #agencylife"
+                        description="Give your colleagues a reason to celebrate every day. #everydayholiday #designory #agencylife"
                         inline-template>
                 <network network="linkedin" class="social__elm social__elm--linked">
                     LinkedIn
@@ -33,7 +33,7 @@
 
         <!-- Twitter -->
         <social-sharing :url="location"
-                        title="Need an excuse to celebrate every day? Now you have it. #holidayeveryday #designory #agencylife"
+                        title="Need an excuse to celebrate every day? Now you have it. #everydayholiday #designory #agencylife"
                         inline-template>
                 <network network="twitter" class="social__elm social__elm--twitter">
                     Twitter

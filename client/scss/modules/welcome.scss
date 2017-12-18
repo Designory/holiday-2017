@@ -3,12 +3,6 @@
     height: calc(100vh - 60px);
     padding: $content-padding-mobile;
 
-    // visible only from 375 => targeting iphon 6
-    // for lower res there's a modifier '--ip5'
-    @media screen and (min-width: 375px) {
-        display: block;
-    }
-
     @include bp('md') {
         display: flex;
         align-items: center;    
@@ -29,10 +23,18 @@
     
     // container with text for iPhone 5 only => resolution 320px
     &--ip5 {
-        display: block;
+        display: none;
 
-        @media screen and (min-width: 375px) {
-            display: none;
+        @include bp('xs') {
+            display: block;
+        }
+    }
+
+    &--mobile {
+        display: none;
+        
+        @media screen and (min-width: 375px) and (max-width: 767px) {
+            display: block;
         }
     }
 }

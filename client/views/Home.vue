@@ -3,7 +3,7 @@
      <div class="screen">
 
        <!-- welcome screen  -->
-       <div class="screen__content screen__content--0">
+       <div class="screen__content screen__content--0" @click="$store.dispatch('nextView')">
         <Welcome></Welcome>
        </div>
        

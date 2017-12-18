@@ -5,7 +5,7 @@
     // Custom elements
     .smooth-picker-container {
         height: 65px;
-        margin: 0 auto 15vh auto;
+        margin: 0 auto;
         overflow: hidden;
         position: relative;
         width: 270px;
@@ -41,6 +41,11 @@
         }
     }
     .smooth-picker-randomize {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(50vh - 40px);
         text-align: center;
 
         @include bp('lg') {
@@ -50,9 +55,13 @@
     .smooth-picker-icon {
         height: 50px;
         margin-bottom: 10px;
+        width: 50px;
     }
     .smooth-picker-text {
         font-size: .75rem;
+    }
+    .smooth-picker-title-sm {
+        font-size: 1.65rem;
     }
 
     // Widget native elements

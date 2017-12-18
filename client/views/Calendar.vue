@@ -1,6 +1,6 @@
 <template>
     <div>
-      <p class="txt txt--center-xs txt--show-xs">My reason to celebrate</p>
+      <p class="txt txt--center-xs txt--show-xs smooth-picker-title-sm">My reason to celebrate</p>
       <!-- Mobile -->
       <div class="smooth-picker-container">
           <div class="smooth-picker-divider"></div>
