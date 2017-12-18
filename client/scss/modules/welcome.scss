@@ -10,19 +10,9 @@
         flex-direction: column;
         text-align: center;
     }
-    
-    @include bp('ipad') {
-        * {
-            font-size: 3rem;
-        }
-    }
 
     @include bp('lg') {
         min-height: 710px;
-
-        * {
-            font-size: 3.5rem;
-        }
     }
     
     // container with text for iPhone 5 only => resolution 320px
@@ -39,6 +29,17 @@
         
         @media screen and (min-width: 375px) and (max-width: 767px) {
             display: block;
+        }
+    }
+
+    &__txt {
+        
+        @include bp('ipad') {
+            font-size: 3rem;
+        }
+
+        @include bp('lg') {
+            font-size: 3.5rem;
         }
     }
 }
