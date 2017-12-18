@@ -53,7 +53,8 @@
         }
 
         @include bp('lg') {
-            transform: translateY(5%); // micro adjustments for a nicer alignmet
+            font-size: 3.5rem;
+            transform: translateY(.6rem); // micro adjustments for a nicer alignmet
         }
     }
 
@@ -116,6 +117,10 @@
 
             &:after {
                 border-right-color: $white;
+            }
+
+            &.disabled {
+                opacity: .5;
             }
         }
         .next {
