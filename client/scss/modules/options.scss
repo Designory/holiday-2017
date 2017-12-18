@@ -6,14 +6,13 @@
     margin: $space-for-icons auto 0 auto; // to preserve space for widget icons
     max-width: 1024px;
     width: 100%;
-
-
-    @media screen and (max-width: 767px) {
+    
+    @include bp('md') {
         transform: translateY(0);
     }
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-        transform: translateY(-60px);
+    
+    @include bp('ipad') {
+        transform: translateY(-60px); // small position adjustment for tablet => designers request
     }
 
     &__item {
