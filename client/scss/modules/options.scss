@@ -51,7 +51,7 @@
     &__widget {
         display: inline-block;
         left: 0;
-        min-width: 250px;
+        min-width: calc(100vw - #{$content-padding-mobile*2});
         opacity: 0;
         pointer-events: none;
         position: absolute;
