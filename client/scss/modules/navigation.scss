@@ -31,7 +31,7 @@
         &--prev {
             opacity: 0;
             pointer-events: none;
-            position: fixed;
+            position: absolute;
             transition: opacity .4s;
             top: $content-padding-mobile;
             left: $content-padding-mobile;
