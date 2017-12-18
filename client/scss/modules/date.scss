@@ -24,6 +24,10 @@
         margin: 0;
         text-align: center;
 
+        @include bp('xs') {
+            margin-bottom: 1rem;
+        }
+
         @include bp('md') {
             padding-top: 10vh;  // extra padding for tablet - designers request
         }
@@ -39,6 +43,10 @@
         flex: 0 0 auto;
         font-size: 2.75rem;
         text-align: center;
+
+        @include bp('xs') {
+            font-size: 2.25rem;
+        }
 
         @include bp('md') {
             font-size: 3.5rem;
@@ -59,6 +67,10 @@
         justify-content: center;
         margin: 0;
         text-align: center;
+
+        @include bp('xs') {
+            font-size: 1.25rem;
+        }
 
         @include bp('lg') {
             font-size: 1.75rem;
