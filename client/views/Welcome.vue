@@ -31,7 +31,7 @@
         We’ve dug deep, and found <br>
         A gloriously real holiday <br>
         For each day, year round!
-        <span class="navigation__btn navigation__btn--next navigation__btn--desktop" @click="$store.dispatch('nextView')"></span>
+        <span class="navigation__btn navigation__btn--next navigation__btn--desktop"></span>
       </p>
   </div>
 
@@ -49,7 +49,7 @@
         For we’ve dug deep, and found <br>
         A gloriously real holiday <br>
         For each day, year round!
-        <span class="navigation__btn navigation__btn--next navigation__btn--desktop" @click="$store.dispatch('nextView')"></span>
+        <span class="navigation__btn navigation__btn--next navigation__btn--desktop"></span>
       </p>
   </div>
   
