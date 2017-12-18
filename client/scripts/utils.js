@@ -114,4 +114,14 @@ function trackingBtn(label) {
     });
 }
 
-export { pushState, setView, setDate, normalizeParams, trackingBtn };
+/**
+ * Updating ga tracking (+ 1 for pages to be labeled as 1,2,3 instead of 0,1,2)
+ */
+function trackingPage() {
+    window.dataLayer.push({ 
+        'event': 'virtualPage', 
+        'pageNo': `${Number(store.state.params.view) + 1}` 
+    });
+}
+
+export { pushState, setView, setDate, normalizeParams, trackingBtn, trackingPage };

@@ -50,8 +50,9 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import SocialSharing from 'vue-social-sharing';
+import Vue from 'vue'
+import SocialSharing from 'vue-social-sharing'
+import { trackingBtn } from '../scripts/utils'
 
 Vue.use(SocialSharing);
 
@@ -63,6 +64,11 @@ export default {
       location() {
           return this.$store.state.location;
       }
+  },
+  mounted() {
+  	this.$root.$on('social_shares_open', function (network, url) {
+          trackingBtn(network);
+    });
   }
 }
 </script>

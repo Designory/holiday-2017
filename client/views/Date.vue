@@ -85,11 +85,15 @@ export default {
       trackingBtn('randomize');
     },
     toggleWidget(show, close, label) {
+      let target = document.querySelector(`.options__widget--${show}`);
+
       this.closeWidgets(close);
-      document.querySelector(`.options__widget--${show}`).classList.toggle('options__widget--open');
+      target.classList.toggle('options__widget--open');
 
       // updating ga tracking 
-      trackingBtn(label);
+      if (target.classList.contains('options__widget--open')) {
+        trackingBtn(label);
+      }
     },
     closeWidgets(index) {
         document.querySelectorAll('.options__widget')[index].classList.remove('options__widget--open');
