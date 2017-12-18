@@ -108,8 +108,13 @@ function findHoliday(month, date, arr) {
  * @param {string} label custom label for button to be tracked with GA
  */
 function trackingBtn(label) {
+    
     window.dataLayer.push({ 
         'event': 'buttonClick', 
+        'buttonName': label
+    });
+    console.log({
+        'event': 'buttonClick',
         'buttonName': label
     });
 }
