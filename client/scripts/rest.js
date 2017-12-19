@@ -21,4 +21,5 @@ async function getQueryParams() {
  */
 getQueryParams()
     .then(params => Utils.pushState( Utils.normalizeParams(params) ))
+    .then(Utils.trackingPage)
     .catch(err => Utils.pushState( Utils.normalizeParams() ));

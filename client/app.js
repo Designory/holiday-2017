@@ -9,6 +9,9 @@ import './scripts/gestures'
 import './scripts/shake'
 import './scripts/screen'
 
+// Google analytics object
+window.dataLayer = [];
+
 const app = new Vue({
   router,
   store,
